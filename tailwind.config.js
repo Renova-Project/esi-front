@@ -6,11 +6,17 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "1rem",
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        honolulu: "#0061B1",
+        darkblue: "#0C1F38",
+        crayola: "#1B76FF",
+        grey: "#B3B3B3",
+        darkgrey: "#5D5D5D",
       },
     },
   },

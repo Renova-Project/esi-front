@@ -1,7 +1,10 @@
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = DM_Sans({
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -9,9 +12,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children, params: { locale } }) {
+  const messages = useMessages();
+
   return (
     <html lang={locale}>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <div className="overflow-hidden">{children}</div>
+        </NextIntlClientProvider>
+      </body>
     </html>
   );
 }

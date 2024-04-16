@@ -1,0 +1,19 @@
+{
+  "Nav": {
+    "upLinks": {
+      "library": "Biblothèque",
+      "elearning": "E-learning",
+      "talents": "Talents",
+      "labs": "Labos",
+      "portal": "Portail juridique"
+    },
+    "downLinks": {
+      "school": "Ecole",
+      "studies": "Etudes",
+      "research": "Recherche",
+      "campus": "Campus",
+      "partnetship": "Partenariat",
+      "alumni": "Alumni"
+    }
+  }
+}
