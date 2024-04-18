@@ -3,4 +3,15 @@
 @tailwind utilities;
 
 body {
+    
+}
+
+.slick-dots li {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.slick-active {
+  background-color: #fff !important;
+  border-radius: 50%;
 }

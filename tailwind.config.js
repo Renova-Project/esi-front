@@ -17,6 +17,12 @@ module.exports = {
         crayola: "#1B76FF",
         grey: "#B3B3B3",
         darkgrey: "#5D5D5D",
+        heroGradientStart: "#011D34",
+        heroGradientEnd: "#02111E",
+      },
+      height: {
+        heroSectionMobile: "50vh",
+        heroSection: "calc(100vh - 126.36px)",
       },
     },
   },

@@ -15,5 +15,12 @@
       "partnetship": "Partenariat",
       "alumni": "Alumni"
     }
+  },
+  "Landing": {
+    "hero": {
+      "welcome": "Bienvenue à",
+      "title": "L'Ecole Nationale Supérieure d’Informatique",
+      "subtitle": "L'école de l'élite"
+    }
   }
 }
