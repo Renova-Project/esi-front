@@ -15,5 +15,18 @@
       "partnetship": "Partenariat",
       "alumni": "Alumni"
     }
-  }
+  },"Landing":{
+    "events":{
+        "title":"Evénements",
+        "allEvents":"Tous les Evénements"
+  },
+  "a_la_une":{
+    "title":"A la une",
+    "allActualities":"Voir Tous les Actualités"
+},
+"Actualities":{
+"title":"Actualités ESI",
+    "allActualities":"Voir Tous les Actualités"
+}
+}
 }

@@ -15,5 +15,19 @@
       "partnetship": "Partnetship",
       "alumni": "Alumni"
     }
-  }
+  },
+  "Landing":{
+    "events":{
+        "title":"Events",
+        "allEvents":"All events"
+  },
+  "a_la_une":{
+    "title":"In the news",
+    "allActualities":"See All News"
+},
+"Actualities":{
+"title":"ESI News",
+    "allActualities":"See All News"
+}
+}
 }
