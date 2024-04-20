@@ -19,6 +19,7 @@ module.exports = {
         darkgrey: "#5D5D5D",
         heroGradientStart: "#011D34",
         heroGradientEnd: "#02111E",
+        sectionBgGray: "#F8F8F8"
       },
       height: {
         heroSectionMobile: "50vh",

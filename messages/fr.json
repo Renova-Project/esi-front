@@ -21,6 +21,41 @@
       "welcome": "Bienvenue à",
       "title": "L'Ecole Nationale Supérieure d’Informatique",
       "subtitle": "L'école de l'élite"
+    },
+    "inNumbers": {
+      "title": "Esi en nombres",
+      "numbers": [
+        {
+          "value": "1",
+          "ordinalIndicator": "er",
+          "label": "Centre de recherche en Afrique"
+        },
+        {
+          "value": "500",
+          "label": "Partenariats établis avec des entreprises"
+        },
+        {
+          "value": "1",
+          "ordinalIndicator": "ère",
+          "label": "La moyenne d'accés la plus élevée"
+        },
+        {
+          "value": "1206",
+          "label": "Etudiants"
+        },
+        {
+          "value": "120",
+          "label": "Enseignants"
+        },
+        {
+          "value": "134",
+          "label": "Doctorants"
+        },
+        {
+          "value": "175",
+          "label": "Travailleurs"
+        }
+      ]
     }
   }
 }
