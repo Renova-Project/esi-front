@@ -3,12 +3,12 @@ import Image from 'next/image'
 const New = ({image,description}) => {
   return (
     /*The content will be completed from the back-end*/
-    <div className='mb-8 md:mb-0 flex flex-row lg:flex-col justify-center items-center gap-2'>
-        <div className='md:w-full h-full'>
-            <img src={'/LMCS-11.svg'} alt='/' className='object-cover'/>
+    <div className='h-28 sm:h-36 md:48 lg:h-[30rem] w-full lg:max-w-[25rem] flex flex-row lg:flex-col justify-center items-start gap-4 mb-8 md:mb-0'>
+        <div className='w-[40%] lg:w-full h-full lg:h-[60%] relative'>
+            <Image src={image} alt='/' fill={true} className='w-full h-full' objectFit='contain'/>
         </div>
-        <div>
-            <p className='text-md md:text-lg'>{description}</p>
+        <div className='w-[60%] lg:w-full h-full lg:h-[40%]'>
+            <p className='text-sm md:text-lg'>{description}</p>
         </div>
     </div>
   )

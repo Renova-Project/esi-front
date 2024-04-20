@@ -26,8 +26,33 @@
     "allActualities":"See All News"
 },
 "Actualities":{
-"title":"ESI News",
+    "title":"ESI News",
     "allActualities":"See All News"
-}
+},"Specialities":{
+  "title":"The specialties",
+  "details":"See more details",
+  "speciality":{
+    "SID":{
+      "abrevihation":"CDS",
+      "name":"Computer and data systems"
+    },
+    "SIQ":{
+      "abrevihation":"CS",
+      "name":"Computer system"
+    },
+    "SIT":{
+      "abrevihation":"IST",
+      "name":"Information system and technology"
+    },
+    "SIL":{
+      "abrevihation":"CSS",
+      "name":"Computer systems and software"
+    }
+  }
+
+  },
+  "partners":{
+    "title":"Our partners"
+  }
 }
 }

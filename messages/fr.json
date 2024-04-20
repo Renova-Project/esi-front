@@ -27,6 +27,31 @@
 "Actualities":{
 "title":"Actualités ESI",
     "allActualities":"Voir Tous les Actualités"
-}
+},
+"Specialities":{
+  "title":"Les spécialités",
+  "details":"Voir plus de detail",
+  "speciality":{
+    "SID":{
+      "abrevihation":"SID",
+      "name":"Système informatiques et donnès"
+    },
+    "SIQ":{
+      "abrevihation":"SIQ",
+      "name":"Système informatique"
+    },
+    "SIT":{
+      "abrevihation":"SIT",
+      "name":"Système d’information et technologie"
+    },
+    "SIL":{
+      "abrevihation":"SIL",
+      "name":"Système informatiques et logiciels"
+    }
+  }
+  },
+  "partners":{
+    "title":"Nos partenaire"
+  }
 }
 }
