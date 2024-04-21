@@ -12,9 +12,9 @@ import Partners from "@/components/Partners";
 
 export const Speciality =({abrevihation,name,image})=>{
    return(
-    <div className="h-[6.125rem] md:h-[8rem] w-full sm:w-11/12 lg:w-[46%] xl:w-[48%] flex gap-3 bg-[#081F3A] shadow-md hover:scale-105">
-      <div className="flex h-full w-[30%] relative">
-        <Image src={image} alt="/" fill={true} className="w-full h-auto" objectFit="cover"/>
+    <div className="h-[6.125rem] md:h-[8rem] w-full sm:w-11/12 lg:w-[46%] xl:w-[48%] flex gap-3 bg-[#081F3A] shadow-md md:hover:scale-105">
+      <div className="h-full w-[30%] relative">
+        <Image src={image} alt="/" fill={true} className="w-full h-full"/>
       </div>
       <div className="h-full w-[70%] flex flex-col justify-center items-start">
         <p className="font-semibold text-lg">{abrevihation}</p>
@@ -26,7 +26,7 @@ export const Speciality =({abrevihation,name,image})=>{
 
 export const PartnerLg = ({image}) => {
    return(
-      <div className="relative w-[8rem] sm:w-[12rem] md:w-[14rem] max-w-[16rem] h-[90%]">
+      <div className="relative w-[14rem] max-w-[16rem] h-[90%]">
         <Image src={image} alt="/" fill={true} className="w-full h-full" objectFit="cover"/>
       </div>
    )
@@ -34,7 +34,7 @@ export const PartnerLg = ({image}) => {
 
 export const PartnerSm = ({image}) =>{
   return(
-    <div className="relative w-[8rem] sm:w-[12rem] md:w-[14rem] max-w-[16rem] h-[8rem]">
+    <div className="relative w-[6rem] sm:w-[8rem] md:w-[10rem] max-w-[10rem] h-[8rem]">
         <Image src={image} alt="/" fill={true} className="w-full h-full" objectFit="contain"/>
       </div>
   )
