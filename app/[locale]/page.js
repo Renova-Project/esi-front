@@ -24,12 +24,20 @@ export const Speciality =({abrevihation,name,image})=>{
    )
 }
 
-export const Partner = ({image}) => {
+export const PartnerLg = ({image}) => {
    return(
-      <div className="relative flex items-center justify-center w-[8rem] sm:w-[12rem] md:w-[14rem] max-w-[16rem] h-[8rem]">
-        <Image src={image} alt="/" fill={true} className="w-full h-auto" objectFit="contain"/>
+      <div className="relative w-[8rem] sm:w-[12rem] md:w-[14rem] max-w-[16rem] h-[90%]">
+        <Image src={image} alt="/" fill={true} className="w-full h-full" objectFit="cover"/>
       </div>
    )
+}
+
+export const PartnerSm = ({image}) =>{
+  return(
+    <div className="relative w-[8rem] sm:w-[12rem] md:w-[14rem] max-w-[16rem] h-[8rem]">
+        <Image src={image} alt="/" fill={true} className="w-full h-full" objectFit="contain"/>
+      </div>
+  )
 }
 
 
@@ -130,16 +138,16 @@ export default function Home() {
                     <h1 className='text-2xl sm:text-3xl font-bold'>{t("partners.title")}</h1>
                 </div>
                 <Partners>
-                  <Partner image='/LogoHome.png'/>
-                  <Partner image='/LogoHome.png'/>
-                  <Partner image='/LogoHome.png'/>
-                  <Partner image='/LogoHome.png'/>
+                  <PartnerSm image='/LogoHome.png'/>
+                  <PartnerSm image='/LogoHome.png'/>
+                  <PartnerSm image='/LogoHome.png'/>
+                  <PartnerSm image='/LogoHome.png'/>
                 </Partners>
-                <div className="relative container py-4 hidden lg:flex items-center justify-between">
-                    <Partner image='/LMCS-11.svg'/>
-                    <Partner image='/LMCS-11.svg'/>
-                    <Partner image='/LMCS-11.svg'/>
-                    <Partner image='/LMCS-11.svg'/>
+                <div className="relative h-[10rem] container py-4 hidden lg:flex items-center justify-between">
+                    <PartnerLg image='/LMCS-11.svg'/>
+                    <PartnerLg image='/LMCS-11.svg'/>
+                    <PartnerLg image='/LMCS-11.svg'/>
+                    <PartnerLg image='/LMCS-11.svg'/>
                 </div>
         </section>
       </main>

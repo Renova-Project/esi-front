@@ -9,7 +9,7 @@ const Partners = ({children}) => {
       const handleResize = () => {
         if (window.innerWidth < 400) {
           setSlidesToShow(2);
-        } else if (window.innerWidth < 600) {
+        } else if (window.innerWidth < 810) {
           setSlidesToShow(3);
         } else {
           setSlidesToShow(4);
@@ -32,7 +32,7 @@ const Partners = ({children}) => {
       };
   return (
     <div className='lg:hidden flex justify-center items-center border-y-4 border-y-honolulu mb-8'>
-        <div className='container'>
+        <div className='container py-3'>
             <Slider {...settings}>
                 {children}
             </Slider>
