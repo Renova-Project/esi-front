@@ -4,6 +4,7 @@ import { Donegal_One, Source_Serif_4 } from "next/font/google";
 import NumbersSection from "./NumbersSection";
 import HeroSection from "./HeroSection";
 import SchoolPresentation from "./SchoolPresentation";
+import Footer from "@/components/Footer";
 
 const donegalOne = Donegal_One({
   subsets: ["latin"],
@@ -14,8 +15,6 @@ const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
 });
 
-
-
 export default function Home() {
   const t = useTranslations(["Landing"]);
 
@@ -25,6 +24,7 @@ export default function Home() {
       <HeroSection />
       <NumbersSection />
       <SchoolPresentation />
+      <Footer />
     </div>
   );
 }
