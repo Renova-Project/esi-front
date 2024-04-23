@@ -68,5 +68,25 @@
       "visit": "Vsititer campus",
       "virtualVisit": "Visite virtuelle"
     }
+  },
+  "Footer": {
+    "title": "Ecole nationale Superieure d’Informatique (ESI)",
+    "col2": {
+      "title": "Liens rapide",
+      "links": [
+        "L’école",
+        "Post-Graduation & Recherche",
+        "Cooperation/Partenariat",
+        "Formation Continue",
+        "Vie à l'ecole"
+      ]
+    },
+    "col3": {
+      "title": "Contactez nous",
+      "adresse": "Oued Smar, Alger, Algérie",
+      "email": "email@esi.dz",
+      "phone": "+21- 2533 - 0000"
+    },
+    "allrights": "© 2024 ESI . Tous les droits sont ..."
   }
 }

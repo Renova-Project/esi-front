@@ -5,10 +5,8 @@ import { cn } from "@/lib/utils";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 import { useTranslations } from "next-intl";
 import { Source_Serif_4 } from "next/font/google";
+import Image from "next/image";
 import { useRef } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
@@ -25,7 +23,14 @@ const SchoolPresentation = () => {
     sliderRef.slickPrev();
   };
   return (
-    <section className="bg-[#050E1C] text-white py-20">
+    <section className="bg-[#050E1C] text-white pb-10 md:py-20 relative">
+      <Image
+        src="/gradient-blue.svg"
+        className="absolute right-0 top-0 rotate-180"
+        width={301}
+        height={326}
+        alt=""
+      />
       <div className="container flex items-center flex-col md:justify-between md:flex-row md:gap-20">
         <div className="md:max-w-[40%]">
           <div className="bg-crayola h-16 w-[2px] mb-8"></div>
@@ -47,11 +52,11 @@ const SchoolPresentation = () => {
         </div>
         <div className="flex-1  max-w-full md:max-w-[50%] lg:max-w-[40%] mt-10">
           <div className="">
-            <Slider
-              ref={(ref) => {
+            <Carousel
+              refAssignment={(ref) => {
                 sliderRef = ref;
               }}
-              {...{
+              settings={{
                 dots: false,
                 infinite: true,
                 speed: 500,
@@ -72,7 +77,7 @@ const SchoolPresentation = () => {
                 className="rounded-lg"
               /> */}
               </div>
-            </Slider>
+            </Carousel>
           </div>
           <div className="flex justify-center gap-2 mt-4">
             <button
