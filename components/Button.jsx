@@ -5,7 +5,7 @@ function Button({ children, className, ...rest }) {
   return (
     <button
       className={cn(
-        "bg-gradient-to-b from-btnGradientStart via-btnGradientStart via-30% to-btnGradientEnd font-semibold py-3 px-10",
+        "text-white bg-honolulu font-semibold py-3 px-10 relative z-20",
         className
       )}
       {...rest}
