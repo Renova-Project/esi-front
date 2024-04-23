@@ -5,7 +5,7 @@ import Image from 'next/image'
 const New = ({image,description}) => {
   return (
     /*The content will be completed from the back-end*/
-    <div className='h-28 sm:h-36 md:h-48 lg:h-[20rem] w-full lg:max-w-[24rem] flex flex-row lg:flex-col justify-center items-start mb-8 md:mb-0'>
+    <div className='h-28 sm:h-36 md:h-48 lg:h-[20rem] w-full lg:max-w-[23rem] flex flex-row lg:flex-col justify-center items-start mb-8 md:mb-0'>
         <div className='w-[45%] lg:w-full h-full lg:h-[70%] relative flex items-start justify-start'>
             <Image src={image} alt='/' fill={true} className='w-full h-full' objectFit='cover'/>
         </div>

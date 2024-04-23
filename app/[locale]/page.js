@@ -2,10 +2,8 @@ import Nav from "@/components/Nav";
 import Carousel from "@/components/Carousel";
 import { useTranslations } from "next-intl";
 import Event from "@/components/Event";
-import New from "@/components/New";
 import './globals.css'
 import Image from "next/image";
-import Partners from "@/components/Partners";
 import { Source_Serif_4 } from "next/font/google";
 import HeadlineNews from "./HeadlineNews";
 import News from "./News";
@@ -29,24 +27,20 @@ export const Speciality =({abrevihation,name,image})=>{
    )
 }
 
-export const PartnerLg = ({image}) => {
+export const Partner = ({image}) => {
    return(
-      <div className="relative w-[14rem] max-w-[16rem] h-[90%]">
+      <div className="relative w-[14rem] max-w-[16rem] h-[6rem]">
         <Image src={image} alt="/" fill={true} className="w-full h-full" objectFit="cover"/>
       </div>
    )
 }
 
-export const PartnerSm = ({image}) =>{
-  return(
-    <div className="relative w-[6rem] sm:w-[8rem] md:w-[10rem] max-w-[10rem] h-[8rem]">
-        <Image src={image} alt="/" fill={true} className="w-full h-full" objectFit="contain"/>
-      </div>
-  )
+
+
+
+const getData = async () => {
+
 }
-
-
-
 
 
 
@@ -74,8 +68,8 @@ export default function Home() {
                  <h1 className={`text-2xl sm:text-3xl font-bold pb-10 md:pb-0 ${inter.className}`}>{t("events.title")}</h1>
                  <button className='hidden md:flex px-16 py-4 bg-honolulu text-white'>{t("events.allEvents")}</button>
               </div>
-              <hr className="hidden md:flex mb-10 mt-7 text-black font-bold text-xl"/>
-              <div className='w-full flex flex-col items-start md:flex-row md:items-center justify-between'>
+              <hr className="hidden lg:flex mb-10 mt-7 text-black font-bold text-xl"/>
+              <div className='w-full flex flex-col items-start lg:flex-row lg:items-center justify-between'>
                   <Event mounth="MAR" day="22" title="Algerian Doctorat" label="Conference on Computer"/>
                   <Event mounth="MAR" day="22" title="Algerian Doctorat" label="Conference on Computer"/>
                   <Event mounth="MAR" day="22" title="Algerian Doctorat" label="Conference on Computer"/>
@@ -89,7 +83,7 @@ export default function Home() {
         <section className='bg-darkblue relative'>
             <div className="container flex flex-col py-10 text-white"> 
                 <div className='w-full flex items-center justify-between pb-10'>
-                    <h1 className='text-2xl sm:text-3xl font-bold'>{t("Specialities.title")}</h1>
+                    <h1 className={`text-2xl sm:text-3xl font-bold ${inter.className}`}>{t("Specialities.title")}</h1>
                     <button className='hidden lg:flex px-10 py-4 bg-honolulu text-white relative z-10'>{t("Specialities.details")}</button>
                 </div>
                  <div className='w-full flex flex-col items-start justify-between gap-4 lg:hidden'>
@@ -98,7 +92,6 @@ export default function Home() {
                      <Speciality abrevihation={t("Specialities.speciality.SIT.abrevihation")} name={t("Specialities.speciality.SIT.name")} image='/SIT.png'/>
                      <Speciality abrevihation={t("Specialities.speciality.SIL.abrevihation")} name={t("Specialities.speciality.SIL.name")} image='/SIL.png'/>
                 </div>
-                
                 <div className='w-full hidden lg:flex flex-col items-center justify-center gap-10'>
                   <div className="w-full flex items-center justify-between">
                       <Speciality abrevihation={t("Specialities.speciality.SID.abrevihation")} name={t("Specialities.speciality.SID.name")} image='/SID.png'/>
@@ -113,25 +106,32 @@ export default function Home() {
                     <button className='flex items-center justify-center px-16 py-4 bg-honolulu text-white'>{t("Specialities.details")}</button>
               </div>
             </div>
-            <div className="absolute"/>
-            <div/>
+              <Image src={'/Gradient_bleu.svg'} alt="/" width={250} height={200} className="hidden lg:flex absolute top-[-12rem] right-0" objectFit="cover"/>
+              <Image src={'/Gradient_bleu_1.svg'} alt="/" width={150} height={170} className="hidden lg:flex absolute bottom-0 left-[-3rem]" objectFit="cover"/>
+              
         </section>
-        <section className="w-full flex flex-col py-10">
-                <div className='w-full container flex items-center justify-between pb-10'>
-                    <h1 className='text-2xl sm:text-3xl font-bold'>{t("partners.title")}</h1>
-                </div>
-                <Partners>
-                  <PartnerSm image='/LogoHome.png'/>
-                  <PartnerSm image='/LogoHome.png'/>
-                  <PartnerSm image='/LogoHome.png'/>
-                  <PartnerSm image='/LogoHome.png'/>
-                </Partners>
-                <div className="relative h-[10rem] container py-4 hidden lg:flex items-center justify-between">
-                    <PartnerLg image='/LMCS-11.svg'/>
-                    <PartnerLg image='/LMCS-11.svg'/>
-                    <PartnerLg image='/LMCS-11.svg'/>
-                    <PartnerLg image='/LMCS-11.svg'/>
-                </div>
+        <section className="py-10 bg-[#f8f8f8]">
+            <div className='w-full container flex items-center justify-between pb-10'>
+              <h1 className={`text-2xl sm:text-3xl font-bold ${inter.className}`}>{t("partners.title")}</h1>
+            </div>
+            <div className="w-full border-y-2 border-x-0 lg:border-0 border-honolulu bg-white">
+              <div className="container min-h-[8rem]">
+                <Carousel 
+                sliderRef={null}
+                settings={{
+                  dots: false,
+                  infinite: true,
+                  speed: 500,
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  arrows:false
+               }}>
+                  <Partner image='/LMCS-11.svg' />
+                  <Partner image='/LMCS-11.svg' />
+                  <Partner image='/LMCS-11.svg' />
+               </Carousel>
+            </div>
+          </div>
         </section>
       </main>
     </div>
