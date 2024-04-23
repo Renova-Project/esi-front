@@ -13,3 +13,8 @@
 .slick-active {
   border-radius: 50%;
 }
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  
