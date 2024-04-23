@@ -1,8 +1,11 @@
 import Nav from "@/components/Nav";
-import Carousel from "@/components/Carousel";
 import { useTranslations } from "next-intl";
+import { Donegal_One, Source_Serif_4 } from "next/font/google";
+import NumbersSection from "./NumbersSection";
+import HeroSection from "./HeroSection";
+import SchoolPresentation from "./SchoolPresentation";
+import Footer from "@/components/Footer";
 import Event from "@/components/Event";
-import './globals.css'
 import Image from "next/image";
 import { Source_Serif_4 } from "next/font/google";
 import HeadlineNews from "./HeadlineNews";
@@ -37,33 +40,25 @@ export const Partner = ({image}) => {
 
 
 
+const donegalOne = Donegal_One({
+  subsets: ["latin"],
+  weight: "400",
+});
 
-const getData = async () => {
-
-}
-
-
+const sourceSerif = Source_Serif_4({
+  subsets: ["latin"],
+});
 
 export default function Home() {
   const t = useTranslations(["Landing"]);
-  //const data = await getData()
+
   return (
     <div>
       <Nav />
-      <main>
-        <Carousel>
-          <div className="relative bg-[url('/hero.jpg')] h-screen bg-cover bg-center">
-            <div className="bg-darkblue/60 absolute top-0 left-0 w-full h-full " />
-            <h1 className="text-white ">
-              Ecole nationale supérieure d'informatique
-            </h1>
-          </div>
-          <div className="bg-[url('/hero.jpg')] h-screen bg-cover bg-center">
-            <div className="bg-darkblue/60 h-full" />
-          </div>
-        </Carousel>
-
-        <section className='container flex flex-col py-10'>
+      <HeroSection />
+      <NumbersSection />
+      <SchoolPresentation />
+      <section className='container flex flex-col py-10'>
               <div className='w-full flex items-center justify-between'>
                  <h1 className={`text-2xl sm:text-3xl font-bold pb-10 md:pb-0 ${inter.className}`}>{t("events.title")}</h1>
                  <button className='hidden md:flex px-16 py-4 bg-honolulu text-white'>{t("events.allEvents")}</button>
@@ -133,7 +128,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
+      <Footer />
     </div>
   );
 }

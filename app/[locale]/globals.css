@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+
+
+
+.slick-dots li {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.slick-active {
+  border-radius: 50%;
 }
 
 .hide-scroll::-webkit-scrollbar {
