@@ -1,20 +1,14 @@
 "use client";
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function Carousel({ children }) {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+export default function Carousel({ children, settings, refAssignment }) {
   return (
-    <Slider {...settings}>
-      {children}
-    </Slider>
+    <div className="relative">
+      <Slider ref={refAssignment} {...settings}>
+        {children}
+      </Slider>
+    </div>
   );
 }

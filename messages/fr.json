@@ -15,5 +15,78 @@
       "partnetship": "Partenariat",
       "alumni": "Alumni"
     }
+  },
+  "Landing": {
+    "hero": {
+      "welcome": "Bienvenue à",
+      "title": "L'Ecole Nationale Supérieure d’Informatique",
+      "subtitle": "L'école de l'élite"
+    },
+    "inNumbers": {
+      "title": "Esi en nombres",
+      "numbers": [
+        {
+          "value": "1",
+          "ordinalIndicator": "er",
+          "label": "Centre de recherche en Afrique"
+        },
+        {
+          "value": "500",
+          "label": "Partenariats établis avec des entreprises"
+        },
+        {
+          "value": "1",
+          "ordinalIndicator": "ère",
+          "label": "La moyenne d'accés la plus élevée"
+        },
+        {
+          "value": "+8269",
+          "label": "Diplomés"
+        },
+        {
+          "value": "1206",
+          "label": "Etudiants"
+        },
+        {
+          "value": "120",
+          "label": "Enseignants"
+        },
+        {
+          "value": "134",
+          "label": "Doctorants"
+        },
+        {
+          "value": "175",
+          "label": "Travailleurs"
+        }
+      ]
+    },
+    "presentation": {
+      "beforeTitle": "Présentation de l'école",
+      "title": "A la découverte de l'ESI",
+      "description": "L'École nationale supérieure d'informatique (ESI), anciennement Institut national de formation en informatique (INI), est un établissement d'enseignement supérieur algérien formant des ingénieurs d’État en informatique. Elle est située à Oued Smar, à environ 15 km du centre-ville de la capitale Alger, en Algérie.",
+      "visit": "Vsititer campus",
+      "virtualVisit": "Visite virtuelle"
+    }
+  },
+  "Footer": {
+    "title": "Ecole nationale Superieure d’Informatique (ESI)",
+    "col2": {
+      "title": "Liens rapide",
+      "links": [
+        "L’école",
+        "Post-Graduation & Recherche",
+        "Cooperation/Partenariat",
+        "Formation Continue",
+        "Vie à l'ecole"
+      ]
+    },
+    "col3": {
+      "title": "Contactez nous",
+      "adresse": "Oued Smar, Alger, Algérie",
+      "email": "email@esi.dz",
+      "phone": "+21- 2533 - 0000"
+    },
+    "allrights": "© 2024 ESI . Tous les droits sont ..."
   }
 }

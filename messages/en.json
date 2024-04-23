@@ -15,5 +15,12 @@
       "partnetship": "Partnetship",
       "alumni": "Alumni"
     }
+  },
+  "Landing": {
+    "hero": {
+      "welcome": "Welcome to",
+      "title": "Higher school of computer science",
+      "subtitle": "The school of elite"
+    }
   }
 }
