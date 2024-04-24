@@ -66,19 +66,13 @@ const News = ({ news }) => {
             .concat(news)
             .concat(news)
             .map((nw) => (
-              <New
-                key={nw.id}
-                image={nw.image && "/LMCS-11.svg"}
-                description={nw.news_name}
-              />
+              <New key={nw.id} image={nw.image} description={nw.news_name} />
             ))}
         </Carousel>
       </div>
 
       <div className="py-4 md:py-10 flex items-center justify-between">
-        <Button >
-          {t("a_la_une.allActualities")}
-        </Button>
+        <Button>{t("a_la_une.allActualities")}</Button>
         <div className="hidden lg:flex  gap-2 mt-4">
           <button
             onClick={previous}

@@ -66,8 +66,8 @@ const getData = async () => {
 
 export default async function Home() {
   const t = await getTranslations("Landing");
-  const data = await getData();
-  console.log(data);
+  // const data = await getData();
+  // console.log(data);
   return (
     <div>
       <Nav />
@@ -85,7 +85,7 @@ export default async function Home() {
         </div>
         <hr className="hidden lg:flex mt-6 mb-10 text-black font-bold text-xl" />
         <div className="flex justify-between gap-3 flex-wrap  lg:mt-0">
-          {data.events
+          {/* {data.events
             .concat(data.events)
             .concat(data.events)
             .map((ev) => (
@@ -94,14 +94,14 @@ export default async function Home() {
                 startDate={ev.start_date}
                 title={ev.event_name}
               />
-            ))}
+            ))} */}
         </div>
         <div className="pt-4">
           <Button className="md:hidden mt-10">{t("events.allEvents")}</Button>
         </div>
       </section>
-      <HeadlineNews />
-      <News news={data.news} />
+      {/* <HeadlineNews news={data.headline_news} /> */}
+      {/* <News news={data.news} /> */}
       <section className="bg-darkblue relative overflow-hidden">
         <div className="container flex flex-col py-10 text-white">
           <div className="w-full flex items-center justify-between pb-10">

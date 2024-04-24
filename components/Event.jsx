@@ -9,7 +9,7 @@ const Event = ({ startDate, title }) => {
   const month = date.toLocaleString("default", { month: "short" });
   const day = date.getDate();
   return (
-    <div className=" md:max-w-80 2xl:max-w-96">
+    <div className="md:max-w-80 2xl:max-w-96">
       <div className="w-full flex items-center justify-center gap-2 flex-1">
         <div className="flex flex-col justify-center items-center text-honolulu font-semibold shadow-md border-b-2 border-b-honolulu py-3 px-8">
           <p className={inter.className}>{month}</p>
