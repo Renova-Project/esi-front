@@ -42,10 +42,10 @@ const SchoolPresentation = () => {
           </h2>
           <p>{t("presentation.description")}</p>
           <div className="flex gap-x-8 gap-y-4 mt-8 flex-wrap">
-            <Button className="flex-1 min-w-48">
+            <Button className="flex-1 min-w-48 bg-gradient-to-b from-btnGradientStart via-btnGradientStart via-30% to-btnGradientEnd">
               <span>{t("presentation.visit")}</span>
             </Button>
-            <Button className="flex-1 min-w-48 bg-none border border-white">
+            <Button className="flex-1 min-w-48  bg-transparent border border-white">
               <span>{t("presentation.virtualVisit")}</span>
             </Button>
           </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Button from "@/components/Button";
 import Carousel from "@/components/Carousel";
 import { useTranslations } from "next-intl";
 import { Donegal_One } from "next/font/google";
@@ -68,8 +69,18 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[url('/hero.jpg')] h-heroSectionMobile lg:h-heroSection  bg-cover bg-center">
-          <div className="bg-darkblue/60 h-full" />
+
+        <div className="bg-[url('/hero.jpg')] h-heroSectionMobile lg:h-heroSection  bg-cover bg-center relative">
+          <div className="bg-gradient-to-b from-heroGradientStart/75 to-heroGradientEnd/60 absolute top-0 left-0 w-full h-full" />
+          <div className="relative container h-full flex items-end pb-8">
+            <div className="md:bg-[rgba(39,62,90,0.6)] md:py-14 md:px-7 md:max-w-[625px] ">
+              <p className="text-white font-medium text-lg mb-2">
+                Vivez des moments inoubliables, créez des liens durables et
+                forgez votre avenir avec passion et engagement
+              </p>
+              <Button>Espace etudiant</Button>
+            </div>
+          </div>
         </div>
       </Carousel>
     </section>
