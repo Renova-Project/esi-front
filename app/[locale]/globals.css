@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 .slick-dots li {
   width: 10px !important;
   height: 10px !important;
@@ -15,6 +12,12 @@
 }
 
 .hide-scroll::-webkit-scrollbar {
-    display: none;
-  }
-  
+  display: none;
+}
+
+.school-presentation-carousel {
+  border: 5px solid #9bc1fb;
+}
+.school-presentation-carousel div {
+  height: "100%";
+}

@@ -1,11 +1,9 @@
 import Nav from "@/components/Nav";
-import { useTranslations } from "next-intl";
 import { Donegal_One, Source_Serif_4 } from "next/font/google";
 import NumbersSection from "./NumbersSection";
 import HeroSection from "./HeroSection";
 import SchoolPresentation from "./SchoolPresentation";
 import Footer from "@/components/Footer";
-import Event from "@/components/Event";
 import Image from "next/image";
 import HeadlineNews from "./HeadlineNews";
 import News from "./News";
@@ -22,7 +20,12 @@ export const Speciality = ({ abrevihation, name, image }) => {
   return (
     <div className="h-[6.125rem] md:h-[8rem] w-full sm:w-11/12 lg:w-[46%] xl:w-[48%] flex gap-3 bg-[#081F3A] shadow-md md:hover:scale-105">
       <div className="h-full w-[30%] relative">
-        <Image src={image} alt="/" fill={true} className="w-full h-full" />
+        <Image
+          src={image}
+          alt="/"
+          fill={true}
+          className="w-full h-full object-cover"
+        />
       </div>
       <div className="h-full w-[70%] flex flex-col justify-center items-start">
         <p className="font-semibold text-lg">{abrevihation}</p>
@@ -57,7 +60,7 @@ const sourceSerif = Source_Serif_4({
 
 const getData = async () => {
   try {
-    const res = await fetch(API_URL);
+    const res = await fetch(API_URL + "/home");
     return res.json();
   } catch (e) {
     console.log(e);
@@ -66,12 +69,12 @@ const getData = async () => {
 
 export default async function Home() {
   const t = await getTranslations("Landing");
-  // const data = await getData();
-  // console.log(data);
+  const data = await getData();
+  console.log(data);
   return (
     <div>
       <Nav />
-      <HeroSection />
+      <HeroSection sliderContent={data.sliders} />
       <NumbersSection />
       <SchoolPresentation />
       <section className="container py-10 ">
