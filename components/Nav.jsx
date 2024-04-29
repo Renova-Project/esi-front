@@ -110,6 +110,45 @@ const iAmLinks = [
   "/i-am/executive",
 ];
 
+const IAmDropdownMenu = () => {
+  const t = useTranslations("Nav");
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const handleMouseEnter = () => {
+    setDropdownVisible(true);
+  };
+
+  const handleMouseLeave = () => {
+    setDropdownVisible(false);
+  };
+  return (
+    <div
+      className="relative lg:h-full"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className="flex font-medium items-center w-full p-4 mt-6 justify-between bg-honolulu lg:w-fit lg:p-0 lg:mt-0 lg:gap-2 lg:bg-transparent">
+        <span>{t("iAm.title")}</span>
+        {dropdownVisible ? (
+          <ChevronDownIcon className="w-6 h-6 lg:rotate-180" />
+        ) : (
+          <ChevronUpIcon className="w-6 h-6 lg:rotate-180" />
+        )}
+      </div>
+      {dropdownVisible ? (
+        <ul className="bg-white rounded-md text-black h-fit w-full  absolute bottom-[calc(100%+24px)] left-0 px-4 pt-4 lg:w-52 lg:bottom-0 lg:top-full lg:pt-6 lg:bg-darkblue lg:text-white lg:z-50">
+          {iAmLinks.map((link, childIndex) => (
+            <li key={link} className="mb-4">
+              <Link href={link} className="hover:underline">
+                {t(`iAm.links.${childIndex}`)}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+    </div>
+  );
+};
+
 function Nav({ content }) {
   const [activeSublinks, setActiveSublinks] = useState(-1);
   const t = useTranslations("Nav");
@@ -120,9 +159,7 @@ function Nav({ content }) {
     <nav className="relative">
       <div className={`bg-darkblue text-white ${topBarActive ? "" : "hidden"}`}>
         <div className="container py-3 hidden  lg:flex items-center justify-between">
-          <button className="flex items-center gap-2">
-            je suis <ChevronDownIcon className="text-white w-4 h-4" />
-          </button>
+          <IAmDropdownMenu />
           <ul className="flex gap-6 text-grey">
             {upLinks.map((link) => (
               <li key={link.href}>
@@ -235,30 +272,10 @@ function Nav({ content }) {
                   ) : null}
                 </li>
               ))
-            : iAmLinks.map((link, i) => (
-                <li
-                  key={link.href}
-                  className="border-b border-[#1A3559] flex justify-between items-center py-4 cursor-pointer"
-                >
-                  <span className="font-semibold">{t("iAm.links." + i)}</span>
-                  <ChevronRightIcon className="text-white w-6 h-6" />
-                </li>
-              ))}
+            : null}
         </ul>
         <div className="px-6">
-          <button
-            className="flex font-medium items-center w-full p-4 mt-6 justify-between bg-honolulu "
-            onClick={() => {
-              setIamMenuActive((old) => !old);
-            }}
-          >
-            <span>{t("iAm.title")}</span>
-            {iAmMenuActive ? (
-              <ChevronDownIcon className="w-6 h-6" />
-            ) : (
-              <ChevronUpIcon className="w-6 h-6" />
-            )}
-          </button>
+          <IAmDropdownMenu />
         </div>
       </div>
     </nav>
