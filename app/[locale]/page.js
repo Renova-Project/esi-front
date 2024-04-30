@@ -70,11 +70,10 @@ const getData = async () => {
 export default async function Home() {
   const t = await getTranslations("Landing");
   const data = await getData();
-  console.log(data);
   return (
     <div>
       <Nav />
-      <HeroSection sliderContent={data.sliders} />
+      <HeroSection sliderContent={data?.sliders} />
       <NumbersSection />
       <SchoolPresentation />
       <section className="container py-10 ">

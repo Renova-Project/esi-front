@@ -11,8 +11,7 @@ import {
   MagnifyingGlassIcon,
 } from "@heroicons/react/20/solid";
 import { useState } from "react";
-import { ArrowRightIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import Button from "./Button";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const upLinks = [
   {
@@ -49,6 +48,7 @@ const downLinks = [
       "/school/success",
       "/school/contact",
     ],
+    imgUrl: "/sublinks0.jpg",
   },
   {
     href: "/studies",
@@ -60,6 +60,7 @@ const downLinks = [
       "/studies/internships",
       "/studies/diplomat",
     ],
+    imgUrl: "/sublinks1.jpg",
   },
   {
     href: "/research",
@@ -70,6 +71,7 @@ const downLinks = [
       "/research/phd",
       "/research/rules",
     ],
+    imgUrl: "/sublinks2.jpg",
   },
   {
     href: "/campus",
@@ -80,6 +82,7 @@ const downLinks = [
       "/campus/events",
       "/campus/library",
     ],
+    imgUrl: "/hero.jpg",
   },
   {
     href: "/partnetship",
@@ -89,6 +92,7 @@ const downLinks = [
       "/partnetship/formation",
       "/partnetship/become-partner",
     ],
+    imgUrl: "/sublinks3.png",
   },
   {
     href: "/alumni",
@@ -149,14 +153,52 @@ const IAmDropdownMenu = () => {
   );
 };
 
+const SublinksMenu = ({ activeIndex }) => {
+  const t = useTranslations("Nav");
+  if (activeIndex === -1) {
+    return null;
+  }
+  const activeLink = downLinks[activeIndex];
+
+  return (
+    <div className="absolute z-40 w-full top-full left-0 bg-darkblue text-white flex">
+      <div className="w-1/3 relative">
+        <Image className="object-cover " src={activeLink?.imgUrl} fill alt="" />
+        <div className="absolute top-0 left-0 w-full h-full bg-darkblue bg-opacity-60" />
+        <div className="relative flex justify-center items-center h-full text-3xl font-bold">
+          {t(`downLinks.${activeLink.key}`)}
+        </div>
+      </div>
+      <ul className="grid grid-cols-3 gap-4 p-10 flex-1">
+        {activeLink.sublinks.map((sublink, childIndex) => (
+          <li key={sublink}>
+            <Link href={sublink} className="hover:underline">
+              {t(`sublinks.${activeLink.key}.${childIndex}`)}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
 function Nav({ content }) {
-  const [activeSublinks, setActiveSublinks] = useState(-1);
+  const [activeMobileSublinks, setActiveMobileSublinks] = useState(-1);
   const t = useTranslations("Nav");
   const [mobileMenuActive, setMobileMenuActive] = useState(false);
   const [topBarActive, setTopBarActive] = useState(true);
   const [iAmMenuActive, setIamMenuActive] = useState(false);
+  const [activeSublinks, setActiveSublinks] = useState(-1);
+
+  const handleMouseEnter = (i) => {
+    setActiveSublinks(i);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveSublinks(-1);
+  };
   return (
-    <nav className="relative">
+    <nav className="relative" onMouseLeave={handleMouseLeave}>
       <div className={`bg-darkblue text-white ${topBarActive ? "" : "hidden"}`}>
         <div className="container py-3 hidden  lg:flex items-center justify-between">
           <IAmDropdownMenu />
@@ -174,8 +216,12 @@ function Nav({ content }) {
         <div className="container py-4 flex items-center justify-between">
           <Image src="/esi-logo.svg" alt="logo" width={60} height={15} />
           <ul className="hidden lg:flex items-center gap-6">
-            {downLinks.map((link) => (
-              <li key={link.href}>
+            {downLinks.map((link, index) => (
+              <li
+                className="hover:underline"
+                key={link.href}
+                onMouseEnter={() => handleMouseEnter(index)}
+              >
                 <Link href={link.href}>{t("downLinks." + link.key)}</Link>
               </li>
             ))}
@@ -201,6 +247,7 @@ function Nav({ content }) {
           </button>
         </div>
       </div>
+      <SublinksMenu activeIndex={activeSublinks} />
       <button
         className={`absolute top-0 right-28 p-1 rounded-b-full hidden lg:inline-block bg-[#273D56]
         }`}
@@ -237,8 +284,8 @@ function Nav({ content }) {
                 <li
                   key={link.href}
                   className={`border-b border-[#1A3559] ${
-                    activeSublinks != -1
-                      ? activeSublinks === i
+                    activeMobileSublinks != -1
+                      ? activeMobileSublinks === i
                         ? "block"
                         : "hidden"
                       : "block"
@@ -247,19 +294,19 @@ function Nav({ content }) {
                   <div
                     className="flex justify-between items-center py-4 cursor-pointer"
                     onClick={() => {
-                      setActiveSublinks((old) => (old === i ? -1 : i));
+                      setActiveMobileSublinks((old) => (old === i ? -1 : i));
                     }}
                   >
                     <span className="font-semibold">
                       {t("downLinks." + link.key)}
                     </span>
-                    {activeSublinks === i ? (
+                    {activeMobileSublinks === i ? (
                       <ChevronUpIcon className="w-6 h-6" />
                     ) : (
                       <ChevronDownIcon className="w-6 h-6" />
                     )}
                   </div>
-                  {activeSublinks === i ? (
+                  {activeMobileSublinks === i ? (
                     <ul className="ml-4">
                       {link.sublinks.map((sublink, childIndex) => (
                         <li key={sublink} className="mb-4 ">

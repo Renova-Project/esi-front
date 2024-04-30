@@ -66,7 +66,7 @@ const SchoolPresentation = () => {
                 className: "school-presentation-carousel",
               }}
             >
-              <div className="h-56 md:h-72  bg-cover bg-center relative">
+              <div className="h-56 md:h-72  bg-cover bg-center relative border-[5px] solid border-[#9bc1fb]">
                 <Image
                   className="top-0 left-0 object-cover"
                   src="/presentation.jpg"
@@ -74,7 +74,7 @@ const SchoolPresentation = () => {
                   alt="School"
                 />
               </div>
-              <div className="h-56 md:h-72  bg-cover bg-center relative">
+              <div className="h-56 md:h-72  bg-cover bg-center relative border-[5px] solid border-[#9bc1fb]">
                 <Image
                   className="top-0 left-0 object-cover"
                   src="/presentation.jpg"
