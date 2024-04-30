@@ -40,6 +40,7 @@ export const Rec = () =>{
 
 export default async function Home() {
   const t = await getTranslations("Partners.recruitment");
+  const n = await getTranslations("Partners"); 
   return (
     <div>
          
@@ -47,13 +48,13 @@ export default async function Home() {
 
         <div className='flex items-center lg:hidden'>
            <div className='w-1/3 flex justify-center py-4 text-[#0061B1] text-sm md:text-base font-semibold'>
-            <Link href={''}>{t("nav.recruitment.recruitmentSm")}</Link>
+            <Link href={''}>{n("nav.recruitment.recruitmentSm")}</Link>
            </div>
            <div className='w-1/3 flex justify-center py-4 bg-honolulu text-white text-sm md:text-base font-semibold border-white border-r-2'>
-            <Link href={''}>{t("nav.formation.formationSm")}</Link>
+            <Link href={''}>{n("nav.formation.formationSm")}</Link>
            </div>
            <div className='w-1/3 flex justify-center py-4 bg-honolulu text-white text-sm md:text-base font-semibold'>
-            <Link href={''}>{t("nav.partnership.partnershipSm")}</Link>
+            <Link href={''}>{n("nav.partnership.partnershipSm")}</Link>
            </div>
         </div>
 
@@ -61,26 +62,26 @@ export default async function Home() {
 
         <div className='hidden lg:flex items-center'>
            <div className='w-1/3 flex justify-center gap-3 py-4 text-[#0061B1] text-sm md:text-base font-semibold'>
-                <Link href={''}>{t("nav.recruitment.recruitmentLg")}</Link>
+                <Link href={''}>{n("nav.recruitment.recruitmentLg")}</Link>
                 <span className='w-5 h-5 rounded-full p-3 text-blue-300 border-[1px] border-[#0061B1]'>
                   <ChevronRightIcon/>
                 </span>
            </div>
            <div className='w-1/3 flex justify-center gap-3 py-4 bg-honolulu text-white text-sm md:text-base font-semibold border-white border-r-[1px]'>
-                <Link href={''}>{t("nav.formation.formationLg")}</Link>
+                <Link href={''}>{n("nav.formation.formationLg")}</Link>
                 <span className='w-4 h-4 rounded-full p-3 text-white border-[1px] bg-[#5F9EFF]/30'>
                   <ChevronRightIcon/>
                 </span>
            </div>
            <div className='w-1/3 flex justify-center gap-3 py-4 bg-honolulu text-white text-sm md:text-base font-semibold'>
-                <Link href={''}>{t("nav.partnership.partnershipLg")}</Link>
+                <Link href={''}>{n("nav.partnership.partnershipLg")}</Link>
                 <span className='w-4 h-4 rounded-full p-3 text-white border-[1px] bg-[#5F9EFF]/30'>
                   <ChevronRightIcon/>
                 </span>
            </div>
         </div>
         {/* Hero Section */}
-        <div className="relative bg-[url('/bg1.jpg')] h-heroPartnersMobile lg:h-heroPartners bg-cover bg-center flex items-center">
+        <div className="relative bg-[url('/bg1.jpg')] lg:bg-[url('/bg3.jpg')] h-heroPartnersMobile lg:h-heroPartners bg-cover bg-center flex items-center">
             <div className='relative container h-full flex flex-col justify-around'>
                 <div className='flex justify-center'>
                   <p className={`text-white text-3xl sm:text-4xl md:text-5xl font-semibold lg:font-normal ${donegalOne.className}`}>
@@ -99,6 +100,8 @@ export default async function Home() {
                   </div>
                 </div>
             </div>
+            <Image src={'/points.svg'} alt='/' width={200} height={180} className='absolute left-0 bottom-[-100px] z-10 hidden lg:block'/>
+
         </div>
 
         {/* Devenir partenaire Section */}

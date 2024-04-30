@@ -12,8 +12,8 @@ const col2Links = ["/1", "/2", "/3", "/4", "/5"];
 function Footer() {
   const t = useTranslations("Footer");
   return (
-    <footer className="bg-darkblue relative">
-      <div className="container grid grid-cols-1 gap-6 md:grid-cols-3 py-10 md:gap-x-52   text-[#DEDDDE] ">
+    <footer className="bg-darkblue relative z-0">
+      <div className="relative container grid grid-cols-1 gap-6 md:grid-cols-3 py-10 md:gap-x-52 text-[#DEDDDE]">
         <div>
           <Image src="/esi-logo-white.svg" alt="logo" width={60} height={15} />
           <p className="my-4">{t("title")}</p>
