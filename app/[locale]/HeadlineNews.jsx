@@ -64,18 +64,6 @@ const HeadlineNews = ({ news }) => {
             {news.map((nw) => (
               <New key={nw.id} image={nw.image} description={nw.news_name} />
             ))}
-            <New
-              image="/LMCS-11.svg"
-              description="Séminaire LMCS (Pr. Jalil BOUKHOBZA, Lab-STICC/ENSTA-Bretagne, Brest, France) - Lundi 30 octobre 2023, 13h, Salle Visio"
-            />
-            <New
-              image="/LMCS-11.svg"
-              description="Séminaire LMCS (Pr. Jalil BOUKHOBZA, Lab-STICC/ENSTA-Bretagne, Brest, France) - Lundi 30 octobre 2023, 13h, Salle Visio"
-            />
-            <New
-              image="/LMCS-11.svg"
-              description="Séminaire LMCS (Pr. Jalil BOUKHOBZA, Lab-STICC/ENSTA-Bretagne, Brest, France) - Lundi 30 octobre 2023, 13h, Salle Visio"
-            />
           </Carousel>
         </div>
         <div className="w-full flex flex-col items-center justify-center gap-4 lg:hidden">

@@ -6,7 +6,6 @@ import Link from "next/link";
 import {
   Bars3BottomRightIcon,
   ChevronDownIcon,
-  ChevronRightIcon,
   ChevronUpIcon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/20/solid";
