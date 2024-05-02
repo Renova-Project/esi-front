@@ -1,0 +1,43 @@
+{
+  "Studies": {
+    "Engineering": {
+      "hero": {
+        "title": ["Parcour d'un", "bachelier", "à un", "ingenieur", "à l'ESI"],
+        "subtitle": "Dévoilez Votre potentiel avec notre parcours d'ingénieur :"
+      },
+      "access": {
+        "title": "Acces à l’ecole",
+        "description": "Les nouveau bacheliers accède à l’ESI vec un bac montion excellent , les moyenne d’aaceptation varient d’un année a une autre , cette année les moyennes était :",
+        "grades": [
+          {
+            "value": "18,02",
+            "branch": "Mathématiques"
+          },
+          {
+            "value": "18,98",
+            "branch": "Science"
+          },
+          {
+            "value": "19,24",
+            "branch": "M.Technique"
+          }
+        ],
+        "oldGrades": "> Moyennes des années précedentes"
+      },
+      "cursus": {
+        "title": ["Cursus", "d’ingenieur", "en informatique"],
+        "subtitle": "La fomation d’ingenieur à l’ecole superieur de l’informatique est decoupé en 2 cycles",
+        "cp": {
+          "abr": "CP",
+          "title": "Cycle Préparatoire",
+          "description": "Deux années durant lesquelles sont enseignées les connaissances de base devant être maîtrisées par un ingénieur avant d’aborder les connaissances plus spécifiques.\n\nL’accès aux classes supérieures est subordonné à la réussite à un concours dont les conditions sont fixées chaque année par arrêté de Monsieur le Ministre de l’Enseignement Supérieur.\n\nCe concours est ouvert, sous conditions, aux étudiants issus de certaines filières enseignées dans les autres établissements universitaires"
+        },
+        "cs": {
+          "abr": "CS",
+          "title": "Cycle Superieur",
+          "description": "<strong>1CS tronc commun:</strong> Après avoir reussi le concours tous l’etudiant integrre le cycle superieur 1CS en tronc commun, des connaissance de base d’ingenieur en informatique.\n\n<strong>2CS année de  Specialité:</strong> L’étudiant choisi l’une des 4 specialité disponible pour une année 2CS d’études.\n\n<strong>3CS projet fin d’étude+Master/FIE:</strong> La dernière année est consacré au projet de fin d’étude qui vas durer 9 mois avec possibilité de faie en paralelle le Master et une formation d’entreprenareat."
+        }
+      }
+    }
+  }
+}

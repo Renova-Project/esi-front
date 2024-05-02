@@ -13,7 +13,8 @@ import { API_URL } from "@/lib/constants";
 import Button from "@/components/Button";
 import Event from "@/components/Event";
 
-const inter = Source_Serif_4({
+
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
 });
 
@@ -50,15 +51,6 @@ export const Partner = ({ image }) => {
   );
 };
 
-const donegalOne = Donegal_One({
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const sourceSerif = Source_Serif_4({
-  subsets: ["latin"],
-});
-
 const getData = async () => {
   try {
     const res = await fetch(API_URL + "/home");
@@ -79,7 +71,7 @@ export default async function Home() {
       <SchoolPresentation />
       <section className="container py-10 ">
         <div className="flex items-center justify-between mb-10 lg:mb-0">
-          <h1 className={`text-2xl sm:text-3xl font-bold ${inter.className}`}>
+          <h1 className={`text-2xl sm:text-3xl font-bold ${sourceSerif.className}`}>
             {t("events.title")}
           </h1>
           <Button className="hidden md:inline-block">
@@ -114,7 +106,7 @@ export default async function Home() {
       <section className="bg-darkblue relative overflow-hidden">
         <div className="container py-10 text-white">
           <div className="w-full flex items-center justify-between pb-10">
-            <h1 className={`text-2xl sm:text-3xl font-bold ${inter.className}`}>
+            <h1 className={`text-2xl sm:text-3xl font-bold ${sourceSerif.className}`}>
               {t("Specialities.title")}
             </h1>
             <button className="hidden lg:flex px-10 py-4 bg-honolulu text-white relative z-10">
@@ -165,7 +157,7 @@ export default async function Home() {
       </section>
       <section className="py-10 bg-[#f8f8f8]">
         <div className="w-full container flex items-center justify-between pb-10">
-          <h1 className={`text-2xl sm:text-3xl font-bold ${inter.className}`}>
+          <h1 className={`text-2xl sm:text-3xl font-bold ${sourceSerif.className}`}>
             {t("partners.title")}
           </h1>
         </div>

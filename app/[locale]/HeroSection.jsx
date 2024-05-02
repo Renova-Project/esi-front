@@ -5,7 +5,6 @@ import Carousel from "@/components/Carousel";
 import { useTranslations } from "next-intl";
 import { Donegal_One } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 
 const donegalOne = Donegal_One({
   subsets: ["latin"],
