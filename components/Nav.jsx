@@ -201,7 +201,7 @@ function Nav({ content }) {
       <div className={`bg-darkblue text-white ${topBarActive ? "" : "hidden"}`}>
         <div className="container py-3 hidden  lg:flex items-center justify-between">
           <IAmDropdownMenu />
-          <ul className="flex gap-6 text-grey">
+          <ul className="flex gap-10 text-grey">
             {upLinks.map((link) => (
               <li key={link.href}>
                 <Link href={link.href}>{t("upLinks." + link.key)}</Link>
@@ -214,7 +214,7 @@ function Nav({ content }) {
       <div className="bg-white">
         <div className="container py-4 flex items-center justify-between">
           <Image src="/esi-logo.svg" alt="logo" width={60} height={15} />
-          <ul className="hidden lg:flex items-center gap-6">
+          <ul className="hidden lg:flex items-center gap-14">
             {downLinks.map((link, index) => (
               <li
                 className="hover:underline"

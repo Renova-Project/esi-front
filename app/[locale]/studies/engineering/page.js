@@ -14,7 +14,7 @@ function Page() {
 
   return (
     <div>
-      <section className="relative h-heroSectionMobile  bg-cover bg-center flex items-end pb-8 lg:pb-20">
+      <section className="relative h-heroSectionMobile   bg-cover bg-center flex items-end pb-8 lg:pb-20">
         <Image
           src="/studies/engineering/hero.jpg"
           className="top-0 left-0 object-cover"
