@@ -61,23 +61,29 @@ export default async function Home() {
         {/* Desktop Nav */}
 
         <div className='hidden lg:flex items-center'>
-           <div className='w-1/3 flex justify-center gap-3 py-4 text-[#0061B1] text-sm md:text-base font-semibold'>
-                <Link href={''}>{n("nav.recruitment.recruitmentLg")}</Link>
-                <span className='w-5 h-5 rounded-full p-3 text-blue-300 border-[1px] border-[#0061B1]'>
-                  <ChevronRightIcon/>
+           <div className='w-1/3 flex justify-center py-4'>
+                <Link className='flex items-center gap-3 text-sm md:text-base text-[#0061B1] font-semibold' href={''}>
+                  <p>{n("nav.recruitment.recruitmentLg")}</p>
+                <span className='rounded-full p-1 text-[#0061B1] border-[1px] border-[#0061B1]'>
+                  <ChevronRightIcon className='w-5 h-5'/>
                 </span>
+                </Link>
            </div>
-           <div className='w-1/3 flex justify-center gap-3 py-4 bg-honolulu text-white text-sm md:text-base font-semibold border-white border-r-[1px]'>
-                <Link href={''}>{n("nav.formation.formationLg")}</Link>
-                <span className='w-4 h-4 rounded-full p-3 text-white border-[1px] bg-[#5F9EFF]/30'>
-                  <ChevronRightIcon/>
+           <div className='w-1/3 flex justify-center py-4 bg-honolulu text-white text-sm md:text-base font-semibold border-white border-r-[1px]'>
+                <Link className='flex items-center gap-3 text-sm md:text-base' href={''}>
+                  <p>{n("nav.formation.formationLg")}</p>
+                  <span className='rounded-full p-1 text-white border-[1px] bg-[#5F9EFF]/30'>
+                  <ChevronRightIcon className='w-5 h-5'/>
                 </span>
+                </Link>
            </div>
-           <div className='w-1/3 flex justify-center gap-3 py-4 bg-honolulu text-white text-sm md:text-base font-semibold'>
-                <Link href={''}>{n("nav.partnership.partnershipLg")}</Link>
-                <span className='w-4 h-4 rounded-full p-3 text-white border-[1px] bg-[#5F9EFF]/30'>
-                  <ChevronRightIcon/>
+           <div className='w-1/3 flex justify-center py-4 bg-honolulu text-white text-sm md:text-base font-semibold'>
+                <Link className='flex items-center gap-3 text-sm md:text-base' href={''}>
+                  <p>{n("nav.partnership.partnershipLg")}</p>
+                <span className='rounded-full p-1 text-white border-[1px] bg-[#5F9EFF]/30'>
+                  <ChevronRightIcon className='w-5 h-5'/>
                 </span>
+                </Link>
            </div>
         </div>
         {/* Hero Section */}

@@ -9,7 +9,7 @@ import { ChevronRightIcon,ChevronLeftIcon } from '@heroicons/react/20/solid';
 
 export const Formation = ({image}) => {
     return(
-      <div className='bg-white max-w-[22rem] py-6 px-4'>
+      <div className='relative bg-white max-w-[22rem] py-6 px-4 z-0'>
           <div className='relative w-full h-60'>
             <Image src={image} alt='/' fill={true} className='w-full h-full' objectFit='cover'/>
           </div>

@@ -173,6 +173,17 @@
        "text":"Notre université met à disposition un service dédié à la vérification des diplômes de nos ingénieurs, permettant aux employeurs, aux institutions et aux organisations professionnelles de confirmer l'authenticité des qualifications académiques obtenues par nos diplômés. Ce service vise à faciliter le processus de recrutement et à garantir la transparence et la fiabilité des informations académiques.",
        "seeMore":"Voir plus"
       }
+   },
+   "partnership":{
+    "title":"Rejoignez notre réseau de partenaires",
+    "organisationInfos":{
+      "title":"Informations sur l'Organisation*",
+      "text":"Remplir les informations nécessaires et corrects sur votre organisation",
+      "name":"Nom de l’organisation",
+      "type":"Type de l’organisation",
+      "sector":"Secteur d’activité",
+      "size":"Taille de l’organisation"
+    }
    }
   },
   "Footer": {

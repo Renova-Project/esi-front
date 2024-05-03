@@ -65,23 +65,29 @@ export default async function Home() {
         {/* Desktop Nav */}
 
         <div className='hidden lg:flex items-center'>
-           <div className='w-1/3 flex items-center justify-center gap-3 py-4 text-white bg-honolulu text-sm md:text-base font-semibold'>
-                <Link href={''}>{n("nav.recruitment.recruitmentLg")}</Link>
-                <span className='flex items-center rounded-full p-2 text-white border-[1px] border-white'>
+           <div className='w-1/3 flex justify-center py-4 bg-honolulu text-white'>
+                <Link className='flex items-center gap-3 text-sm md:text-base font-semibold' href={''}>
+                  <p>{n("nav.recruitment.recruitmentLg")}</p>
+                  <span className='rounded-full p-1 text-white border-[1px] bg-[#5F9EFF]/30'>
                   <ChevronRightIcon className='w-5 h-5'/>
                 </span>
+                </Link>
            </div>
-           <div className='w-1/3 flex items-center justify-center gap-3 py-4 text-honolulu bg-white text-sm md:text-base font-semibold'>
-                <Link href={''}>{n("nav.formation.formationLg")}</Link>
-                <span className='flex items-center rounded-full p-2 border-honolulu border-[1px]'>
+           <div className='w-1/3 flex justify-center py-4 text-[#0061B1] text-sm md:text-base font-semibold border-white border-r-[1px]'>
+                <Link className='flex items-center gap-3 text-sm md:text-base' href={''}>
+                  <p>{n("nav.formation.formationLg")}</p>
+                  <span className='rounded-full p-1 text-[#0061B1] border-[1px] border-[#0061B1]'>
                   <ChevronRightIcon className='w-5 h-5'/>
                 </span>
+                </Link>
            </div>
-           <div className='w-1/3 flex items-center justify-center gap-3 py-4 bg-honolulu text-white text-sm md:text-base font-semibold'>
-                <Link href={''}>{n("nav.partnership.partnershipLg")}</Link>
-                <span className='flex items-center rounded-full p-2 text-white border-[1px] bg-[#5F9EFF]/30'>
+           <div className='w-1/3 flex justify-center py-4 bg-honolulu text-white text-sm md:text-base font-semibold'>
+                <Link className='flex items-center gap-3 text-sm md:text-base' href={''}>
+                  <p>{n("nav.partnership.partnershipLg")}</p>
+                <span className='rounded-full p-1 text-white border-[1px] bg-[#5F9EFF]/30'>
                   <ChevronRightIcon className='w-5 h-5'/>
                 </span>
+                </Link>
            </div>
         </div>
         {/* Hero Section */}
@@ -115,7 +121,8 @@ export default async function Home() {
                     <p className='text-[#5D5D5D] py-6 lg:text-lg'>{t("become.text")}</p>
                 </div>
                 <div className='flex justify-center'>
-                    <div className='lg:max-w-[36rem] flex flex-col items-center gap-6'>
+                  {/* we must add icons in the places of h1 tags */}
+                    <div className='max-w-[30rem] flex flex-col gap-6'>
                         <div className='w-full flex items-center gap-6 p-5 bg-[#2C6DC5] text-white text-sm lg:text-base font-bold'>
                             <h1>AL</h1>
                             <p>{t("become.certification.first")}</p>
@@ -147,6 +154,7 @@ export default async function Home() {
                 <div className='text-white lg:text-center lg:px-24 pb-16'>
                     <h1 className={`text-xl lg:text-4xl font-extrabold ${inter.className}`}>{t("formations.title")}</h1>
                 </div>
+                {/* The responsive of the slider number of items by each screen */}
                 <Formations/>
                 <div className='text-center py-8'>
                     <Button className='bg-gradient-to-r from-btnGradientStart via-btnGradientStart via-30% to-[#2e6dc6] font-normal px-8 py-4'>
