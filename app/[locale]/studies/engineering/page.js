@@ -14,7 +14,7 @@ function Page() {
 
   return (
     <div>
-      <section className="relative h-heroSectionMobile   bg-cover bg-center flex items-end pb-8 lg:pb-20">
+      <section className="relative h-heroSectionMobile lg:h-heroSection   bg-cover bg-center flex items-end pb-8 lg:pb-20">
         <Image
           src="/studies/engineering/hero.jpg"
           className="top-0 left-0 object-cover"
@@ -44,12 +44,14 @@ function Page() {
           className="absolute hidden lg:inline-block top-0 left-0"
           width={100}
           height={40}
+          alt=""
         />
         <Image
           src="/studies/engineering/black-dots.svg"
           className="absolute hidden lg:inline-block -top-5 left-1/4"
           width={200}
           height={40}
+          alt=""
         />
         <div className="container py-10 relative">
           <h2
