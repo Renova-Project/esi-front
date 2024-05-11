@@ -10,6 +10,7 @@ import Formations from './Formations';
 
 
 
+
 const donegalOne = Donegal_One({
   subsets: ["latin"],
   weight: "400",
@@ -42,8 +43,8 @@ export const Rec = () =>{
 
 
 export default async function Home() {
-  const n = await getTranslations("Partners");
-  const t = await getTranslations("Partners.formation");
+  const t1 = await getTranslations("Partners");
+  const t2 = await getTranslations("Partners.formation");
   
   return (
     <div>
@@ -52,13 +53,13 @@ export default async function Home() {
 
         <div className='flex items-center lg:hidden'>
            <div className='w-1/3 flex justify-center py-4 text-white bg-honolulu text-sm md:text-base font-semibold'>
-            <Link href={''}>{n("nav.recruitment.recruitmentSm")}</Link>
+            <Link href={''}>{t1("nav.recruitment.recruitmentSm")}</Link>
            </div>
            <div className='w-1/3 flex justify-center py-4 text-honolulu bg-white text-sm md:text-base font-semibold'>
-            <Link href={''}>{n("nav.formation.formationSm")}</Link>
+            <Link href={''}>{t1("nav.formation.formationSm")}</Link>
            </div>
            <div className='w-1/3 flex justify-center py-4 bg-honolulu text-white text-sm md:text-base font-semibold'>
-            <Link href={''}>{n("nav.partnership.partnershipSm")}</Link>
+            <Link href={''}>{t1("nav.partnership.partnershipSm")}</Link>
            </div>
         </div>
 
@@ -67,7 +68,7 @@ export default async function Home() {
         <div className='hidden lg:flex items-center'>
            <div className='w-1/3 flex justify-center py-4 bg-honolulu text-white'>
                 <Link className='flex items-center gap-3 text-sm md:text-base font-semibold' href={''}>
-                  <p>{n("nav.recruitment.recruitmentLg")}</p>
+                  <p>{t1("nav.recruitment.recruitmentLg")}</p>
                   <span className='rounded-full p-1 text-white border-[1px] bg-[#5F9EFF]/30'>
                   <ChevronRightIcon className='w-5 h-5'/>
                 </span>
@@ -75,7 +76,7 @@ export default async function Home() {
            </div>
            <div className='w-1/3 flex justify-center py-4 text-[#0061B1] text-sm md:text-base font-semibold border-white border-r-[1px]'>
                 <Link className='flex items-center gap-3 text-sm md:text-base' href={''}>
-                  <p>{n("nav.formation.formationLg")}</p>
+                  <p>{t1("nav.formation.formationLg")}</p>
                   <span className='rounded-full p-1 text-[#0061B1] border-[1px] border-[#0061B1]'>
                   <ChevronRightIcon className='w-5 h-5'/>
                 </span>
@@ -83,7 +84,7 @@ export default async function Home() {
            </div>
            <div className='w-1/3 flex justify-center py-4 bg-honolulu text-white text-sm md:text-base font-semibold'>
                 <Link className='flex items-center gap-3 text-sm md:text-base' href={''}>
-                  <p>{n("nav.partnership.partnershipLg")}</p>
+                  <p>{t1("nav.partnership.partnershipLg")}</p>
                 <span className='rounded-full p-1 text-white border-[1px] bg-[#5F9EFF]/30'>
                   <ChevronRightIcon className='w-5 h-5'/>
                 </span>
@@ -95,16 +96,16 @@ export default async function Home() {
             <div className='relative container h-full flex flex-col justify-around'>
                 <div className='flex justify-center'>
                   <p className={`text-white text-3xl sm:text-4xl md:text-5xl font-semibold lg:font-normal ${donegalOne.className}`}>
-                      {t("heroSection.title")}
+                      {t2("heroSection.title")}
                   </p>
                 </div>
                 <div className='flex justify-center lg:justify-end'>
                   <div className='bg-[#273E5A]/60 text-white border-[#477788] border-[1px] pl-3 pr-5 lg:pr-10 pt-8 pb-6 max-w-[35rem]'>
-                      <p className='font-semibold mb-2 md:text-lg lg:text-2xl'>{t("heroSection.prompt.title")}</p>
-                      <p className='text-[12px] mb-4'>{t("heroSection.prompt.text").slice(200)}</p>
+                      <p className='font-semibold mb-2 md:text-lg lg:text-2xl'>{t2("heroSection.prompt.title")}</p>
+                      <p className='text-[12px] mb-4'>{t2("heroSection.prompt.text").slice(200)}</p>
                       <div className='flex justify-center lg:justify-end'>
                           <Button className="bg-gradient-to-r from-btnGradientStart via-btnGradientStart via-30% to-[#2e6dc6] font-normal px-3 py-4 text-sm">
-                              <span>{t("heroSection.prompt.button")}</span>
+                              <span>{t2("heroSection.prompt.button")}</span>
                           </Button>
                       </div>
                   </div>
@@ -117,29 +118,29 @@ export default async function Home() {
         <div className='bg-[#f8f8f8] relative'>
             <div className='container py-16'>
                 <div className='lg:text-center lg:px-24'>
-                    <h1 className={`text-xl lg:text-4xl font-extrabold ${inter.className}`}>{t("become.title")}</h1>
-                    <p className='text-[#5D5D5D] py-6 lg:text-lg'>{t("become.text")}</p>
+                    <h1 className={`text-xl lg:text-4xl font-extrabold ${inter.className}`}>{t2("become.title")}</h1>
+                    <p className='text-[#5D5D5D] py-6 lg:text-lg'>{t2("become.text")}</p>
                 </div>
                 <div className='flex justify-center'>
                   {/* we must add icons in the places of h1 tags */}
                     <div className='max-w-[30rem] flex flex-col gap-6'>
                         <div className='w-full flex items-center gap-6 p-5 bg-[#2C6DC5] text-white text-sm lg:text-base font-bold'>
                             <h1>AL</h1>
-                            <p>{t("become.certification.first")}</p>
+                            <p>{t2("become.certification.first")}</p>
                         </div>
                         <div className='w-full flex items-center gap-6 p-5 bg-[#2C6DC5] text-white text-sm lg:text-base font-bold'>
                             <h1>AL</h1>
-                            <p>{t("become.certification.second")}</p>
+                            <p>{t2("become.certification.second")}</p>
                         </div>
                         <div className='w-full flex items-center gap-6 p-5 bg-white text-[#0061B1] text-sm lg:text-base border-[1px] border-[#2C6DC5] font-bold'>
                             <h1>AL</h1>
-                            <p>{t("become.certification.third")}</p>
+                            <p>{t2("become.certification.third")}</p>
                         </div>
                     </div>
                 </div>
                 <div className='text-center pt-10'>
                     <Button className='bg-gradient-to-r from-btnGradientStart via-btnGradientStart via-70% to-[#2e6dc6] font-normal px-8 py-3 text-sm'>
-                        <span>{t("become.linkToSigrex")}</span>
+                        <span>{t2("become.linkToSigrex")}</span>
                     </Button>
                 </div>
             </div>
@@ -152,13 +153,13 @@ export default async function Home() {
             <div className='bg-darkblue'>
               <div className='container pt-10 pb-24'>
                 <div className='text-white lg:text-center lg:px-24 pb-16'>
-                    <h1 className={`text-xl lg:text-4xl font-extrabold ${inter.className}`}>{t("formations.title")}</h1>
+                    <h1 className={`text-xl lg:text-4xl font-extrabold ${inter.className}`}>{t2("formations.title")}</h1>
                 </div>
                 {/* The responsive of the slider number of items by each screen */}
                 <Formations/>
                 <div className='text-center py-8'>
                     <Button className='bg-gradient-to-r from-btnGradientStart via-btnGradientStart via-30% to-[#2e6dc6] font-normal px-8 py-4'>
-                        <span>{t("formations.seeMore")}</span>
+                        <span>{t2("formations.seeMore")}</span>
                     </Button>
                 </div>
               </div>
