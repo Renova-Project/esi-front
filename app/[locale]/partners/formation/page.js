@@ -123,17 +123,17 @@ export default async function Home() {
                 </div>
                 <div className='flex justify-center'>
                   {/* we must add icons in the places of h1 tags */}
-                    <div className='max-w-[30rem] flex flex-col gap-6'>
+                    <div className='max-w-[35rem] flex flex-col gap-6'>
                         <div className='w-full flex items-center gap-6 p-5 bg-[#2C6DC5] text-white text-sm lg:text-base font-bold'>
-                            <h1>AL</h1>
+                            <Image src={'/Group.svg'} alt='/' width={30} height={30}/>
                             <p>{t2("become.certification.first")}</p>
                         </div>
                         <div className='w-full flex items-center gap-6 p-5 bg-[#2C6DC5] text-white text-sm lg:text-base font-bold'>
-                            <h1>AL</h1>
+                            <Image src={'/mdi_email-certified-outline.svg'} alt='/' width={30} height={30}/>
                             <p>{t2("become.certification.second")}</p>
                         </div>
                         <div className='w-full flex items-center gap-6 p-5 bg-white text-[#0061B1] text-sm lg:text-base border-[1px] border-[#2C6DC5] font-bold'>
-                            <h1>AL</h1>
+                            <Image src={'/Vector.svg'} alt='/' width={30} height={30}/>
                             <p>{t2("become.certification.third")}</p>
                         </div>
                     </div>
