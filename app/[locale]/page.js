@@ -1,14 +1,10 @@
 import Nav from "@/components/Nav";
-import { useTranslations } from "next-intl";
 import { Donegal_One, Source_Serif_4 } from "next/font/google";
 import NumbersSection from "./NumbersSection";
 import HeroSection from "./HeroSection";
 import SchoolPresentation from "./SchoolPresentation";
 import Footer from "@/components/Footer";
-import Event from "@/components/Event";
 import Image from "next/image";
-import HeadlineNews from "./HeadlineNews";
-import News from "./News";
 import Carousel from "@/components/Carousel";
 import { getTranslations } from "next-intl/server";
 import { API_URL } from "@/lib/constants";
