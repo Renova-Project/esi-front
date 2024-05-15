@@ -2,7 +2,18 @@
 "clubs":{
   "main":{
     "heroSection":{
-        "title":"Vivez des Moments Inoubliables avec les Clubs Scientifiques et les Événements à l’ESI"
+        "title":[
+            "Vivez des",
+            "Moments Inoubliables",
+            "avec les Clubs Scientifiques et les Événements à l’ESI"
+        ]  
+    },
+    "events":{
+        "title":"Explorez ce qui vous Attend"
+    },
+    "allEvents":"Voir Tous les Événements",
+    "ourClubs":{
+        
     }
 }
     }
