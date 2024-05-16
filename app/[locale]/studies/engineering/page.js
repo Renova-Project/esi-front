@@ -90,7 +90,7 @@ function Page() {
           </div>
         </div>
       </section>
-      <section className="bg-[#F8F8F8]">
+      <section className="bg-grayishBg">
         <div className="container py-10 lg:py-20">
           <h2
             className={cn(

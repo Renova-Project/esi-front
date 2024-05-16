@@ -13,7 +13,6 @@ import { API_URL } from "@/lib/constants";
 import Button from "@/components/Button";
 import Event from "@/components/Event";
 
-
 const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
 });
@@ -51,27 +50,31 @@ export const Partner = ({ image }) => {
   );
 };
 
-const getData = async () => {
+const getLandingData = async () => {
   try {
     const res = await fetch(API_URL + "/home");
-    return res.json();
+    const data = await res.json();
+    return data;
   } catch (e) {
     console.log(e);
+    return null;
   }
 };
 
 export default async function Home() {
   const t = await getTranslations("Landing");
-  const data = await getData();
+  const data = await getLandingData();
   return (
     <div>
       <Nav />
-      <HeroSection sliderContent={data?.sliders} />
+      <HeroSection sliderContent={data?.sliders || []} />
       <NumbersSection />
       <SchoolPresentation />
       <section className="container py-10 ">
         <div className="flex items-center justify-between mb-10 lg:mb-0">
-          <h1 className={`text-2xl sm:text-3xl font-bold ${sourceSerif.className}`}>
+          <h1
+            className={`text-2xl sm:text-3xl font-bold ${sourceSerif.className}`}
+          >
             {t("events.title")}
           </h1>
           <Button className="hidden md:inline-block">
@@ -80,7 +83,7 @@ export default async function Home() {
         </div>
         <hr className="hidden lg:flex mt-6 mb-10 text-black font-bold text-xl" />
         <div className="flex justify-between gap-3 flex-wrap  lg:mt-0">
-          {data.events
+          {data?.events
             .concat([
               {
                 id: 4,
@@ -101,12 +104,14 @@ export default async function Home() {
           <Button className="md:hidden mt-10">{t("events.allEvents")}</Button>
         </div>
       </section>
-      <HeadlineNews news={data.headline_news} />
-      <News news={data.news} />
+      <HeadlineNews news={data?.headline_news || []} />
+      <News news={data?.news || []} />
       <section className="bg-darkblue relative overflow-hidden">
         <div className="container py-10 text-white">
           <div className="w-full flex items-center justify-between pb-10">
-            <h1 className={`text-2xl sm:text-3xl font-bold ${sourceSerif.className}`}>
+            <h1
+              className={`text-2xl sm:text-3xl font-bold ${sourceSerif.className}`}
+            >
               {t("Specialities.title")}
             </h1>
             <button className="hidden lg:flex px-10 py-4 bg-honolulu text-white relative z-10">
@@ -155,9 +160,11 @@ export default async function Home() {
           alt=""
         />
       </section>
-      <section className="py-10 bg-[#f8f8f8]">
+      <section className="py-10 bg-grayishBg">
         <div className="w-full container flex items-center justify-between pb-10">
-          <h1 className={`text-2xl sm:text-3xl font-bold ${sourceSerif.className}`}>
+          <h1
+            className={`text-2xl sm:text-3xl font-bold ${sourceSerif.className}`}
+          >
             {t("partners.title")}
           </h1>
         </div>

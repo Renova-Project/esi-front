@@ -33,7 +33,7 @@ const SwitchButton = ({
 };
 
 function ProgramSection() {
-  const t = useTranslations("Studies.Fields.sit.program");
+  const t = useTranslations("Studies.Engineering.Fields.sit.program");
   const [activeSemester, setActiveSemester] = useState(1);
 
   return (

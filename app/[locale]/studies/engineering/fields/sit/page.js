@@ -10,7 +10,7 @@ const sourceSerif = Source_Serif_4({
 });
 
 const HeroSection = () => {
-  const t = useTranslations("Studies.Fields.sit.hero");
+  const t = useTranslations("Studies.Engineering.Fields.sit.hero");
 
   return (
     <section
@@ -54,10 +54,10 @@ const HeroSection = () => {
 };
 
 const LifeSection = () => {
-  const t = useTranslations("Studies.Fields.sit.life");
+  const t = useTranslations("Studies.Engineering.Fields.sit.life");
 
   return (
-    <section className="pb-10 bg-[#F8F8F8] pt-40 lg:pb-20">
+    <section className="pb-10 bg-grayishBg pt-40 lg:pb-20">
       <div className="container">
         <h2
           className={cn(
@@ -86,9 +86,9 @@ const LifeSection = () => {
 };
 
 const SkillsSection = () => {
-  const t = useTranslations("Studies.Fields.sit.skills");
+  const t = useTranslations("Studies.Engineering.Fields.sit.skills");
   return (
-    <section className="bg-[#F8F8F8]">
+    <section className="bg-grayishBg">
       <div className="container py-10 lg:py-20">
         <h2
           className={cn(
@@ -132,8 +132,29 @@ const SkillsSection = () => {
     </section>
   );
 };
+
+const CareerSection = () => {
+  const t = useTranslations("Studies.Engineering.Fields.sit.career");
+  return (
+    <section className="bg-grayishBg">
+      <div className="container py-10 lg:py-20">
+        <h2
+          className={cn(
+            "font-bold text-2xl mb-4 lg:text-3xl lg:text-center lg:mb-10",
+            sourceSerif.className
+          )}
+        >
+          {t("title.0")}
+          <span className="text-crayola"> {t("title.1")} </span>
+          {t("title.2")}
+        </h2>
+        <div className="flex "></div>
+      </div>
+    </section>
+  );
+};
 function Page() {
-  const t = useTranslations("Studies.Fields.sit");
+  const t = useTranslations("Studies.Engineering.Fields.sit");
 
   return (
     <div>
@@ -141,6 +162,7 @@ function Page() {
       <LifeSection />
       <ProgramSection />
       <SkillsSection />
+      <CareerSection />
     </div>
   );
 }

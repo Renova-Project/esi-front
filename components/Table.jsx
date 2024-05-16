@@ -29,7 +29,7 @@ export const TableRow = ({ children, className }) => {
 function Table({ children }) {
   return (
     <div className="overflow-x-scroll lg:overflow-x-hidden">
-      <div className="min-w-max">{children}</div>
+      <div className="min-w-max lg:min-w-0">{children}</div>
     </div>
   );
 }
