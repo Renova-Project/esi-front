@@ -1,10 +1,10 @@
 import React from "react"
 import { Source_Serif_4,Donegal_One } from "next/font/google"
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { MapPinIcon } from "@heroicons/react/20/solid";
 import Button from "@/components/Button";
-
+import OurClubs from "./OurClubs";
+import StudentsTell from "./StudentsTell";
 
 
 const donegalOne = Donegal_One({
@@ -42,6 +42,8 @@ export const Event = ({title,date,type,clubName,localisation}) => {
     )
 }
 
+
+
 export default function Home () {
 
     const t = useTranslations(["clubs.main"]);
@@ -78,11 +80,9 @@ export default function Home () {
                 </div>
             </section>
 
-            <section className="bg-darkblue">
-                <div>
-                    <p></p>
-                </div>
-            </section>
+            <OurClubs/>
+
+            <StudentsTell/>
         </div>
     )
 }
