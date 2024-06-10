@@ -15,4 +15,9 @@
   display: none;
 }
 
-
+.internshipOffers .slick-slide > div {
+  margin: 0 10px;
+}
+.internshipOffers .slick-list {
+  margin: 0 -10px;
+}

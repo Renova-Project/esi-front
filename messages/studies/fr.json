@@ -74,6 +74,42 @@
           "goal": "Objectif",
           "subgoal": "Sous Objectif"
         }
+      },
+      "Internship-service": {
+        "hero": {
+          "title": "Service des stages",
+          "info": {
+            "title": "A prorpos ds stages",
+            "description": "L’étudiant a l’ESI profite de 3 stages pratiques durant çacarrière , stage de decouverte , stage pratique et stage PFE , ou il sera  mené a mettre ses competances en pratique et immercer dans le monde proffessionnnel .",
+            "actionBtn": "Offres de stages"
+          }
+        },
+        "internshipTypes": {
+          "title": ["Types", "de stage"],
+          "types": [
+            {
+              "name": "Stage de decouverte",
+              "year": "1CS",
+              "duration": "1-2  semaines",
+              "description": "L’objectif est de permettre à l’etudiant de connaitre les structures d’entreprises et decouvrir la dynamique du travail en sein d’une entreprise"
+            },
+            {
+              "name": "Stage pratique",
+              "year": "2CS",
+              "duration": "4-6 semaines",
+              "description": "Durant ce stage l’étudiant doit joindre une entreprse pour integrer une equipee et travailler avec eux en mettant en pratique ces connaissances"
+            },
+            {
+              "name": "Stage de PFE",
+              "year": "3CS",
+              "duration": "4-6 semaines",
+              "description": "Dernier stage en 3CS avec lequel l’étudiant vas soutenir pour obtenir soon siplome d’ngenieur"
+            }
+          ]
+        },
+        "internshipOffers": {
+          "title": "Offres de stage"
+        }
       }
     }
   }
