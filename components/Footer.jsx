@@ -17,7 +17,7 @@ function Footer() {
         <div>
           <Image src="/esi-logo-white.svg" alt="logo" width={60} height={15} />
           <p className="my-4">{t("title")}</p>
-          <ul className="flex items-center gap-3">
+          <ul className="flex items-center gap-5">
             <li>
               <a href="https://www.facebook.com" target="_blank">
                 <Image

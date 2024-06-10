@@ -5,7 +5,6 @@ import Carousel from "@/components/Carousel";
 import { useTranslations } from "next-intl";
 import { Donegal_One } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 
 const donegalOne = Donegal_One({
   subsets: ["latin"],
@@ -102,6 +101,34 @@ const HeroSection = ({ sliderContent }) => {
             </div>
           </div>
         ))}
+        <div>
+          <div className="relative h-heroSectionMobile lg:h-heroSection bg-cover bg-center flex justify-center items-center ">
+            <Image
+              src="/hero.jpg"
+              className="w-full h-full left-0 top-0 object-cover"
+              fill
+              alt="Slider image"
+            />
+            <div className="bg-gradient-to-b from-heroGradientStart/75 to-heroGradientEnd/60 absolute top-0 left-0 w-full h-full" />
+            <div className="relative text-white container lg:text-center">
+              <p className="text-crayola text-xl font-bold lg:text-4xl lg:font-normal lg:text-white">
+                {t("hero.welcome")}
+              </p>
+              <div className="flex justify-center">
+                <span className="hidden lg:block my-5 h-[64px] w-[2.5px] bg-white"></span>
+              </div>
+              <h1 className={`text-2xl lg:text-6xl ${donegalOne.className}`}>
+                {t("hero.title")}
+              </h1>
+              <div className="flex justify-center">
+                <span className="hidden lg:block my-5 h-[64px] w-[2.5px] bg-white"></span>
+              </div>
+              <p className="hidden font-medium text-3xl lg:block">
+                {t("hero.subtitle")}
+              </p>
+            </div>
+          </div>
+        </div>
       </Carousel>
     </section>
   );
