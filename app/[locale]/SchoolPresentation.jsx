@@ -89,7 +89,7 @@ const SchoolPresentation = () => {
               onClick={previous}
               className="bg-[#203960] border border-[#f8f8f8] p-1 rounded-full text-white relative focus:outline-none"
             >
-              <ChevronLeftIcon className="w-7 h-7 " />
+              <ChevronLeftIcon className="w-7 h-7" />
             </button>
             <button
               onClick={next}

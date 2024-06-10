@@ -27,6 +27,8 @@ module.exports = {
       height: {
         heroSectionMobile: "50vh",
         heroSection: "calc(100vh - 126.36px)",
+        heroPartnersMobile:"80vh",
+        heroPartners:"calc(100vh - 126.77px)"
       },
     },
   },

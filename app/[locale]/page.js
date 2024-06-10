@@ -5,8 +5,6 @@ import HeroSection from "./HeroSection";
 import SchoolPresentation from "./SchoolPresentation";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import HeadlineNews from "./HeadlineNews";
-import News from "./News";
 import Carousel from "@/components/Carousel";
 import { getTranslations } from "next-intl/server";
 import { API_URL } from "@/lib/constants";
@@ -49,6 +47,7 @@ export const Partner = ({ image }) => {
     </div>
   );
 };
+
 
 const getLandingData = async () => {
   try {
@@ -154,7 +153,7 @@ export default async function Home() {
         />
         <Image
           src="/gradient-blue.svg"
-          className="absolute left-0 bottom-0 "
+          className="absolute left-0 bottom-0"
           width={301}
           height={326}
           alt=""
