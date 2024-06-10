@@ -14,6 +14,54 @@
       "campus": "Campus",
       "partnetship": "Partenariat",
       "alumni": "Alumni"
+    },
+    "sublinks": {
+      "school": [
+        "Présentation de l'école",
+        "Actualités",
+        "Organisation/Structure",
+        "Chiffres clés",
+        "Succés",
+        "Contact"
+      ],
+      "studies": [
+        "Cursus d'ingénieur",
+        "Master",
+        "Formation entrepreneur",
+        "Stages",
+        "Retrait diplomes"
+      ],
+      "research": [
+        "Offres de thèses",
+        "Laboratoires",
+        "Doctorat",
+        "Reglementation"
+      ],
+      "campus": [
+        "Visiter l'école",
+        "Clubs",
+        "Evenements",
+        "Devenir un partenaire",
+        ""
+      ],
+      "partnetship": [
+        "Recruter nos talents",
+        "Former vos collaborateurs",
+        "Partenaires"
+      ],
+      "alumni": ["Temoignanges", "Best acheivments ", "Statiqtiques"]
+    },
+    "iAm": {
+      "title": "Je suis",
+      "links": [
+        "Bachelier",
+        "Etudiant",
+        "Enseignant",
+        "Alumni",
+        "Entreprise",
+        "Executive",
+        "Cadre dirigeant"
+      ]
     }
   },
   "Landing": {

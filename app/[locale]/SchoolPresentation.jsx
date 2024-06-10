@@ -63,19 +63,24 @@ const SchoolPresentation = () => {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: false,
+                className: "school-presentation-carousel",
               }}
             >
-              <div>
-                <div className="h-52 md:h-72  bg-[url('/presentation.jpg')]  bg-cover bg-center relative border-[5px] border-[#9BC1FB]"></div>
+              <div className="h-56 md:h-72  bg-cover bg-center relative border-[5px] solid border-[#9bc1fb]">
+                <Image
+                  className="top-0 left-0 object-cover"
+                  src="/presentation.jpg"
+                  fill
+                  alt="School"
+                />
               </div>
-              <div>
-                {/* <Image
-                src="/presentation.jpg"
-                width={600}
-                height={400}
-                alt="School"
-                className="rounded-lg"
-              /> */}
+              <div className="h-56 md:h-72  bg-cover bg-center relative border-[5px] solid border-[#9bc1fb]">
+                <Image
+                  className="top-0 left-0 object-cover"
+                  src="/presentation.jpg"
+                  fill
+                  alt="School"
+                />
               </div>
             </Carousel>
           </div>

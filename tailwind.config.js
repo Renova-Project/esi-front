@@ -22,6 +22,7 @@ module.exports = {
         sectionBgGray: "#F8F8F8",
         btnGradientStart: "#0D4DA4",
         btnGradientEnd: "#3C7DD5",
+        grayishBg: "#F8F8F8",
       },
       height: {
         heroSectionMobile: "50vh",
