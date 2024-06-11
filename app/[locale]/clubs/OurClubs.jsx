@@ -36,11 +36,9 @@ const OurClubs = () => {
 
   return (
     <section className="bg-darkblue py-10">
-                <div className="text-center text-white pb-20">
-                    <p className="font-bold text-2xs pb-6">{t("ourClubs.title")}</p> 
-                    <div className="flex justify-center">
-                        <p className={`text-center font-bold text-3xl lg:text-4xl ${sourceSerif.className} max-w-[33rem]`}>{t("ourClubs.discover")}</p>
-                    </div>
+                <div className="container text-center text-white pb-20">
+                    <p className="font-semibold text-base pb-6">{t("ourClubs.title")}</p> 
+                    <p className={`font-bold text-xl lg:text-3xl ${sourceSerif.className}`}>{t("ourClubs.discover")}</p>
                 </div>
                 <div className="relative text-white">
                     <Carousel 
