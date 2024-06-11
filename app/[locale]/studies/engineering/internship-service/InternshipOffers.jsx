@@ -7,7 +7,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 import { useTranslations } from "next-intl";
 import { Source_Serif_4 } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { useRef } from "react";
 
 const sourceSerif = Source_Serif_4({

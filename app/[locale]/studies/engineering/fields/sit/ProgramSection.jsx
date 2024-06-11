@@ -32,6 +32,122 @@ const SwitchButton = ({
   );
 };
 
+const semesterOneModules = [
+  {
+    slug: "ANAD",
+    name: "Analyse de données",
+    coeff: 4,
+    cours: "30h",
+    td: "4Oh",
+  },
+  {
+    slug: "AQUA",
+    name: "Assurance qualité",
+    coeff: 1,
+    cours: "20h",
+    td: "2Oh",
+  },
+  {
+    slug: "SIAD",
+    name: "Système d'information d'aide a la décision",
+    coeff: 1,
+    cours: "20h",
+    td: "2Oh",
+  },
+  {
+    slug: "TICO",
+    name: "Technologie d'information et de communication",
+    coeff: 3,
+    cours: "30h",
+    td: "3Oh",
+  },
+  {
+    slug: "ASI",
+    name: "Analyse des systems d'informations",
+    coeff: 4,
+    cours: "40h",
+    td: "4Oh",
+  },
+  {
+    slug: "BDA",
+    name: "Base de données avancées",
+    coeff: 3,
+    cours: "30h",
+    td: "3Oh",
+  },
+  {
+    slug: "PGI",
+    name: "Progiciel de gestion intégré",
+    coeff: 3,
+    cours: "30h",
+    td: "3Oh",
+  },
+  {
+    slug: "SIC",
+    name: "Système d'information collaborative",
+    coeff: 3,
+    cours: "30h",
+    td: "3Oh",
+  },
+];
+const semesterTwoModules = [
+  {
+    slug: "AUSI",
+    name: "Audit des systems d'informations",
+    coeff: 2,
+    cours: "20h",
+    td: "2Oh",
+  },
+  {
+    slug: "MSSI",
+    name: "Management de la sécurité des systems d'informations",
+    coeff: 2,
+    cours: "20h",
+    td: "2Oh",
+  },
+  {
+    slug: "URSI",
+    name: "Urbanisation des systems d'informations",
+    coeff: 2,
+    cours: "20h",
+    td: "2Oh",
+  },
+  {
+    slug: "BI",
+    name: "Business intelligence",
+    coeff: 4,
+    cours: "40h",
+    td: "4Oh",
+  },
+  {
+    slug: "BDM",
+    name: "Big data mining",
+    coeff: 4,
+    cours: "40h",
+    td: "4Oh",
+  },
+  {
+    slug: "ALOG",
+    name: "Architecture logicielle",
+    coeff: 4,
+    cours: "30h",
+    td: "3Oh",
+  },
+  {
+    slug: "FASI",
+    name: "Files d'attente et simulation",
+    coeff: 3,
+    cours: "30h",
+    td: "3Oh",
+  },
+  {
+    slug: "CRM",
+    name: "Client relationship management",
+    coeff: 3,
+    cours: "30h",
+    td: "3Oh",
+  },
+];
 function ProgramSection() {
   const t = useTranslations("Studies.Engineering.Fields.sit.program");
   const [activeSemester, setActiveSemester] = useState(1);
@@ -72,15 +188,13 @@ function ProgramSection() {
                 <span key={i}>{t(`tableColumns.${i}`)}</span>
               ))}
             </TableHead>
-            {Array.from({
-              length: 5,
-            }).map((_, i) => (
-              <TableRow className="grid-cols-5" key={i}>
-                <span className="font-bold">ANA2</span>
-                <span>Analyse Mathematique 2 1 </span>
-                <span>4</span>
-                <span>30h</span>
-                <span>15H</span>
+            {semesterOneModules.map((module) => (
+              <TableRow className="grid-cols-5" key={module.slug}>
+                <span className="font-bold">{module.slug}</span>
+                <span>{module.name}</span>
+                <span>{module.coeff}</span>
+                <span>{module.cours}</span>
+                <span>{module.td}</span>
               </TableRow>
             ))}
           </Table>
@@ -93,15 +207,13 @@ function ProgramSection() {
                 <span key={i}>{t(`tableColumns.${i}`)}</span>
               ))}
             </TableHead>
-            {Array.from({
-              length: 5,
-            }).map((_, i) => (
-              <TableRow className="grid-cols-5" key={i}>
-                <span className="font-bold">ANA2</span>
-                <span>Analyse Mathematique 2 1 </span>
-                <span>4</span>
-                <span>30h</span>
-                <span>15H</span>
+            {semesterTwoModules.map((module) => (
+              <TableRow className="grid-cols-5" key={module.slug}>
+                <span className="font-bold">{module.slug}</span>
+                <span>{module.name}</span>
+                <span>{module.coeff}</span>
+                <span>{module.cours}</span>
+                <span>{module.td}</span>
               </TableRow>
             ))}
           </Table>

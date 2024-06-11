@@ -1,119 +1,138 @@
-{"Partners":{
-    "nav":{
-      "recruitment":{
-        "recruitmentSm":"Recrutement",
-        "recruitmentLg":"Recrutez Nos Talents"
+{
+  "Partners": {
+    "nav": {
+      "recruitment": {
+        "recruitmentSm": "Recrutement",
+        "recruitmentLg": "Recrutez Nos Talents"
       },
-      "formation":{
-        "formationSm":"Formation",
-        "formationLg":"Former Vos Collaborateurs "
+      "formation": {
+        "formationSm": "Formation",
+        "formationLg": "Former Vos Collaborateurs "
       },
-      "partnership":{
-        "partnershipSm":"Partenariat",
-        "partnershipLg":"Devenir Un Partenaire"
+      "partnership": {
+        "partnershipSm": "Partenariat",
+        "partnershipLg": "Devenir Un Partenaire"
       }
-   },
-    "recruitment":{
-       "heroSection":{
-        "title":"Espace Partenaire",
-        "prompt":{
-          "title":"Recrutement de Talents !",
-          "text":"Devenir notre partenaire et contribuer ensemble au développement de solutions innovantes et à la formation des futurs leaders. En rejoignant notre réseau de partenaires, vous aurez l'opportunité de collaborer sur des projets de recherche et développement d'intervenir dans nos programmes académiques, et d'accéder à un vivier talentueux d'étudiants...",
-          "button":"Déposer des offres de Stage"
+    },
+    "recruitment": {
+      "heroSection": {
+        "title": "Espace Partenaire",
+        "prompt": {
+          "title": "Recrutement de Talents !",
+          "text": "Devenir notre partenaire et contribuer ensemble au développement de solutions innovantes et à la formation des futurs leaders. En rejoignant notre réseau de partenaires, vous aurez l'opportunité de collaborer sur des projets de recherche et développement d'intervenir dans nos programmes académiques, et d'accéder à un vivier talentueux d'étudiants...",
+          "button": "Déposer des offres de Stage"
         }
-       },
-       "become":{
-        "title":"Devenir Un Partenaire Recrutement",
-        "text":"En devenant partenaire de notre université, vous aurez un accès privilégié à une base de talents exceptionnellement dynamique et innovante pour répondre efficacement à vos besoins en recrutement. Notre établissement est reconnu pour son excellence académique et pour former des diplômés dotés d’une forte capacité d’adaptation, d’un esprit critique aiguisé et d’une profonde compréhension des technologies les plus avancées. Grâce à ce partenariat :"
-       },
-       "checkDiplome":{
-        "title":"Vérification des Diplômes",
-        "text":"Notre université met à disposition un service dédié à la vérification des diplômes de nos ingénieurs, permettant aux employeurs, aux institutions et aux organisations professionnelles de confirmer l'authenticité des qualifications académiques obtenues par nos diplômés. Ce service vise à faciliter le processus de recrutement et à garantir la transparence et la fiabilité des informations académiques.",
-        "orderOnLine":{
-          "title":"Demande en ligne",
-          "text":"Accédez à notre portail sécurisé de vérification des diplômes via le site web de l'université. Vous aurez besoin des informations de base du diplômé, y compris le nom complet, la date de naissance, et le numéro d'inscription ou le numéro de diplôme.",
-          "check":"Vérifier maintenant"
-       }
-       },
-       "partners":{
-        "title":"Nos partenaires",
-        "text":"Notre université met à disposition un service dédié à la vérification des diplômes de nos ingénieurs, permettant aux employeurs, aux institutions et aux organisations professionnelles de confirmer l'authenticité des qualifications académiques obtenues par nos diplômés. ",
-        "seeMore":"Voir plus"
-       }
-    },
-    "formation":{
-      "heroSection":{
-       "title":"Formation Continue",
-       "prompt":{
-         "title":"Recrutement de Talents !",
-         "text":"Devenir notre partenaire et contribuer ensemble au développement de solutions innovantes et à la formation des futurs leaders. En rejoignant notre réseau de partenaires, vous aurez l'opportunité de collaborer sur des projets de recherche et développement d'intervenir dans nos programmes académiques, et d'accéder à un vivier talentueux d'étudiants...",
-         "button":"Déposer des offres de Stage"
-       }
       },
-      "become":{
-       "title":"Former vos collaborateurs",
-       "text":"En devenant partenaire de notre université, vous aurez un accès privilégié à une base de talents exceptionnellement dynamique et innovante pour répondre efficacement à vos besoins en recrutement. Notre établissement est reconnu pour son excellence académique et pour former des diplômés dotés d’une forte capacité d’adaptation, d’un esprit critique aiguisé et d’une profonde compréhension des technologies les plus avancées. Grâce à ce partenariat :",
-       "certification":{
-        "first":"Adaptabilité aux Tendances du Marché et Flexibilité",
-        "second":"Certifications et Reconnaissance Professionnelle",
-        "third":"Enseignement par des Experts du Domaine"
-       },
-       "linkToSigrex":"Visiter le Site SigreX"
+      "become": {
+        "title": "Devenir Un Partenaire Recrutement",
+        "text": "En devenant partenaire de notre université, vous aurez un accès privilégié à une base de talents exceptionnellement dynamique et innovante pour répondre efficacement à vos besoins en recrutement. Notre établissement est reconnu pour son excellence académique et pour former des diplômés dotés d’une forte capacité d’adaptation, d’un esprit critique aiguisé et d’une profonde compréhension des technologies les plus avancées. Grâce à ce partenariat :",
+        "cards": [
+          {
+            "title": "Rencontres directes avec les futurs diplômés",
+            "description": "Organisez des journées de recrutement, des présentations d’entreprise, et des ateliers spécifiques sur le campus pour rencontrer les étudiants et leur présenter les opportunités de carrière..."
+          },
+          {
+            "title": "Stages et projets de fin d’études",
+            "description": "Proposez des stages ou des sujets de projets de fin d’études pour évaluer en conditions réelles les compétences et l’aptitude des étudiants à s’intégrer dans votre équipe, tout en bénéficiant de leurs perspectives fraîches et innovantes sur vos projets..."
+          },
+          {
+            "title": "Participation à des événements exclusifs",
+            "description": "En tant que partenaire, vous serez invité à participer à des événements exclusifs de networking et de recrutement, vous donnant l'occasion de vous démarquer auprès des futurs diplômés ..."
+          },
+          {
+            "title": "Visibilité sur les supports de communication de l’université",
+            "description": "Profitez d’une visibilité accrue auprès des étudiants et du corps enseignant grâce à une présence sur les supports de communication de l’université, y compris le site web, les newsletters, et les réseaux sociaux."
+          }
+        ]
       },
-      "formations":{
-       "title":"Les formations disponibles",
-       "text":"Notre université met à disposition un service dédié à la vérification des diplômes de nos ingénieurs, permettant aux employeurs, aux institutions et aux organisations professionnelles de confirmer l'authenticité des qualifications académiques obtenues par nos diplômés. Ce service vise à faciliter le processus de recrutement et à garantir la transparence et la fiabilité des informations académiques.",
-       "seeMore":"Voir plus"
+      "checkDiplome": {
+        "title": "Vérification des Diplômes",
+        "text": "Notre université met à disposition un service dédié à la vérification des diplômes de nos ingénieurs, permettant aux employeurs, aux institutions et aux organisations professionnelles de confirmer l'authenticité des qualifications académiques obtenues par nos diplômés. Ce service vise à faciliter le processus de recrutement et à garantir la transparence et la fiabilité des informations académiques.",
+        "orderOnLine": {
+          "title": "Demande en ligne",
+          "text": "Accédez à notre portail sécurisé de vérification des diplômes via le site web de l'université. Vous aurez besoin des informations de base du diplômé, y compris le nom complet, la date de naissance, et le numéro d'inscription ou le numéro de diplôme.",
+          "check": "Vérifier maintenant"
+        }
+      },
+      "partners": {
+        "title": "Nos partenaires",
+        "text": "Notre université met à disposition un service dédié à la vérification des diplômes de nos ingénieurs, permettant aux employeurs, aux institutions et aux organisations professionnelles de confirmer l'authenticité des qualifications académiques obtenues par nos diplômés. ",
+        "seeMore": "Voir plus"
       }
-   },
-   "partnership":{
-    "title":"Rejoignez notre réseau de partenaires",
-    "organisationInfos":{
-      "title":"Informations sur l'Organisation*",
-      "text":"Remplir les informations nécessaires et corrects sur votre organisation",
-      "name":"Nom de l’organisation",
-      "type":"Type de l’organisation",
-      "sector":"Secteur d’activité",
-      "size":"Taille de l’organisation"
     },
-    "contactDetails":{
-      "title":"Coordonnées*",
-      "text":"Remplir les informations nécessaires et corrects sur votre organisation",
-      "email":"Adresse e-mail",
-      "phoneNumber":"Numéro de téléphone",
-      "pays":"Pays",
-      "fullAdress":"Adresse compléte "
+    "formation": {
+      "heroSection": {
+        "title": "Formation Continue",
+        "prompt": {
+          "title": "Recrutement de Talents !",
+          "text": "Devenir notre partenaire et contribuer ensemble au développement de solutions innovantes et à la formation des futurs leaders. En rejoignant notre réseau de partenaires, vous aurez l'opportunité de collaborer sur des projets de recherche et développement d'intervenir dans nos programmes académiques, et d'accéder à un vivier talentueux d'étudiants...",
+          "button": "Déposer des offres de Stage"
+        }
+      },
+      "become": {
+        "title": "Former vos collaborateurs",
+        "text": "En devenant partenaire de notre université, vous aurez un accès privilégié à une base de talents exceptionnellement dynamique et innovante pour répondre efficacement à vos besoins en recrutement. Notre établissement est reconnu pour son excellence académique et pour former des diplômés dotés d’une forte capacité d’adaptation, d’un esprit critique aiguisé et d’une profonde compréhension des technologies les plus avancées. Grâce à ce partenariat :",
+        "certification": {
+          "first": "Adaptabilité aux Tendances du Marché et Flexibilité",
+          "second": "Certifications et Reconnaissance Professionnelle",
+          "third": "Enseignement par des Experts du Domaine"
+        },
+        "linkToSigrex": "Visiter le Site SigreX"
+      },
+      "formations": {
+        "title": "Les formations disponibles",
+        "text": "Notre université met à disposition un service dédié à la vérification des diplômes de nos ingénieurs, permettant aux employeurs, aux institutions et aux organisations professionnelles de confirmer l'authenticité des qualifications académiques obtenues par nos diplômés. Ce service vise à faciliter le processus de recrutement et à garantir la transparence et la fiabilité des informations académiques.",
+        "seeMore": "Voir plus"
+      }
     },
-    "partnershipObjectives":{
-      "title":"Objectifs du Partenariat *",
-      "text":"Décrire votre objectifs et interets de cette partenariat avec notre école",
-      "areasOfInterest":"Domaines d'intérêt",
-      "type":"Type de partenariat souhaité",
-      "webSite":"Site web de l’organisation",
-      "officielDoc":"Document officiel",
-      "import":"importer"
+    "partnership": {
+      "title": "Rejoignez notre réseau de partenaires",
+      "organisationInfos": {
+        "title": "Informations sur l'Organisation*",
+        "text": "Remplir les informations nécessaires et corrects sur votre organisation",
+        "name": "Nom de l’organisation",
+        "type": "Type de l’organisation",
+        "sector": "Secteur d’activité",
+        "size": "Taille de l’organisation"
+      },
+      "contactDetails": {
+        "title": "Coordonnées*",
+        "text": "Remplir les informations nécessaires et corrects sur votre organisation",
+        "email": "Adresse e-mail",
+        "phoneNumber": "Numéro de téléphone",
+        "pays": "Pays",
+        "fullAdress": "Adresse compléte "
+      },
+      "partnershipObjectives": {
+        "title": "Objectifs du Partenariat *",
+        "text": "Décrire votre objectifs et interets de cette partenariat avec notre école",
+        "areasOfInterest": "Domaines d'intérêt",
+        "type": "Type de partenariat souhaité",
+        "webSite": "Site web de l’organisation",
+        "officielDoc": "Document officiel",
+        "import": "importer"
+      },
+      "submitYourRequest": "Soumettre votre demande"
     },
-    "submitYourRequest":"Soumettre votre demande"
-   },
-   "diplomasVerification":{
-    "title":"Vérification de Diplôme",
-    "text":"Confirmez l'authenticité des diplômes délivrés par notre institution",
-    "link":"Vous pouvez vérifier plusieurs diplomes à la fois",
-    "or":"Ou bien",
-    "toInput":"Saisir les informations du diplome",
-    "verify":"Vérifier le Diplôme"
-   },
-   "manyDiplomas":{
-    "title":"Vérification de Diplôme",
-    "text":"Confirmez l'authenticité des diplômes délivrés par notre institution",
-    "toInput":"Saisir les informations du diplome",
-    "verify":"Vérifier le Diplôme",
-    "diploma":{
-      "diploma":"Diplome",
-      "diplomaName":"Nom du Diplômé",
-      "diplomaNumber":"Numéro de Diplôme"
+    "diplomasVerification": {
+      "title": "Vérification de Diplôme",
+      "text": "Confirmez l'authenticité des diplômes délivrés par notre institution",
+      "link": "Vous pouvez vérifier plusieurs diplomes à la fois",
+      "or": "Ou bien",
+      "toInput": "Saisir les informations du diplome",
+      "verify": "Vérifier le Diplôme"
     },
-    "addDiploma":"Ajouter autre diplome +"
-   }
+    "manyDiplomas": {
+      "title": "Vérification de Diplôme",
+      "text": "Confirmez l'authenticité des diplômes délivrés par notre institution",
+      "toInput": "Saisir les informations du diplome",
+      "verify": "Vérifier le Diplôme",
+      "diploma": {
+        "diploma": "Diplome",
+        "diplomaName": "Nom du Diplômé",
+        "diplomaNumber": "Numéro de Diplôme"
+      },
+      "addDiploma": "Ajouter autre diplome +"
+    }
   }
 }

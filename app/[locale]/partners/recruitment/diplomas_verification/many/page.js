@@ -1,10 +1,9 @@
 import React from 'react'
-import Link from 'next/link'
 import { getTranslations } from "next-intl/server";
 import { Donegal_One,Source_Serif_4,Work_Sans } from "next/font/google";
 import { ArrowUpTrayIcon, ChevronRightIcon } from '@heroicons/react/20/solid';
 import Diplomas from './Diplomas';
-
+import { Link } from '@/navigation';
 
 const donegalOne = Donegal_One({
     subsets: ["latin"],

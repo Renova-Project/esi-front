@@ -29,12 +29,13 @@ const HeroSection = () => {
         alt=""
       />
       <div className="container h-full flex flex-col">
-        <div className="flex items-start gap-4 mt-10 mb-6">
+        <div className="flex items-start gap-4 mt-16 mb-6">
           <button className="hidden md:inline-block">
             <ChevronLeftIcon className="text-white w-14 h-14" />
           </button>
-          <h1 className="font-bold text-crayola text-2xl lg:text-5xl max-w-2xl">
-            {t("title")}
+          <h1 className="font-bold text-white text-2xl lg:text-5xl max-w-2xl">
+            {t("title.0")}
+            <span className="text-crayola"> {t("title.1")}</span>
           </h1>
         </div>
         <div className="relative flex-1 lg:p-10">
@@ -101,8 +102,6 @@ const InternshipTypesSection = () => {
     </section>
   );
 };
-
-
 
 function page() {
   return (

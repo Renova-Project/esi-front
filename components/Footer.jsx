@@ -5,8 +5,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
-
+import { Link } from "@/navigation";
 const col2Links = ["/1", "/2", "/3", "/4", "/5"];
 
 function Footer() {

@@ -10,6 +10,8 @@ import { getTranslations } from "next-intl/server";
 import { API_URL } from "@/lib/constants";
 import Button from "@/components/Button";
 import Event from "@/components/Event";
+import HeadlineNews from "./HeadlineNews";
+import News from "./News";
 
 const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
@@ -48,7 +50,6 @@ export const Partner = ({ image }) => {
   );
 };
 
-
 const getLandingData = async () => {
   try {
     const res = await fetch(API_URL + "/home");
@@ -63,6 +64,7 @@ const getLandingData = async () => {
 export default async function Home() {
   const t = await getTranslations("Landing");
   const data = await getLandingData();
+  console.log(data);
   return (
     <div>
       <Nav />

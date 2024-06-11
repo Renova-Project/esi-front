@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import {
   Bars3BottomRightIcon,
   ChevronDownIcon,
@@ -56,7 +56,7 @@ const downLinks = [
       "/studies/engineering",
       "/studies/master",
       "/studies/fie",
-      "/studies/internships",
+      "/studies/engineering/internship-service",
       "/studies/diplomat",
     ],
     imgUrl: "/sublinks1.jpg",
@@ -87,9 +87,9 @@ const downLinks = [
     href: "/partnetship",
     key: "partnetship",
     sublinks: [
-      "/partnetship/recruitment",
-      "/partnetship/formation",
-      "/partnetship/become-partner",
+      "/partners/recruitment",
+      "/partners/formation",
+      "/partners/partnership",
     ],
     imgUrl: "/sublinks3.png",
   },
@@ -213,7 +213,9 @@ function Nav({ content }) {
       </div>
       <div className="bg-white">
         <div className="container py-4 flex items-center justify-between">
-          <Image src="/esi-logo.svg" alt="logo" width={60} height={15} />
+          <Link href="/">
+            <Image src="/esi-logo.svg" alt="logo" width={160} height={30} />
+          </Link>
           <ul className="hidden lg:flex items-center gap-14">
             {downLinks.map((link, index) => (
               <li

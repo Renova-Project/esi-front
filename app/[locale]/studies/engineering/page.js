@@ -3,7 +3,7 @@ import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import { useTranslations } from "next-intl";
 import { Source_Serif_4 } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
@@ -126,6 +126,32 @@ function Page() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="bg-darkblue relative overflow-hidden min-h-[100vh] hidden lg:block">
+        <Image
+          src="/gradient-blue.svg"
+          className="absolute right-0 top-0 rotate-180"
+          width={301}
+          height={326}
+          alt=""
+        />
+        <div className="container py-10 lg:py-20">
+          <h2
+            className={cn(
+              "font-bold text-white text-2xl mb-2 lg:text-3xl lg:mb-4",
+              sourceSerif.className
+            )}
+          >
+            {t("cursus.title.0")}
+            <span className="text-crayola"> {t("cursus.title.1")} </span>
+            {t("cursus.title.2")}
+          </h2>
+          <Image
+            src="/studies/engineering/roadmap.svg"
+            className="object-contain"
+            fill
+          />
         </div>
       </section>
     </div>

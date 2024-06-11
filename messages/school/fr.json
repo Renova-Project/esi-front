@@ -1,0 +1,18 @@
+{
+  "School": {
+    "Presentation": {
+      "hero": {
+        "title": "Présentation de l’école",
+        "info": {
+          "title": "A propos de l'esi",
+          "description": "L'École nationale supérieure d'informatique (ESI), anciennement Institut national de formation en informatique (INI), est un établissement d'enseignement supérieur algérien formant des ingénieurs d’État en informatique. Elle est située à Oued Smar, à environ 15 km du centre-ville de la capitale Alger, en Algérie.",
+          "actionBtn": "Visite virtuelle"
+        }
+      },
+      "vision": {
+        "title": "Vision & stratégie",
+        "description": "Chez ESI, notre vision est de devenir un pôle mondial de  l'enseignement et de la recherche en informatique, en repoussant sans  cesse les frontières de la connaissance et de l'innovation. Pour  atteindre cet objectif, nous nous engageons à offrir des programmes  académiques de qualité, à promouvoir la recherche de pointe et à établir  des partenariats stratégiques avec l'industrie et les institutions du  monde entier."
+      }
+    }
+  }
+}
