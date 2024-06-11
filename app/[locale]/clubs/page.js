@@ -20,7 +20,7 @@ const sourceSerif = Source_Serif_4({
 export const Event = ({title,date,type,clubName,localisation}) => {
     return(
         <div className="bg-[#F4F4F4] p-4 border-2">
-            <div className="w-[20rem] pb-10">
+            <div className="w-[14rem] sm:w-[17rem] lg:w-[20rem] pb-10">
                 <div className="bg-[url('/event.jpg')] h-48"/>
                 <div className="flex items-center justify-between pt-2 text-[#5D5D5D] text-xs">
                   <p>{type}</p>
@@ -67,7 +67,7 @@ export default function Home () {
             <section className="py-10">
                 <div className="container">
                     <h1 className={`pb-20 text-3xl text-center font-bold ${sourceSerif.className}`}>{t("events.title")}</h1>
-                    <div className="flex justify-center md:justify-between gap-4 flex-wrap">
+                    <div className="flex justify-center sm:justify-between gap-4 flex-wrap">
                        <Event title='Annual Internal Event' date={'Mars 24,2024'} type='Devloppement' clubName='GDG Algiers' localisation={'ESI Algiers'}/>
                        <Event title='Annual Internal Event' date={'Mars 24,2024'} type='Devloppement' clubName='GDG Algiers' localisation={'ESI Algiers'}/>
                        <Event title='Annual Internal Event' date={'Mars 24,2024'} type='Devloppement' clubName='GDG Algiers' localisation={'ESI Algiers'}/>
