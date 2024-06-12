@@ -4,7 +4,7 @@ import { Source_Serif_4,Poppins } from "next/font/google"
 import Button from "@/components/Button";
 import Image from "next/image";
 import EsiEnv from "./EsiEnv";
-import {Link} from "@/navigation";
+import Link from "next/link";
 
 
 
@@ -32,7 +32,7 @@ export default function Home () {
                             <p className={`font-semibold ${poppins.className}`}>{t("heroSection.discover.title")}</p>
                             <p className="py-4">{t("heroSection.discover.desc")}</p>
                             <Button className='border-2 border-white text-base px-3 py-2 bg-transparent'>
-                                <Link href={''}>{t("heroSection.discover.reserve")}</Link>
+                                <Link href={'/compus/esi_tour/esi_tour_form'}>{t("heroSection.discover.reserve")}</Link>
                             </Button>
                         </div>
                         <div className="relative h-[20rem] w-full md:max-w-[25rem] bg-[url('/esi-tour.jpg')] bg-cover bg-center"/>
