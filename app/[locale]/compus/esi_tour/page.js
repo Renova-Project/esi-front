@@ -4,7 +4,7 @@ import { Source_Serif_4,Poppins } from "next/font/google"
 import Button from "@/components/Button";
 import Image from "next/image";
 import EsiEnv from "./EsiEnv";
-import Link from "next/link";
+import {Link} from "@/navigation";
 
 
 
