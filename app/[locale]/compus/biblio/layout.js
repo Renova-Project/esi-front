@@ -1,5 +1,4 @@
 import { DM_Sans } from "next/font/google";
-import "../globals.css";
 import { useMessages } from "next-intl";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";

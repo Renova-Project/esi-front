@@ -25,7 +25,7 @@ const Tell = ({nextSlide}) => {
         className="md:w-[10rem] md:h-[10rem] w-[8rem] h-[8rem] rounded-md"
       />
     </div>
-    <div className="md:absolute md:bottom-2 md:right-0 md:shadow-lg md:rounded bg-white mt-2 md:mt-0 md:p-3 md:max-w-[70%]">
+    <div className="md:absolute md:bottom-2 md:right-0 md:shadow-xl md:rounded bg-white mt-2 md:mt-0 md:p-3 md:max-w-[70%]">
       <h3 className="text-sm md:text-base font-bold text-[#5D5D5D]">Bouberbachne Karim</h3>
       <p className="text-xs md:text-sm text-gray-300 py-4">Etudiant ICS | Membre du club CSE</p>
       <p className="text-black font-semibold">
