@@ -80,10 +80,10 @@ const BiblioInPic = () => {
         </div>
       </div> 
       <div className='flex flex-col md:flex-row gap-10 justify-center mt-14'>
-        <Button className={'w-full first-letter:md:w-[40%]'}>
+        <Button className={'w-full md:max-w-1/2 md:w-[40%]'}>
           <span>{t("biblioInPic.regl")}</span>
         </Button>
-        <Button className={'w-full md:w-[40%]'}>
+        <Button className={'w-full md:max-w-1/2 md:w-[40%]'}>
           <span>{t("biblioInPic.officialWebSite")}</span>
         </Button>
       </div>

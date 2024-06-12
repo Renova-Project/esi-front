@@ -19,7 +19,22 @@
     "studentTell":{
         "title":"Étudiants Racontent",
         "discover":"Des Expériences Uniques dans les Clubs et Événements qui Marquent le Parcours Académique"
+    },
+    "details":{
+        "creationDate":"Date de création",
+        "president":"Président(e)",
+        "domaine":"Domaine",
+        "majeurEvent":"Evénements majeurs",
+        "numbers":{
+            "participants":"Participant",
+            "members":"Membres",
+            "events":"Evenement"
+        },
+        "recents":"Les évenements recents",
+        "others":"Autres"
     }
 }
     }
 }
+
+ 

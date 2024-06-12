@@ -43,7 +43,7 @@ export default function Home () {
                     <p className={`text-center font-bold ${poppins.className}`}>{t("vue_360.title1")}</p>
                     <h1 className={`text-center font-bold text-2xl pb-5 ${sourceSerif.className}`}>{t("vue_360.title2")}</h1>
                     <div className="flex justify-center">
-                        <Image src={'/vue_360.png'} alt="/" width={100} height={100} className="h-[20rem] w-full md:max-w-[35rem]" objectFit="contain"/>
+                        <iframe src="url" title="description"></iframe>
                     </div>
                 </div>
             </div>

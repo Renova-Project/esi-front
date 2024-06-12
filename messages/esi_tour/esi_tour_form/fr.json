@@ -4,10 +4,39 @@
         "heroSection":{
             "title":"Resérver un tour",
             "form":{
-                "name":"Découvrer l’esi",
-                "organisation":"",
-                "email":"Nous sommes heureux d'accueillir des visites de l’ESI . Les groupes peuvent profiter d'une visite du campus et d'une présentation sur les admissions, ainsi que d'activités supplémentaires sur demande. Les visites sont disponibles en semaine tout au long de l'année. ",
-                "":"Reservez votre tours"
+                "name":{
+                    "label":"Nom",
+                    "placeHolder":"Enter Votre Nom"
+                },
+               "organisation":{
+                    "label":"Who are you?",
+                    "placeHolder":"Organization/Institution"
+                }, 
+                "email":{
+                    "label":"Entrez un email correct",
+                    "placeHolder":"Email"
+                },
+                "number":{
+                    "label":"Entrez une Numero correct",
+                    "placeHolder":"Numero de telephone"
+                },
+                "date":{
+                    "label":"Preferred Date and Time",
+                    "placeHolder":"Date"
+                },
+                "desc":{
+                    "label":"Brève description de pourquoi le groupe visite le campus?",
+                    "placeHolder":"Objectif de la Visite"
+                },
+                "group":{
+                    "label":"Nombre de personnes dans le groupe de visite",
+                    "placeHolder":"Taille du Groupe"
+                },
+                "open":{
+                    "label":"Un champ ouvert",
+                    "placeHolder":"Additional Comments"
+                },
+                "submit":"Reservez votre tour"
             }
         }
     }
