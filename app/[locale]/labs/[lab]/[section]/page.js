@@ -1,3 +1,4 @@
+import ArticlesPage from "@/components/labs/pages/ArticlesPage"
 import NewsPage from "@/components/labs/pages/NewsPage"
 import PresentationPage from "@/components/labs/pages/PresentationPage"
 import TeamsPage from "@/components/labs/pages/TeamsPage"
@@ -12,6 +13,8 @@ export default function LabSectionPage({ params }) {
             return <NewsPage />
         case "teams":
             return <TeamsPage />
+        case "articles":
+            return <ArticlesPage />
         default:
             return <h1>Page doesn't exist</h1>
     }
