@@ -12,10 +12,10 @@ const sourceSerif = Source_Serif_4({
     subsets: ["latin"],
   });
 
-  const Book = ({title,author}) => {
+  const Book = ({title,author,img}) => {
     return(
         <div>
-            <Image src={'/book.png'} alt='/' width={200} height={250} objectFit='cover'/>
+            <Image src={img} alt='/' width={200} height={250} objectFit='cover'/>
             <p className='font-bold text-lg'>{title}</p>
             <p className='text[#6F6F6F]'><span className='mr-1'>by</span>{author}</p>
         </div>
@@ -78,10 +78,10 @@ const sourceSerif = Source_Serif_4({
                           },
                       ]}
                     >
-                    <Book title={'Algorithms'} author={'louis and kevin'}/>
-                    <Book title={'Algorithms'} author={'louis and kevin'}/>
-                    <Book title={'Algorithms'} author={'louis and kevin'}/>
-                    <Book title={'Algorithms'} author={'louis and kevin'}/>
+                    <Book title={'Atomic kotlin '} author={'Bruce  and sveltana'} img={'/kotlin.png'}/>
+                    <Book title={'Elementary math for com...'} author={'Eric Bennett'} img={'/imgbib.png'}/>
+                    <Book title={'Algorithms'} author={'louis and kevin'} img={'/book.png'}/>
+                    <Book title={'Algebraic foundations in...'} author={'werner kuich '} img={'/imgbib1.png'}/>
                     </Carousel>
                     <button
                         onClick={prev}

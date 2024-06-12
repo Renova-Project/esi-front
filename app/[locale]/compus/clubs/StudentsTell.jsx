@@ -18,7 +18,7 @@ const Tell = ({nextSlide}) => {
     <div className="relative md:h-[20rem] w-auto max-w-[35rem] flex flex-col p-3 md:p-0">
     <div className="md:absolute md:top-[5%] md:left-[7%]">
       <Image 
-        src="/event.jpg" 
+        src="/boy.png" 
         alt="Bouberbachne Karim"
         width={150}
         height={300}
@@ -64,10 +64,11 @@ const StudentsTell = () => {
                     settings={{
                         infinite: true,
                         speed: 500,
-                        slidesToShow: 1,
+                        slidesToShow: 2,
                         slidesToScroll: 1,
                         arrows: false,
                         initialSlide: 0,
+                        centerPadding: "50px",
                         centerMode:true
                       }}
                       responsive={[

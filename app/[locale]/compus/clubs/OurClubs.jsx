@@ -14,10 +14,10 @@ const sourceSerif = Source_Serif_4({
   });
 
 
-export const Club = ({name,description}) => {
+export const Club = ({name,description,image}) => {
     return(
-        <div className="max-w-[20rem] bg-transparent border-[1px] border-gray-500 p-6">
-            <Image src={'/cse-logo-png.png'} alt="/" width={100} height={100}/>
+        <div className="h-80 max-w-[20rem] bg-transparent border-[1px] border-gray-500 p-6">
+            <Image src={image} alt="/" width={100} height={100} className=''/>
             <h1 className="font-semibold text-2xl py-4">{name}</h1>
             <p className="text-sm">{description}</p>
         </div>
@@ -90,9 +90,9 @@ const OurClubs = () => {
                           },
                       ]}
                     >
-                      <Club name={'CSE'} description="Club scientifique de l'ESI Domaine Scientifique / Technologique Evénements majeursHack IT / Leapfrog / Design Fest / Algeria Web Awards"/>
-                      <Club name={'CSE'} description="Club scientifique de l'ESI Domaine Scientifique / Technologique Evénements majeursHack IT / Leapfrog / Design Fest / Algeria Web Awards"/>
-                      <Club name={'CSE'} description="Club scientifique de l'ESI Domaine Scientifique / Technologique Evénements majeursHack IT / Leapfrog / Design Fest / Algeria Web Awards"/>  
+                      <Club name={'GDG'} description="Club Google Developer Groups Date de créationSeptembre 2011 Domaine Développement des produits technologiques" image={'/gdg-Photoroom.png'}/>
+                      <Club name={'CSE'} description="Club scientifique de l'ESI Domaine Scientifique / Technologique Evénements majeursHack IT / Leapfrog / Design Fest / Algeria Web Awards" image={'/cse-logo-png.png'}/>
+                      <Club name={'ETIC'} description="Domaine : Entrepreneuriat Nombre d'événements : 59 Evénements majeurs : Salon de l’emploi / Training Camp / Before S2EE" image={'/etic.png'}/>  
                     </Carousel>
                     <button
                         onClick={previous}

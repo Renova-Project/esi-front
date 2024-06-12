@@ -13,6 +13,7 @@ const Home = () => {
   const t = useTranslations(["esi_tour_form.main"]);
   return (
     <div className='bg-white'>
+      <div className='bg-darkblue h-10'/>
         <div className='container py-10'>
           <h1 className={`text-center font-bold text-3xl ${sourceSerif.className}`}>{t("heroSection.title")}</h1>
              <div>
@@ -58,11 +59,12 @@ const Home = () => {
                           <input
                             id="phone"
                             type="tel"
-                            placeholder={t("heroSection.form.email.placeHolder")}
+                            placeholder={t("heroSection.form.number.placeHolder")}
                             className="shadow appearance-none border rounded w-full py-5 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                           />
                       </div>
                    </div>
+                   <div className="w-full h-[0.39px] bg-black/40 my-1 md:hidden"/>
                    <div className='w-full md:max-w-[45%]'>
                       <div className='mt-4'>
                         <label className="block text-[#666666] text-sm font-bold mb-2" htmlFor="date">

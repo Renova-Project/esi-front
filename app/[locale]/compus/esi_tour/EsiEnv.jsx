@@ -12,11 +12,11 @@ const sourceSerif = Source_Serif_4({
     subsets: ["latin"],
   });
 
-const Env = ({title,desc}) =>{
+const Env = ({title,desc,image}) =>{
     return(
-        <div className='max-w-[15rem] pl-2 border-2'>
-            <Image src={'/esi-logo.svg'} width={200} height={200} objectFit='cover'/>
-            <div className=''>
+        <div className='max-w-[15rem] h-72'>
+            <Image src={image} width={200} height={200} className='w-full h-[60%]' objectFit='cover'/>
+            <div className='pl-2 mt-2'>
                 <p className='font-semibold'>{title}</p>
                 <p className='text-[#5D5D5D]'>{desc}</p>
             </div>
@@ -56,7 +56,7 @@ const Env = ({title,desc}) =>{
                                     width: "100%",
                                     height: "100%",
                                     borderRadius: "50%",
-                                    border: "1px white solid",
+                                    border: "1px black solid",
                                   }}
                                 ></div>
                               ),
@@ -85,9 +85,9 @@ const Env = ({title,desc}) =>{
                               },
                           ]}
                         >
-                        <Env title={'Amphi'} desc={'06 Amphi'}/>
-                        <Env title={'Salles TD/TP'} desc={'36 Salles de travaux dirigés et travaux pratiques'}/>
-                        <Env title={'Bibliothèque'} desc={'01 bibliothèque et 2 salles de lecture d’une capacité de 100 places'}/>
+                        <Env title={'Amphi'} desc={'06 Amphi'} image={'/amphi.jpg'}/>
+                        <Env title={'Salles TD/TP'} desc={'36 Salles de travaux dirigés et travaux pratiques'} image={'/salles.jpg'}/>
+                        <Env title={'Bibliothèque'} desc={'01 bibliothèque et 2 salles de lecture d’une capacité de 100 places'} image={'/bib.jpg'}/>
                     </Carousel>
                     <button className='absolute top-1/2 -translate-y-1/2 right-0' onClick={next}>
                         <ArrowRightIcon className='w-10 h-10'/>

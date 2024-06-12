@@ -62,7 +62,7 @@ const Details = () => {
       <div className='bg-darkblue'>
           <div className='container flex flex-col md:flex-row gap-14 items-center justify-center pb-10'> 
               <div className='flex flex-col items-center'>
-                  <Image src={'/GDG.png'} alt="/" width={200} height={200} objectFit='contain'/>
+                  <Image src={'/gdg-Photoroom.png'} alt="/" width={200} height={200} objectFit='cover'/>
                   <ul className='flex items-center justify-between gap-4'>
                       <li>
                           <a href="https://www.facebook.com" target="_blank">
@@ -122,7 +122,7 @@ const Details = () => {
                   </ul>
               </div>
               <div className='w-full md:max-w-[60%] text-white px-4'>
-                   <h1 className='font-bold text-xl py-6'>GDG (Google Developer Group )</h1>
+                   <h1 className='font-bold text-2xl md:text-4xl py-6'>GDG (Google Developer Group )</h1>
                    <div className='flex'>
                     <span className="font-semibold">{t("details.creationDate")}</span>
                     <span className='px-1'>:</span>
