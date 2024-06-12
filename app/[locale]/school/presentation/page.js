@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Source_Serif_4 } from "next/font/google";
 import Image from "next/image";
 import React from "react";
+import Organisation from "./Organisation";
 
 const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
@@ -71,7 +72,79 @@ function Page() {
           >
             {t("vision.title")}
           </h2>
-          <p className="text-center">{t("vision.description")}</p>
+          <p className="text-left lg:text-center">{t("vision.description")}</p>
+        </div>
+      </section>
+      <section>
+        <div className="container py-14">
+          <h2
+            className={cn(
+              "font-bold text-2xl mb-8 lg:text-3xl lg:text-center lg:mb-6",
+              sourceSerif.className
+            )}
+          >
+            {t("creation.title")}
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-14 text-center flex-wrap mt-10">
+            <div className="flex-1 flex flex-col items-center">
+              <div className="flex items-center justify-center p-4 border border-black rounded-full">
+                <Image
+                  src="/school/presentation/esi-logo.svg"
+                  width={60}
+                  height={60}
+                  alt=""
+                />
+              </div>
+              <div className="text-honolulu text-lg font-bold mt-4">
+                {t("creation.steps.0.name")}
+              </div>
+              <div>{t("creation.steps.0.description")}</div>
+            </div>
+            <div className="flex-1 flex flex-col items-center">
+              <div className="flex items-center justify-center p-4 border border-black rounded-full">
+                <Image
+                  src="/school/presentation/esi-logo.svg"
+                  width={60}
+                  height={60}
+                  alt=""
+                />
+              </div>
+              <div className="text-honolulu text-lg font-bold mt-4">
+                {t("creation.steps.1.name")}
+              </div>
+              <div>{t("creation.steps.1.description")}</div>
+            </div>
+            <div className="flex-1 flex flex-col items-center">
+              <div className="flex items-center justify-center p-4 border border-black rounded-full">
+                <Image
+                  src="/school/presentation/esi-logo.svg"
+                  width={60}
+                  height={60}
+                  alt=""
+                />
+              </div>
+              <div className="text-honolulu text-lg font-bold mt-4">
+                {t("creation.steps.2.name")}
+              </div>
+              <div>{t("creation.steps.2.description")}</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Organisation />
+      <section>
+        <div className="container py-14">
+          <h2
+            className={cn(
+              "font-bold text-2xl mb-8 lg:text-3xl lg:text-center lg:mb-6",
+              sourceSerif.className
+            )}
+          >
+            {t("creation.title")}
+          </h2>
+          <div className="text-center flex-wrap mt-10">
+            {t("organisation.second")}
+          </div>
         </div>
       </section>
     </div>
