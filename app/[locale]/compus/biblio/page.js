@@ -30,8 +30,8 @@ export default function Home () {
            <div className="relative bg-[url('/biblio.jpg')] h-[70vh] lg:h-heroSection bg-cover bg-center flex justify-center items-center">
                <div className="container w-full flex justify-around flex-wrap gap-4">
                   <div className="flex items-end justify-end">
-                    <div className="">
-                    <p className="font-semibold text-lg text-white">{t("heroSection.workTimes.title")}</p>
+                    <div className="flex flex-col justify-center">
+                    <p className="font-semibold text-lg text-white text-center md:text-left">{t("heroSection.workTimes.title")}</p>
                     <div className="flex items-center gap-2 pl-2 my-3">
                       <span className="w-4 h-4 rounded-full bg-honolulu"/>
                       <p className="text-white">{t("heroSection.workTimes.saturday")}</p>
@@ -56,10 +56,10 @@ export default function Home () {
                 </div>
                 </div>
             </div> 
-            <div className="bg-white">
+            <div className="bg-[#EEEEEE]">
                 <div className="container py-10">
                     <h1 className={`mb-4 text-center font-bold text-3xl ${sourceSerif.className}`}>{t("biblioInNumbers.title")}</h1>
-                    <div className="flex justify-center gap-28 flex-wrap">
+                    <div className="flex justify-center gap-10 md:gap-28 flex-wrap">
                         <div className="bg-[#EEEEEE] px-4 py-6 max-w-36 flex-1 md:max-w-52">
                             <p className="text-4xl font-black text-honolulu">+8269</p>
                             <div className="h-[0.39px] bg-black/40 my-1"/>

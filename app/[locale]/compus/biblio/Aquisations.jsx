@@ -34,7 +34,7 @@ const sourceSerif = Source_Serif_4({
         sliderRef.slickPrev();
       };
     return (
-        <section className="bg-white">
+        <section className="bg-[#EEEEEE]">
         <div className="container py-10">
              <h1 className={`text-center font-bold text-3xl ${sourceSerif.className}`}>{t("aquisation.title")}</h1>
              <p className="text-center text-sm pt-3 pb-6">{t("aquisation.desc")}</p>
@@ -44,7 +44,7 @@ const sourceSerif = Source_Serif_4({
                         sliderRef = ref;
                       }}
                     settings={{
-                        dots: true,
+                        dots: false,
                         infinite: true,
                         speed: 500,
                         slidesToShow: 3,
@@ -53,16 +53,6 @@ const sourceSerif = Source_Serif_4({
                         initialSlide: 0,
                         centerMode: true,
                         centerPadding: "45px",
-                        customPaging: () => (
-                            <div
-                              style={{
-                                width: "100%",
-                                height: "100%",
-                                borderRadius: "50%",
-                                border: "1px white solid",
-                              }}
-                            ></div>
-                          ),
                       }}
                       responsive={[
                         {

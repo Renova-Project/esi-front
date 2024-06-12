@@ -12,6 +12,7 @@ export default getRequestConfig(async ({ locale }) => {
     messages: {...((await import(`./messages/${locale}.json`)).default),
     ...((await import(`./messages/clubs/${locale}.json`)).default),
     ...((await import(`./messages/esi_tour/${locale}.json`)).default),
-    ...((await import(`./messages/biblio/${locale}.json`)).default)
+    ...((await import(`./messages/biblio/${locale}.json`)).default),
+    ...((await import(`./messages/esi_tour/esi_tour_form/${locale}.json`)).default),
   }};
 });
