@@ -10,7 +10,8 @@
           "title":"Evénements"
         },
         "alumniStories":{
-          "title":"Alumni stories & news"
+          "title":"Alumni stories & news",
+          "submit":"Lire Autres Histoires"
         }
     }
   }
