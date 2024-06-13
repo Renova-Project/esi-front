@@ -1,13 +1,25 @@
 import Button from "@/components/Button";
+import { API_URL, IMG_URL } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Source_Serif_4 } from "next/font/google";
 import Image from "next/image";
 
 const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
 });
+const getStoriesData = async () => {
+  try {
+    const res = await fetch(API_URL + "/stories");
+    const data = await res.json();
+    return data;
+  } catch (e) {
+    console.log(e);
+    return null;
+  }
+};
 const events = [
   {
     title:
@@ -28,8 +40,9 @@ const events = [
     imageUrl: "/school/success/1.png",
   },
 ];
-function Page() {
-  const t = useTranslations(["School.Stories"]);
+async function Page() {
+  const t = await getTranslations("School.Stories");
+  const stories = await getStoriesData();
   return (
     <div>
       <section className="bg-darkblue text-white py-20 relative">
@@ -58,7 +71,7 @@ function Page() {
           <h1
             className={cn(
               sourceSerif.className,
-              "font-bold hidden lg:block lg:text-5xl max-w-2xl mb-2 lg:mb-5"
+              "font-bold text-3xl  lg:text-5xl max-w-2xl mb-2 lg:mb-5"
             )}
           >
             {t("title")}
@@ -67,21 +80,23 @@ function Page() {
       </section>
       <section className="bg-grayishBg py-16 lg:py-20">
         <div className="container grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {events.map((ev) => (
-            <div key={ev.imageUrl}>
+          {stories.map((story) => (
+            <div key={story.id}>
               <Image
-                src={ev.imageUrl}
+                src={IMG_URL + story.image}
                 className="w-full h-56 object-cover"
                 width={400}
                 height={100}
                 alt=""
               />
-              <div className="font-medium mt-2">{ev.title}</div>
+              <div className="font-medium mt-2">{story.title}</div>
               <div className="flex justify-between items-center">
                 <Link href="/school/success-stories/1">
                   <Button className="mt-2 py-2">{t("readMore")}</Button>
                 </Link>
-                <span className="text-sm text-darkgrey">{ev.date}</span>
+                <span className="text-sm text-darkgrey">
+                  {story.story_date}
+                </span>
               </div>
             </div>
           ))}

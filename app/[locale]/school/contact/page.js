@@ -62,7 +62,14 @@ function Page() {
               <span>m_koudil@esi.dz</span>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 relative">
+            <Image
+              src="/school/contact/letter.svg"
+              className="absolute -left-24 bottom-0"
+              width={100}
+              height={100}
+              alt=""
+            />
             <form>
               <div className="flex flex-col gap-2">
                 <label className="font-medium">{t("form.name")}</label>

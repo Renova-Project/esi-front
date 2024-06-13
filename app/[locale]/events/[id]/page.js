@@ -11,7 +11,7 @@ const sourceSerif = Source_Serif_4({
 
 const getStoryData = async (id) => {
   try {
-    const res = await fetch(API_URL + "/stories/" + id);
+    const res = await fetch(API_URL + "/events/" + id);
     const data = await res.json();
     return data;
   } catch (e) {
@@ -21,7 +21,7 @@ const getStoryData = async (id) => {
 };
 
 async function Page({ params }) {
-  const story = await getStoryData(params.id);
+  const event = await getStoryData(params.id);
   return (
     <div>
       <section className="bg-darkblue text-white py-20 relative">
@@ -54,12 +54,12 @@ async function Page({ params }) {
                 "font-bold text-2xl lg:block lg:text-3xl max-w-2xl mb-2 lg:mb-5"
               )}
             >
-              {story.title}
+              {event.event_name}
             </h1>
-            <div className="">{story.description}</div>
+            <div className="">{event.event_description}</div>
           </div>
           <Image
-            src={IMG_URL + story.image}
+            src={IMG_URL + event.image}
             className="w-full lg:w-1/3 object-cover block"
             width={400}
             height={300}
