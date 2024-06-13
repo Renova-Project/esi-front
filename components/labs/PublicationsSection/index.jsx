@@ -1,11 +1,6 @@
-import { Source_Serif_4 } from "next/font/google";
+import { sourceSerif } from "@/lib/styles";
 import PublicationCard from "./PublicationCard"
 import { cn } from "@/lib/utils";
-
-const sourceSerif = Source_Serif_4({
-    subsets: ["latin"],
-});
-
 
 const publications = [
     {

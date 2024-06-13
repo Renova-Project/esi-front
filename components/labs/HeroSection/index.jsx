@@ -1,4 +1,6 @@
-import Link from "next/link"
+
+import { Link } from "@/navigation"
+import LabsNavigation from "./LabsNavigation"
 
 export default function HeroSection({ lab }) {
     const labsData = {
@@ -20,15 +22,8 @@ export default function HeroSection({ lab }) {
     }
 
     return <section>
-        <div className="grid grid-cols-3 space-x-1">
-            {Object.keys(labsData).map(key => (<Link key={key} href={`/fr/labs/${key}`}>
-                <div key={key} className={`flex ${lab === key ? "bg-gray-100 text-honolulu" : "bg-darkblue hover:bg-honolulu duration-300 text-white"} px-12 py-4 items-center justify-between`}>
-                    <span className="font-semibold text-xl">{labsData[key].title1}</span>
-                    <span className={`text-4xl ${lab === key ? "border-honolulu" : "bg-[#5F9EFF44] border-white"} rounded-full w-10 h-10 flex items-center justify-center border `}>{">"}</span>
-                </div>
-            </Link>))}
-        </div>
         <div className="text-white" style={{ background: "url('/labs/hero-bg.png') no-repeat", backgroundSize: "cover" }}>
+            <LabsNavigation labs={labsData} lab={lab}/>
             <div className="container py-10 lg:py-20 grid grid-cols-2 gap-4">
                 <div>
                     <h1 className="text-6xl font-bold">{labsData[lab].title1}</h1>

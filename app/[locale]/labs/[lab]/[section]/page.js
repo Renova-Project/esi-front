@@ -6,11 +6,11 @@ import PresentationPage from "@/components/labs/pages/PresentationPage"
 import TeamsPage from "@/components/labs/pages/TeamsPage"
 
 export default function LabSectionPage({ params }) {
-    const { section } = params
+    const { section, lab } = params
 
     switch (section) {
         case "presentation":
-            return <PresentationPage />
+            return <PresentationPage lab={lab} />
         case "news":
             return <NewsPage />
         case "teams":

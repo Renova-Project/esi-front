@@ -1,17 +1,13 @@
 "use client"
 
 import { cn } from "@/lib/utils";
-import { Source_Serif_4 } from "next/font/google";
 import Link from "next/link";
 import Event from "./Event";
 import Carousel from "@/components/Carousel";
 import { useRef } from "react";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import Article from "./Article";
-
-const sourceSerif = Source_Serif_4({
-    subsets: ["latin"],
-});
+import { sourceSerif } from "@/lib/styles";
 
 const events = [
     {

@@ -1,12 +1,8 @@
 import Table, { TableHead, TableRow } from "@/components/Table";
+import { sourceSerif } from "@/lib/styles";
 import { cn } from "@/lib/utils";
-import { Source_Serif_4 } from "next/font/google";
 import Image from "next/image";
 import { IoSearch } from "react-icons/io5";
-
-const sourceSerif = Source_Serif_4({
-    subsets: ["latin"],
-});
 
 
 const columns = ["Image", "Nom / Prénom", "Sigle de l'équipe", "Email"]

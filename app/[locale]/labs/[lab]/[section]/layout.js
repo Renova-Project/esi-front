@@ -1,10 +1,11 @@
-import LabsNavigation from "@/components/labs/LabsNavigation";
+import LabsSectionNavigation from "@/components/labs/shared/LabsSectionNavigation"
+
 
 export default function LabSectionLayout({ params, children }) {
     const { lab, section } = params
 
     return <>
-        <LabsNavigation lab={lab} section={section} />
+        <LabsSectionNavigation lab={lab} section={section} />
         {children}
     </>
 }

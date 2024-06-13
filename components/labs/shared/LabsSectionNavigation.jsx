@@ -1,4 +1,4 @@
-import Link from "next/link"
+import { Link } from "@/navigation"
 
 const links = {
     lmcs: [
@@ -55,8 +55,8 @@ const links = {
     ],
     fablab: [
         {
-            label: "Objectif",
-            link: "objective"
+            label: "Présentation",
+            link: "presentation"
         },
         {
             label: "inscription",
@@ -69,11 +69,11 @@ const links = {
     ]
 }
 
-export default function LabsNavigation({ lab, section }) {
+export default function LabsSectionNavigation({ lab, section }) {
     return <section className="bg-grayishBg">
-        <div className="container flex justify-between py-5 lg:py-10 uppercase font-semibold">
+        <div className="container flex justify-around py-5 lg:py-10 uppercase font-semibold">
             {links[lab].map((link) => (
-                <Link key={link.link} className="block" href="#">
+                <Link key={link.link} className="block" href={`/labs/${lab}/${link.link}`}>
                     <span className={`${section === link.link ? "text-honolulu font-bold" : ""}`}>
                         {link.label}
                     </span>
