@@ -51,11 +51,20 @@ const HeroSection = ({ sliderContent }) => {
       >
         <div>
           <div className="relative h-heroSectionMobile lg:h-heroSection bg-cover bg-center flex justify-center items-center ">
-            <Image
+            {/* <Image
               src="/hero.jpg"
               className="w-full h-full left-0 top-0 object-cover"
               fill
               alt="Slider image"
+            /> */}
+            <video
+              className="w-screen h-full object-cover absolute left-0 top-0 "
+              id="background-video"
+              autoPlay
+              loop
+              muted
+              src="/bg-video.mov"
+              type="video/mp4"
             />
             <div className="bg-gradient-to-b from-heroGradientStart/75 to-heroGradientEnd/60 absolute top-0 left-0 w-full h-full" />
             <div className="relative text-white container lg:text-center">

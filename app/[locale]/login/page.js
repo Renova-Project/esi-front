@@ -27,7 +27,7 @@ function Login() {
         })
       );
       setTimeout(() => {
-        router.push("/profile/clubs/etic");
+        router.push("/fr/profile/clubs/main");
       }, 2000);
     } else {
       setError("Email ou mot de passe invalides");

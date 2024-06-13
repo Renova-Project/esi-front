@@ -1,1 +1,39 @@
-{}
+{
+  "Profile": {
+    "Main": {
+      "events": {
+        "title": "Our Events",
+        "shareBtn": "Add an Event"
+      },
+      "addEvent": {
+        "title": "Share Your Passion, Animate Our Community",
+        "description": "Submit the details of your event to enrich our calendar of diverse activities",
+        "inputs": [
+          {
+            "label": "Title",
+            "placeholder": "Event Title"
+          },
+          {
+            "label": "Type",
+            "placeholder": "Event Type"
+          },
+          {
+            "label": "Date",
+            "placeholder": "XX/YY/ZZZZ"
+          },
+          {
+            "label": "Location",
+            "placeholder": "Event Location"
+          },
+          {
+            "label": "Description",
+            "placeholder": "Event Description ...."
+          },
+          {
+            "label": "Image"
+          }
+        ]
+      }
+    }
+  }
+}

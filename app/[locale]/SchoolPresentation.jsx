@@ -2,6 +2,7 @@
 import Button from "@/components/Button";
 import Carousel from "@/components/Carousel";
 import { cn } from "@/lib/utils";
+import { Link } from "@/navigation";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 import { useTranslations } from "next-intl";
 import { Source_Serif_4 } from "next/font/google";
@@ -43,10 +44,17 @@ const SchoolPresentation = () => {
           <p>{t("presentation.description")}</p>
           <div className="flex gap-x-8 gap-y-4 mt-8 flex-wrap">
             <Button className="flex-1 min-w-48 bg-gradient-to-b from-btnGradientStart via-btnGradientStart via-30% to-btnGradientEnd">
-              <span>{t("presentation.visit")}</span>
+              <Link href="/campus/esi_tour">
+                <span>{t("presentation.visit")}</span>
+              </Link>
             </Button>
             <Button className="flex-1 min-w-48  bg-transparent border border-white">
-              <span>{t("presentation.virtualVisit")}</span>
+              <a
+                href="https://esivtour.cse.club/VirtualTour.html?fbclid=IwAR2JyAXGG8MXCQXdlvMfXM0162Q8jAW2LfedtVgLSsfBY8B6hRgx8r3VCRg"
+                target="_blank"
+              >
+                <span>{t("presentation.virtualVisit")}</span>
+              </a>
             </Button>
           </div>
         </div>

@@ -1,2 +1,141 @@
 {
+  "Studies": {
+    "Engineering": {
+      "hero": {
+        "title": [
+          "From a",
+          "high school graduate",
+          "to an",
+          "engineer",
+          "at ESI"
+        ],
+        "subtitle": "Unleash Your Potential with our Engineering Program:"
+      },
+      "access": {
+        "title": "School Access",
+        "description": "New high school graduates access ESI with an excellent grade average, and the acceptance averages vary from year to year. This year, the averages were:",
+        "grades": [
+          {
+            "value": "18.02",
+            "branch": "Mathematics"
+          },
+          {
+            "value": "18.98",
+            "branch": "Science"
+          },
+          {
+            "value": "19.24",
+            "branch": "Technical Mathematics"
+          }
+        ],
+        "oldGrades": "> Previous Years' Averages"
+      },
+      "cursus": {
+        "title": ["Engineering", "Program", "in Computer Science"],
+        "subtitle": "The engineering program at the National School of Computer Science is divided into 2 cycles",
+        "cp": {
+          "abr": "CP",
+          "title": "Preparatory Cycle",
+          "description": "Two years during which the basic knowledge that an engineer must master before tackling more specific knowledge is taught.\n\nAccess to higher classes is subject to passing an exam whose conditions are set each year by order of the Minister of Higher Education.\n\nThis exam is open, under certain conditions, to students from certain fields taught in other university institutions."
+        },
+        "cs": {
+          "abr": "CS",
+          "title": "Advanced Cycle",
+          "description": "<strong>1CS Common Core:</strong> After passing the exam, all students join the advanced cycle 1CS in the common core, covering the basic knowledge of computer engineering.\n\n<strong>2CS Specialization Year:</strong> The student chooses one of the 4 available specializations for the 2CS year of study.\n\n<strong>3CS Final Project + Master's/Entrepreneurship Training:</strong> The final year is dedicated to the end-of-study project lasting 9 months, with the possibility to pursue a Master's degree and entrepreneurship training simultaneously."
+        }
+      },
+      "roadmap": {
+        "title": ["Details of the", "Training", "Over 5 Years"]
+      },
+      "Fields": {
+        "sit": {
+          "hero": {
+            "title": "SIT",
+            "subtitle": "Information Systems and Technology"
+          },
+          "life": {
+            "title": ["Life as a", "SIT Student"],
+            "description": "Imagine designing an enterprise architecture for major global companies. Consulting with a hedge fund on how to address the blockchain technology challenge. Working as an IT manager in one of the world's leading consulting firms.\n\nAs an information systems student at NUS, you will acquire the crucial skills necessary to prepare for exciting careers. Information systems involve the design, implementation, and management of IT. The field is vast, with potential careers in almost every sector.\n\nNUS prides itself on offering the strongest technical IT foundation of any educational institution in the country. By studying information systems, you will receive world-class training in computer networks, enterprise systems, digital marketing, and management. It is a holistic field of study that prepares you for careers in IT management, systems architecture, network engineering, or any other area where people, IT, and systems intersect."
+          },
+          "program": {
+            "title": "Programs",
+            "firstSemester": "Semester 1",
+            "secondSemester": "Semester 2",
+            "tableColumns": [
+              "Module",
+              "Designation",
+              "Coef",
+              "Lectures",
+              "Tutorials"
+            ],
+            "getPdf": "You can get the complete program with detailed modules in PDFs",
+            "getPdfBtn": "Download"
+          },
+          "skills": {
+            "title": "Your Key Skills as a SIT Engineer"
+          },
+          "career": {
+            "title": ["What You", "Could", "Become"]
+          }
+        }
+      },
+      "Module": {
+        "Skills": {
+          "title": ["Expected", "Skills"],
+          "tableColumns": ["Family", "Skill", "Element", "Level", "Type"]
+        },
+        "Description": {
+          "title": ["Description of the", "Program", "Subject"],
+          "goal": "Goal",
+          "subgoal": "Sub Goal"
+        }
+      },
+      "Internship-service": {
+        "hero": {
+          "title": ["Internship", "Service"],
+          "info": {
+            "title": "About Internships",
+            "description": "ESI students benefit from 3 practical internships during their studies: discovery internship, practical internship, and final year project (PFE) internship, where they will put their skills into practice and immerse themselves in the professional world.",
+            "actionBtn": "Internship Offers"
+          }
+        },
+        "internshipTypes": {
+          "title": ["Types", "of Internships"],
+          "types": [
+            {
+              "name": "Discovery Internship",
+              "year": "1CS",
+              "duration": "1-2 weeks",
+              "description": "The objective is to allow students to learn about company structures and discover the dynamics of working within a company."
+            },
+            {
+              "name": "Practical Internship",
+              "year": "2CS",
+              "duration": "4-6 weeks",
+              "description": "During this internship, students must join a company, integrate into a team, and work with them by putting their knowledge into practice."
+            },
+            {
+              "name": "Final Year Project (PFE) Internship",
+              "year": "3CS",
+              "duration": "4-6 weeks",
+              "description": "The final internship in 3CS with which the student will defend their thesis to obtain their engineering diploma."
+            }
+          ]
+        },
+        "internshipOffers": {
+          "title": "Internship Offers"
+        }
+      }
+    },
+    "Master": {
+      "hero": {
+        "title": ["Master's", "Program"],
+        "info": {
+          "title": "About the Master's",
+          "description": "In the 5th year (3CS), ESI offers an optional program to obtain a Master's degree in computer engineering, in addition to the state engineering degree in computer science. The program, focused on the business world, also allows you to develop the practical skills and basic professional experience necessary to enter the job market.",
+          "actionBtn": "Apply"
+        }
+      }
+    }
+  }
 }

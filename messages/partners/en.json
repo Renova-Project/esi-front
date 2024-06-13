@@ -1,1 +1,138 @@
-{}
+{
+  "Partners": {
+    "nav": {
+      "recruitment": {
+        "recruitmentSm": "Recruitment",
+        "recruitmentLg": "Recruit Our Talents"
+      },
+      "formation": {
+        "formationSm": "Training",
+        "formationLg": "Train Your Employees"
+      },
+      "partnership": {
+        "partnershipSm": "Partnership",
+        "partnershipLg": "Become a Partner"
+      }
+    },
+    "recruitment": {
+      "heroSection": {
+        "title": "Partner Space",
+        "prompt": {
+          "title": "Talent Recruitment!",
+          "text": "Become our partner and contribute together to the development of innovative solutions and the training of future leaders. By joining our network of partners, you will have the opportunity to collaborate on research and development projects, participate in our academic programs, and access a talented pool of students...",
+          "button": "Submit Internship Offers"
+        }
+      },
+      "become": {
+        "title": "Become a Recruitment Partner",
+        "text": "By becoming a partner of our university, you will have privileged access to an exceptionally dynamic and innovative talent pool to effectively meet your recruitment needs. Our institution is recognized for its academic excellence and for training graduates with strong adaptability, sharp critical thinking, and a deep understanding of advanced technologies. Through this partnership:",
+        "cards": [
+          {
+            "title": "Direct Meetings with Future Graduates",
+            "description": "Organize recruitment days, company presentations, and specific workshops on campus to meet students and present career opportunities..."
+          },
+          {
+            "title": "Internships and Final Year Projects",
+            "description": "Offer internships or final year project topics to evaluate in real conditions the skills and ability of students to integrate into your team, while benefiting from their fresh and innovative perspectives on your projects..."
+          },
+          {
+            "title": "Participation in Exclusive Events",
+            "description": "As a partner, you will be invited to participate in exclusive networking and recruitment events, giving you the opportunity to stand out to future graduates..."
+          },
+          {
+            "title": "Visibility on University Communication Platforms",
+            "description": "Enjoy increased visibility among students and faculty through a presence on university communication platforms, including the website, newsletters, and social media."
+          }
+        ]
+      },
+      "checkDiplome": {
+        "title": "Degree Verification",
+        "text": "Our university offers a dedicated service for verifying the degrees of our engineers, allowing employers, institutions, and professional organizations to confirm the authenticity of the academic qualifications obtained by our graduates. This service aims to facilitate the recruitment process and ensure transparency and reliability of academic information.",
+        "orderOnLine": {
+          "title": "Online Request",
+          "text": "Access our secure degree verification portal through the university's website. You will need the graduate's basic information, including full name, date of birth, and registration number or degree number.",
+          "check": "Verify Now"
+        }
+      },
+      "partners": {
+        "title": "Our Partners",
+        "text": "Our university offers a dedicated service for verifying the degrees of our engineers, allowing employers, institutions, and professional organizations to confirm the authenticity of the academic qualifications obtained by our graduates.",
+        "seeMore": "See More"
+      }
+    },
+    "formation": {
+      "heroSection": {
+        "title": "Continuing Education",
+        "prompt": {
+          "title": "Talent Recruitment!",
+          "text": "Become our partner and contribute together to the development of innovative solutions and the training of future leaders. By joining our network of partners, you will have the opportunity to collaborate on research and development projects, participate in our academic programs, and access a talented pool of students...",
+          "button": "Submit Internship Offers"
+        }
+      },
+      "become": {
+        "title": "Train Your Employees",
+        "text": "By becoming a partner of our university, you will have privileged access to an exceptionally dynamic and innovative talent pool to effectively meet your recruitment needs. Our institution is recognized for its academic excellence and for training graduates with strong adaptability, sharp critical thinking, and a deep understanding of advanced technologies. Through this partnership:",
+        "certification": {
+          "first": "Adaptability to Market Trends and Flexibility",
+          "second": "Certifications and Professional Recognition",
+          "third": "Teaching by Domain Experts"
+        },
+        "linkToSigrex": "Visit the SigreX Website"
+      },
+      "formations": {
+        "title": "Available Trainings",
+        "text": "Our university offers a dedicated service for verifying the degrees of our engineers, allowing employers, institutions, and professional organizations to confirm the authenticity of the academic qualifications obtained by our graduates. This service aims to facilitate the recruitment process and ensure transparency and reliability of academic information.",
+        "seeMore": "See More"
+      }
+    },
+    "partnership": {
+      "title": "Join Our Network of Partners",
+      "organisationInfos": {
+        "title": "Organization Information*",
+        "text": "Fill in the necessary and correct information about your organization",
+        "name": "Organization Name",
+        "type": "Organization Type",
+        "sector": "Sector",
+        "size": "Organization Size"
+      },
+      "contactDetails": {
+        "title": "Contact Details*",
+        "text": "Fill in the necessary and correct information about your organization",
+        "email": "Email Address",
+        "phoneNumber": "Phone Number",
+        "pays": "Country",
+        "fullAdress": "Full Address"
+      },
+      "partnershipObjectives": {
+        "title": "Partnership Objectives*",
+        "text": "Describe your goals and interests in this partnership with our school",
+        "areasOfInterest": "Areas of Interest",
+        "type": "Desired Partnership Type",
+        "webSite": "Organization Website",
+        "officielDoc": "Official Document",
+        "import": "Import"
+      },
+      "submitYourRequest": "Submit Your Request"
+    },
+    "diplomasVerification": {
+      "title": "Degree Verification",
+      "text": "Confirm the authenticity of the degrees issued by our institution",
+      "link": "You can verify multiple degrees at once",
+      "or": "Or",
+      "toInput": "Enter the Degree Information",
+      "verify": "Verify the Degree"
+    },
+    "manyDiplomas": {
+      "title": "Degree Verification",
+      "text": "Confirm the authenticity of the degrees issued by our institution",
+      "toInput": "Enter the Degree Information",
+      "verify": "Verify the Degree",
+      "diploma": {
+        "diploma": "Degree",
+        "diplomaName": "Graduate Name",
+        "diplomaNumber": "Degree Number"
+      },
+      "addDiploma": "Add Another Degree +"
+    }
+  }
+}

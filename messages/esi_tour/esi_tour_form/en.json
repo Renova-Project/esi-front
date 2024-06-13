@@ -1,0 +1,44 @@
+{
+  "esi_tour_form": {
+    "main": {
+      "heroSection": {
+        "title": "Reserve a Tour",
+        "form": {
+          "name": {
+            "label": "Name",
+            "placeHolder": "Enter Your Name"
+          },
+          "organisation": {
+            "label": "Who are you?",
+            "placeHolder": "Organization/Institution"
+          },
+          "email": {
+            "label": "Enter a valid email",
+            "placeHolder": "Email"
+          },
+          "number": {
+            "label": "Enter a valid phone number",
+            "placeHolder": "Phone Number"
+          },
+          "date": {
+            "label": "Preferred Date and Time",
+            "placeHolder": "Date"
+          },
+          "desc": {
+            "label": "Brief description of why the group is visiting the campus",
+            "placeHolder": "Purpose of Visit"
+          },
+          "group": {
+            "label": "Number of people in the visiting group",
+            "placeHolder": "Group Size"
+          },
+          "open": {
+            "label": "Open field",
+            "placeHolder": "Additional Comments"
+          },
+          "submit": "Reserve your tour"
+        }
+      }
+    }
+  }
+}

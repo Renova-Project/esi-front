@@ -83,22 +83,13 @@ export default async function Home() {
         </div>
         <hr className="hidden lg:flex mt-6 mb-10 text-black font-bold text-xl" />
         <div className="flex justify-between gap-3 flex-wrap  lg:mt-0">
-          {data?.events
-            .concat([
-              {
-                id: 4,
-                event_name: "jkdlmsqkfkjqkmlfkjq jkldskjfsssssssssssss",
-                start_date: "2024-04-03T06:00:00Z",
-                end_date: "2024-04-11T17:49:05Z",
-              },
-            ])
-            .map((ev) => (
-              <Event
-                key={ev.id}
-                startDate={ev.start_date}
-                title={ev.event_name}
-              />
-            ))}
+          {data?.events.slice(0, 3).map((ev) => (
+            <Event
+              key={ev.id}
+              startDate={ev.start_date}
+              title={ev.event_name}
+            />
+          ))}
         </div>
         <div className="pt-4">
           <Button className="md:hidden mt-10">{t("events.allEvents")}</Button>

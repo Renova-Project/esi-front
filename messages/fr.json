@@ -2,10 +2,10 @@
   "Nav": {
     "upLinks": {
       "library": "Biblothèque",
-      "elearning": "E-learning",
       "talents": "Talents",
       "labs": "Labos",
-      "portal": "Portail juridique"
+      "portal": "Portail juridique",
+      "sigrex": "SIGREX"
     },
     "downLinks": {
       "school": "Ecole",
@@ -40,7 +40,7 @@
         "Visiter l'école",
         "Clubs",
         "Evenements",
-        "Devenir un partenaire",
+        "Biblothèque",
         ""
       ],
       "partnetship": [
@@ -53,7 +53,7 @@
     "iAm": {
       "title": "Je suis",
       "links": [
-        "Bachelier",
+        "Club",
         "Etudiant",
         "Enseignant",
         "Alumni",

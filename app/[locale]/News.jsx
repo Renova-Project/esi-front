@@ -62,9 +62,6 @@ const News = ({ news }) => {
           }}
         >
           {news
-            .concat(news)
-            .concat(news)
-            .concat(news)
             .map((nw) => (
               <New key={nw.id} image={nw.image} description={nw.news_name} />
             ))}

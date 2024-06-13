@@ -1,1 +1,27 @@
-{}
+{
+  "esi_tour": {
+    "main": {
+      "heroSection": {
+        "title": "ESI TOUR",
+        "discover": {
+          "title": "Discover ESI",
+          "desc": "We are happy to welcome visits to ESI. Groups can enjoy a campus tour and an admissions presentation, as well as additional activities upon request. Tours are available on weekdays throughout the year.",
+          "reserve": "Reserve your tour"
+        }
+      },
+      "vue_360": {
+        "title1": "Start a virtual tour",
+        "title2": "360° Visit"
+      },
+      "localisation": {
+        "title1": "Where to Find Us",
+        "title2": "Geographical Location of ESI",
+        "desc": "ESI is located 15 kilometers from downtown Algiers, 4 km from Houari Boumediene International Airport, and 2 kilometers from the University of Science and Technology Houari Boumediene (USTHB). It is served by the East Suburban Train 'Algiers-Dar El Beida-Thénia'."
+      },
+      "environement": {
+        "title1": "Educational Framework",
+        "title2": "The Learning Environment at ESI"
+      }
+    }
+  }
+}

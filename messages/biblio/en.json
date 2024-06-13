@@ -1,1 +1,60 @@
-{}
+{
+  "biblio": {
+    "main": {
+      "heroSection": {
+        "desc": {
+          "title": "Description",
+          "desc": "The ESI Library was established when the school was created in 1969. It offers a wide range of services to users, mainly documentation. It is primarily specialized in the field of Computer Science.",
+          "catalogue": "View the catalogue",
+          "memories": "Thesis Repository"
+        },
+        "workTimes": {
+          "title": "Opening Hours",
+          "saturday": "Saturday: 8:30 AM to 4:00 PM",
+          "sunday": "Sunday to Thursday: 8:30 AM to 10:00 PM"
+        }
+      },
+      "biblioInNumbers": {
+        "title": "Library in Numbers",
+        "fondDocumentaires": {
+          "title": "Documentary Collection",
+          "tit": "TITLES",
+          "exp": "COPIES"
+        },
+        "memories": {
+          "title": "Theses",
+          "tit": "FINAL YEAR PROJECT",
+          "exp": "MASTER'S"
+        },
+        "theses": {
+          "title": "Doctoral Theses",
+          "tit": "DOCTORATE",
+          "exp": "MAGISTER"
+        }
+      },
+      "aquisation": {
+        "title": "Latest Acquisitions",
+        "desc": "Every year, the library purchases new books according to the needs of the members, especially the needs of the teachers (an average of 40 to 60 titles consisting of 3 to 5 copies each)."
+      },
+      "biblioInPic": {
+        "title": "Library in Pictures",
+        "explore": "Explore the gallery of our Library",
+        "regl": "Library Internal Regulations",
+        "officialWebSite": "Access the Official Website"
+      },
+      "contact": {
+        "title": "Contact Us",
+        "desc": "Our team is here to answer all your questions and provide the assistance you need. Do not hesitate to contact us by email or in person at the library",
+        "respo": "Library Director",
+        "officialWebSite": "Access the Official Website",
+        "form": {
+          "nameLabel": "Name",
+          "emailLabel": "Enter a valid email",
+          "phoneNumberLabel": "Enter a valid phone number",
+          "messageLabel": "Message should not exceed 255 words",
+          "submit": "Send the Message"
+        }
+      }
+    }
+  }
+}

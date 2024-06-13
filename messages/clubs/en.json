@@ -1,1 +1,38 @@
-{}
+{
+  "clubs": {
+    "main": {
+      "heroSection": {
+        "title": [
+          "Live",
+          "Unforgettable Moments",
+          "with Scientific Clubs and Events at ESI"
+        ]
+      },
+      "events": {
+        "title": "Explore What Awaits You"
+      },
+      "allEvents": "See All Events",
+      "ourClubs": {
+        "title": "Our Clubs",
+        "discover": "Discover our Scientific Clubs"
+      },
+      "studentTell": {
+        "title": "Students Share",
+        "discover": "Unique Experiences in Clubs and Events that Shape the Academic Journey"
+      },
+      "details": {
+        "creationDate": "Creation Date",
+        "president": "President",
+        "domaine": "Field",
+        "majeurEvent": "Major Events",
+        "numbers": {
+          "participants": "Participants",
+          "members": "Members",
+          "events": "Events"
+        },
+        "recents": "Recent Events",
+        "others": "Others"
+      }
+    }
+  }
+}

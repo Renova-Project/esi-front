@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Link } from "@/navigation";
+import { Link, useRouter, usePathname } from "@/navigation";
 import {
   Bars3BottomRightIcon,
   ChevronDownIcon,
@@ -14,23 +14,24 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const upLinks = [
   {
-    href: "/library",
+    href: "https://biblio.esi.dz/",
     key: "library",
   },
   {
-    href: "/elearning",
-    key: "elearning",
-  },
-  {
-    href: "/talents",
+    href: "https://talents.esi.dz/",
     key: "talents",
   },
   {
-    href: "/labs",
+    href: "https://lcsi.esi.dz/",
     key: "labs",
   },
   {
-    href: "/juridic-portal",
+    href: "https://localhost:3001",
+    key: "sigrex",
+  },
+  ,
+  {
+    href: "https://portailjuridique.esi.dz/",
     key: "portal",
   },
 ];
@@ -63,22 +64,17 @@ const downLinks = [
   {
     href: "/research",
     key: "research",
-    sublinks: [
-      "/research/center",
-      "/research/labs",
-      "/research/phd",
-      "/research/rules",
-    ],
+    sublinks: ["/research/center", "/labs", "/research/phd", "/research/rules"],
     imgUrl: "/sublinks2.jpg",
   },
   {
     href: "/campus",
     key: "campus",
     sublinks: [
-      "/campus/visit",
+      "/campus/esi_tour",
       "/campus/clubs",
       "/campus/events",
-      "/campus/library",
+      "/campus/biblio",
     ],
     imgUrl: "/hero.jpg",
   },
@@ -104,7 +100,7 @@ const downLinks = [
 ];
 
 const iAmLinks = [
-  "/i-am/bachelor",
+  "/login",
   "/i-am/student",
   "/i-am/teacher",
   "/i-am/alumni",
@@ -187,7 +183,8 @@ function Nav({ content }) {
   const [topBarActive, setTopBarActive] = useState(true);
   const [iAmMenuActive, setIamMenuActive] = useState(false);
   const [activeSublinks, setActiveSublinks] = useState(-1);
-
+  const router = useRouter();
+  const pathname = usePathname();
   const handleMouseEnter = (i) => {
     setActiveSublinks(i);
   };
@@ -195,6 +192,11 @@ function Nav({ content }) {
   const handleMouseLeave = () => {
     setActiveSublinks(-1);
   };
+
+  const handleLanguageChange = () => {
+    router.push(pathname, { locale: "en" });
+  };
+
   return (
     <nav className="relative" onMouseLeave={handleMouseLeave}>
       <div className={`bg-darkblue text-white ${topBarActive ? "" : "hidden"}`}>
@@ -203,7 +205,9 @@ function Nav({ content }) {
           <ul className="flex gap-10 text-grey">
             {upLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href}>{t("upLinks." + link.key)}</Link>
+                <a href={link.href} target="_blank">
+                  {t("upLinks." + link.key)}
+                </a>
               </li>
             ))}
           </ul>
@@ -226,7 +230,11 @@ function Nav({ content }) {
               </li>
             ))}
           </ul>
-          <button className="hidden lg:inline-block">
+
+          <button
+            className="hidden lg:inline-block"
+            onClick={handleLanguageChange}
+          >
             <Image
               src="/langSwitch.svg"
               alt="lang-switch"

@@ -1,0 +1,87 @@
+{
+  "School": {
+    "Presentation": {
+      "hero": {
+        "title": "School Presentation",
+        "info": {
+          "title": "About ESI",
+          "description": "The National School of Computer Science (ESI), formerly the National Institute of Computer Training (INI), is an Algerian higher education institution training State engineers in computer science. It is located in Oued Smar, about 15 km from the city center of the capital Algiers, Algeria.",
+          "actionBtn": "Virtual Tour"
+        }
+      },
+      "vision": {
+        "title": "Vision & Strategy",
+        "description": "At ESI, our vision is to become a global hub for computer science education and research, constantly pushing the boundaries of knowledge and innovation. To achieve this goal, we are committed to offering quality academic programs, promoting cutting-edge research, and establishing strategic partnerships with industry and institutions worldwide."
+      },
+      "creation": {
+        "title": "School Creation",
+        "steps": [
+          {
+            "name": "CERI-1969",
+            "description": "Creation of the school under the name Center for Studies and Research in Computer Science (CERI)"
+          },
+          {
+            "name": "INI-1983",
+            "description": "Affiliated with the Ministry of Higher Education under the name National Institute of Computer Training (INI)"
+          },
+          {
+            "name": "ESI-2008",
+            "description": "Transformed into a national higher school by executive decree No. 08-220 of July 14, 2008, under the name National School of Computer Science (ESI)"
+          }
+        ]
+      },
+      "organisation": {
+        "title": "Organization & Management",
+        "switch": [
+          "Administrative Organization",
+          "Pedagogical and Scientific Organization"
+        ],
+        "first": "Directorate.\n\nGeneral Secretariat.\n\nDeputy Directorate of Education, Diplomas, and Continuing Education.\n\nDeputy Directorate of Doctoral Training, Scientific Research, Technological Development, Innovation, and Entrepreneurship Promotion.\n\nDeputy Directorate of Information Systems, Communication, and External Relations.\n\nLibrary.",
+        "second": "At ESI, we are committed to providing our students with the skills necessary to succeed in a constantly evolving world. Our academic programs are designed to develop not only advanced technical skills but also interpersonal, problem-solving, and critical thinking skills. Our graduates are ready to tackle industry challenges and make significant contributions to society."
+      }
+    },
+    "Stories": {
+      "title": "Success Stories",
+      "readMore": "Read More"
+    },
+    "Contact": {
+      "title": "Contact Us",
+      "description": "Our team is here to answer all your questions and provide the assistance you need. Do not hesitate to contact us by email or in person at the administration.",
+      "headMaster": "Director of ESI",
+      "contacts": "contacts",
+      "form": {
+        "name": "Full Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "message": "Message",
+        "submitBtn": "Send Message"
+      },
+      "otherContacts": {
+        "title": "Other Contacts"
+      }
+    },
+    "Organisation": {
+      "title": "Organization & Structures",
+      "direction": {
+        "title": "Pedagogy Directorate",
+        "subtitles": ["Diagram", "Details"],
+        "description": "This structure manages the pedagogical and administrative aspects of undergraduate training, i.e., engineering training. It includes several structures:\n1. CPI Department (Integrated Preparatory Cycle or CPI): 2 years.\n2. CS Department (Second Cycle of 3 years (Advanced Cycle or CS)).\n  A. 1 CS: Common Core\n  B. 2 and 3 CS: Specialization\n    B. 1. SIT (Information Systems and Technology).\n    B. 2. SIQ (Computer Systems).\n    B. 3. SIL (Computer Systems and Software).\n    B. 4. SID (Intelligent Systems and Data).\n3. Internship Service: responsible for supervising and organizing practical internships in companies during the university curriculum (from the 1st year to the 5th year) and then programming the defenses.\n4. Cultural and Scientific Activities Service.\n5. Diplomas Service.\n6. School Service: responsible for managing the monitoring of the schooling of enrolled undergraduate students."
+      },
+      "post": {
+        "title": "Pedagogy Directorate",
+        "subtitles": ["Details"],
+        "description": "Its missions:\nManagement, organization, and monitoring of studies in the first and second postgraduate levels. Organization of the entrance examination to the Doctorate D-LMD.\nPromotion of scientific research (Management of research projects by providing appropriate means).\nHandling of retraining, improvement of the teaching-research staff, and scholarships abroad.\nPromotion of scientific exchanges within the framework of national and international cooperation."
+      },
+      "relex": {
+        "title": "Directorate of External Relations and Continuing Education (DREFC)",
+        "subtitles": ["Diagram", "Details"],
+        "description": "Its mission is to develop the school's image by multiplying partnership framework agreements with the socio-economic environment, offering continuing education and other services, as well as maintaining and communicating statistics internally, to the hierarchy, to the board of directors, direction council, supervision, partners, and finally the press. It is structured into three services and a secretariat:\n1. External Relations Service\nA. Responsible for Business Relations (internship and valorization aspect): Internship prospecting. Dissemination of recruitment calls to Alumni and through posting, Employability surveys. Maintaining and updating the professional networking file.\nB. Responsible for Business Relations (Agreements and Services aspect): Monitoring ESI-Companies / ESI-Universities agreements (legal advice, execution, assessments). Management of service provision calls (expertise, legal advice). Monitoring sponsorship actions for scientific and cultural events (contact, establishment of agreements, follow-up, and periodic assessments). Documentary monitoring (regulatory texts (laws, decrees, decisions, ...))\nC. Responsible for International Relations (administrative aspect): Monitoring international mobility (students, PhD students). Management of guest missions within the framework of inter-institutional agreements (preparation of invitations, visa follow-up, transport tickets, park relations, hotel reservations and follow-up, and invoice management). Collaborates with DPGR, DG, SG, market service, budget, car park.\n2. Continuing Education Service: Management of continuing education calls for tenders\nA. Prospecting and maintaining the list of trainers\nB. Managing suppliers called upon to intervene in continuing education (caterers, ...) and monitoring operations (internal and external purchase orders, delivery notes, etc.\nC. Supervision of the professional exams competition operation, recruitment exams for engineers in accordance with regulations.\n3. Statistics and External Communication Service: Preparation of DREFC statistics\nA. Press review and press relations,\nB. Preparation of Open Days and updating the school's presentation (videos, brochures, ...)\nC. Information monitoring"
+      },
+      "moyens": {
+        "title": "Directorate of IT Resources",
+        "subtitles": ["Diagram", "Details"],
+        "description": "Composed of two services: the network management and maintenance service and the pedagogical rooms management service to ensure the practical work of our students. The network management and maintenance service's mission is to ensure the proper functioning of the school's network (intranet and internet), and to maintain IT equipment (hardware and software). The pedagogical rooms managementservice aims to provide students with rooms equipped with IT equipment (computers and software) to ensure the smooth running of practical sessions for our students."
+      }
+    }
+  }
+}
