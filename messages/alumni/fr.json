@@ -8,6 +8,9 @@
         },
         "events":{
           "title":"Evénements"
+        },
+        "alumniStories":{
+          "title":"Alumni stories & news"
         }
     }
   }
