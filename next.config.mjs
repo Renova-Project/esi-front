@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "esi-backend.onrender.com",
       },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
     ],
   },
 };

@@ -22,10 +22,13 @@ module.exports = {
         sectionBgGray: "#F8F8F8",
         btnGradientStart: "#0D4DA4",
         btnGradientEnd: "#3C7DD5",
+        grayishBg: "#F8F8F8",
       },
       height: {
         heroSectionMobile: "50vh",
         heroSection: "calc(100vh - 126.36px)",
+        heroPartnersMobile:"80vh",
+        heroPartners:"calc(100vh - 126.77px)"
       },
     },
   },

@@ -9,18 +9,26 @@ import Carousel from "@/components/Carousel";
 import { getTranslations } from "next-intl/server";
 import { API_URL } from "@/lib/constants";
 import Button from "@/components/Button";
+import Event from "@/components/Event";
+import HeadlineNews from "./HeadlineNews";
+import News from "./News";
 
-const inter = Source_Serif_4({
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
 });
 
 export const Speciality = ({ abrevihation, name, image }) => {
   return (
-    <div className="h-[6.125rem] md:h-[8rem] w-full sm:w-11/12 lg:w-[46%] xl:w-[48%] flex gap-3 bg-[#081F3A] shadow-md md:hover:scale-105">
+    <div className="flex gap-3 bg-[#081F3A] shadow-md md:hover:scale-105">
       <div className="h-full w-[30%] relative">
-        <Image src={image} alt="/" fill={true} className="w-full h-full" />
+        <Image
+          src={image}
+          alt="/"
+          fill={true}
+          className="w-full h-full object-cover"
+        />
       </div>
-      <div className="h-full w-[70%] flex flex-col justify-center items-start">
+      <div className="px-4 py-8 flex-1">
         <p className="font-semibold text-lg">{abrevihation}</p>
         <p>{name}</p>
       </div>
@@ -42,37 +50,31 @@ export const Partner = ({ image }) => {
   );
 };
 
-const donegalOne = Donegal_One({
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const sourceSerif = Source_Serif_4({
-  subsets: ["latin"],
-});
-
-const getData = async () => {
+const getLandingData = async () => {
   try {
-    const res = await fetch(API_URL);
-    return res.json();
+    const res = await fetch(API_URL + "/home");
+    const data = await res.json();
+    return data;
   } catch (e) {
     console.log(e);
+    return null;
   }
 };
 
 export default async function Home() {
   const t = await getTranslations("Landing");
-  // const data = await getData();
-  // console.log(data);
+  const data = await getLandingData();
   return (
     <div>
       <Nav />
-      <HeroSection />
+      <HeroSection sliderContent={data?.sliders || []} />
       <NumbersSection />
       <SchoolPresentation />
       <section className="container py-10 ">
         <div className="flex items-center justify-between mb-10 lg:mb-0">
-          <h1 className={`text-2xl sm:text-3xl font-bold ${inter.className}`}>
+          <h1
+            className={`text-2xl sm:text-3xl font-bold ${sourceSerif.className}`}
+          >
             {t("events.title")}
           </h1>
           <Button className="hidden md:inline-block">
@@ -81,81 +83,64 @@ export default async function Home() {
         </div>
         <hr className="hidden lg:flex mt-6 mb-10 text-black font-bold text-xl" />
         <div className="flex justify-between gap-3 flex-wrap  lg:mt-0">
-          {/* {data.events
-            .concat(data.events)
-            .concat(data.events)
+          {data?.events
+            .concat([
+              {
+                id: 4,
+                event_name: "jkdlmsqkfkjqkmlfkjq jkldskjfsssssssssssss",
+                start_date: "2024-04-03T06:00:00Z",
+                end_date: "2024-04-11T17:49:05Z",
+              },
+            ])
             .map((ev) => (
               <Event
                 key={ev.id}
                 startDate={ev.start_date}
                 title={ev.event_name}
               />
-            ))} */}
+            ))}
         </div>
         <div className="pt-4">
           <Button className="md:hidden mt-10">{t("events.allEvents")}</Button>
         </div>
       </section>
-      {/* <HeadlineNews news={data.headline_news} /> */}
-      {/* <News news={data.news} /> */}
+      <HeadlineNews news={data?.headline_news || []} />
+      <News news={data?.news || []} />
       <section className="bg-darkblue relative overflow-hidden">
-        <div className="container flex flex-col py-10 text-white">
+        <div className="container py-10 text-white">
           <div className="w-full flex items-center justify-between pb-10">
-            <h1 className={`text-2xl sm:text-3xl font-bold ${inter.className}`}>
+            <h1
+              className={`text-2xl sm:text-3xl font-bold ${sourceSerif.className}`}
+            >
               {t("Specialities.title")}
             </h1>
             <button className="hidden lg:flex px-10 py-4 bg-honolulu text-white relative z-10">
               {t("Specialities.details")}
             </button>
           </div>
-          <div className="w-full flex flex-col items-start justify-between gap-4 lg:hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
             <Speciality
               abrevihation={t("Specialities.speciality.SID.abrevihation")}
               name={t("Specialities.speciality.SID.name")}
-              image="/SID.png"
+              image="/SID.jpg"
             />
             <Speciality
               abrevihation={t("Specialities.speciality.SIQ.abrevihation")}
               name={t("Specialities.speciality.SIQ.name")}
-              image="/SIQ.png"
+              image="/SIQ.jpg"
             />
             <Speciality
               abrevihation={t("Specialities.speciality.SIT.abrevihation")}
               name={t("Specialities.speciality.SIT.name")}
-              image="/SIT.png"
+              image="/SIT.jpg"
             />
             <Speciality
               abrevihation={t("Specialities.speciality.SIL.abrevihation")}
               name={t("Specialities.speciality.SIL.name")}
-              image="/SIL.png"
+              image="/SIL.jpg"
             />
           </div>
-          <div className="w-full hidden lg:flex flex-col items-center justify-center gap-10">
-            <div className="w-full flex items-center justify-between">
-              <Speciality
-                abrevihation={t("Specialities.speciality.SID.abrevihation")}
-                name={t("Specialities.speciality.SID.name")}
-                image="/SID.png"
-              />
-              <Speciality
-                abrevihation={t("Specialities.speciality.SIQ.abrevihation")}
-                name={t("Specialities.speciality.SIQ.name")}
-                image="/SIQ.png"
-              />
-            </div>
-            <div className="w-full flex items-center justify-between">
-              <Speciality
-                abrevihation={t("Specialities.speciality.SIT.abrevihation")}
-                name={t("Specialities.speciality.SIT.name")}
-                image="/SIT.png"
-              />
-              <Speciality
-                abrevihation={t("Specialities.speciality.SIL.abrevihation")}
-                name={t("Specialities.speciality.SIL.name")}
-                image="/SIL.png"
-              />
-            </div>
-          </div>
+
           <div className="pt-10 lg:hidden">
             <Button>{t("Specialities.details")}</Button>
           </div>
@@ -169,15 +154,17 @@ export default async function Home() {
         />
         <Image
           src="/gradient-blue.svg"
-          className="absolute left-0 bottom-0 "
+          className="absolute left-0 bottom-0"
           width={301}
           height={326}
           alt=""
         />
       </section>
-      <section className="py-10 bg-[#f8f8f8]">
+      <section className="py-10 bg-grayishBg">
         <div className="w-full container flex items-center justify-between pb-10">
-          <h1 className={`text-2xl sm:text-3xl font-bold ${inter.className}`}>
+          <h1
+            className={`text-2xl sm:text-3xl font-bold ${sourceSerif.className}`}
+          >
             {t("partners.title")}
           </h1>
         </div>

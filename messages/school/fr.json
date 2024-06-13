@@ -1,0 +1,87 @@
+{
+  "School": {
+    "Presentation": {
+      "hero": {
+        "title": "Présentation de l’école",
+        "info": {
+          "title": "A propos de l'esi",
+          "description": "L'École nationale supérieure d'informatique (ESI), anciennement Institut national de formation en informatique (INI), est un établissement d'enseignement supérieur algérien formant des ingénieurs d’État en informatique. Elle est située à Oued Smar, à environ 15 km du centre-ville de la capitale Alger, en Algérie.",
+          "actionBtn": "Visite virtuelle"
+        }
+      },
+      "vision": {
+        "title": "Vision & stratégie",
+        "description": "Chez ESI, notre vision est de devenir un pôle mondial de  l'enseignement et de la recherche en informatique, en repoussant sans  cesse les frontières de la connaissance et de l'innovation. Pour  atteindre cet objectif, nous nous engageons à offrir des programmes  académiques de qualité, à promouvoir la recherche de pointe et à établir  des partenariats stratégiques avec l'industrie et les institutions du  monde entier."
+      },
+      "creation": {
+        "title": "Création de l’école",
+        "steps": [
+          {
+            "name": "CERI-1969",
+            "description": "Création de l’école sous le nomde Centre d’Etudes et de Recherche en Informatique (CERI)"
+          },
+          {
+            "name": "INI-983",
+            "description": "Rattachée au ministère de l’Enseignement Supérieur sous le nom de l’Institut National de Formation en Informatique (INI)"
+          },
+          {
+            "name": "ESI-2008",
+            "description": "Transformée en école nationale supérieure par le décret exécutif n° 08-220 du 14 juillet 2008, sous le nom d’Ecole nationale Supérieure d’Informatique (ESI)"
+          }
+        ]
+      },
+      "organisation": {
+        "title": "Organisation & Gestion",
+        "switch": [
+          "Organisation administrative",
+          "Organisation pedagogique et scientifique"
+        ],
+        "first": "Direction.\n\nSecrétariat Général.\n\nDirection adjointe des Enseignements, des Diplômes et de la Formation Continue.\n\nDirection  adjointe de la Formation Doctorale, de la Recherche Scientifique et du  Développement Technologique, de l’Innovation et de la Promotion de  l’Entrepreneuriat.\n\nDirection adjointe des Systèmes d’Information, de Communication et des Relations Extérieures.\n\nBibliothèque.",
+        "second": "À ESI, nous nous engageons à fournir à nos étudiants les  compétences nécessaires pour réussir dans un monde en constante  évolution. Nos programmes académiques sont conçus pour développer non  seulement des compétences techniques de pointe, mais aussi des  compétences interpersonnelles, de résolution de problèmes et de pensée  critique. Nos diplômés sont prêts à relever les défis de l'industrie et à  apporter une contribution significative à la société."
+      }
+    },
+    "Stories": {
+      "title": "Histoires de succés",
+      "readMore": "Lire plus"
+    },
+    "Contact": {
+      "title": "Contactez Nous",
+      "description": " Notre équipe est là  pour  répondre  à  toutes  vos questions et vous offrir l'assistance dont vous avez besoin. N'hésitez pas à nous contacter par e-mail ou en personne à la l’administration",
+      "headMaster": "Directeur de l’ESI",
+      "contacts": "contacts",
+      "form": {
+        "name": "Nom complet",
+        "email": "Email",
+        "phone": "Numero de telephone",
+        "message": "Message",
+        "submitBtn": "Envoyer le message"
+      },
+      "otherContacts": {
+        "title": "Autres contacts"
+      }
+    },
+    "Organisation": {
+      "title": "Organisation & Structures",
+      "direction": {
+        "title": "La Direction de la Pédagogie",
+        "subtitles": ["Schéma", "Détails"],
+        "description": "     C’est la structure qui gère les aspects pédagogiques et administratifs  de la formation graduée, c’est-à-dire la formation d’ingéniorat. Elle  comprend plusieurs structures :\n1. Département CPI (Cycle préparatoire Intégré ou CPI): 2 années.\n2. Département CS (Second cycle de 3 ans(Cycle Supérieur ou CS).\n  A. 1 CS : Socle commun  \n  B. 2 et 3 CS : Spécialisation\n    B. 1. SIT (Système d’Information et Technologie).\n    B. 2. SIQ (Systèmes Informatiques).\n    B. 3. SIL (Système Informatiques et Logiciels).\n    B. 4. SID (Systèmes Intelligents et Données).\n3.Service des stages : il est chargé de l’encadrement et de  l’organisation des stages pratiques en entreprises pendant le cursus universitaire (de la 1ère année à la 5eme année) ensuite la  programmation des soutenances.\n4. Service des Activités Culturelles et Scientifiques.\n5. Service des Diplômes.\n6. Service de la scolarité : il est chargé de gérer le suivi de la scolarité des étudiants inscrits en graduation."
+      },
+      "post": {
+        "title": "La Direction de la Pédagogie",
+        "subtitles": ["Détails"],
+        "description": "Ses missions :\nLa gestion, l’organisation et le suivi des études en première et deuxième post graduation.        L’organisation du concours d’accès au Doctorat D-LMD.\nLa promotion de la recherche scientifique (Gestion des projets de recherches en veillant à fournir les moyens appropriés).\nLa prise en charge du recyclage, du perfectionnement du corps enseignants-chercheurs et des bourses à l’étranger.\nLa promotion des échanges scientifiques dans le cadre de la coopération nationale et internationale."
+      },
+      "relex": {
+        "title": "La Direction des Relations Extérieures et de la Formation Continue (DREFC)",
+        "subtitles": ["Schéma", "Détails"],
+        "description": "Elle a pour mission de développer l’image de l’Ecole et ce en  multipliant les accords cadre de partenariat avec le milieu  socio-économique, la réalisation d’offre de formation continue et autres  prestations de services, ainsi que la tenue de statistiques et leur  communication en interne, à la hiérarchie, au conseil d’administration,  conseil de direction, la tutelle, partenaires et enfin les organes de  presse. Elle est structurée en Trois services et un secrétariat:\n1. Service Relations Extérieures\nA. Chargée des Relations Entreprises (volet: stages et valorisation):  Prospection des stages pratiques. Diffusion des appels à recrutement  auprès des Alumni et par affichage, Enquêtes employabilité. Tenue et  mise à jour du fichier de réseautage professionnel.\nB. Chargée des Relations Entreprises (Volet: Conventions et  Prestations): Suivi des Accord- conventions ESI-Entreprises / ESI-  Universités (conseil juridique, exécution, bilans).Gestion des appels à  prestation de services (expertise, conseil juridique). Suivi des  actions de sponsoring de manifestations scientifique et culturelles  (contact, établissements de conventions, suivi et bilans périodiques).  Veille documentaire (textes règlementaires (lois, décrets, décisions,  ..)    \nC. Chargée Relations internationales (volet: administratif) : Suivi du  volte: mobilité internationale (étudiants, doctorants). Gestion des  missions des invités étrangers dans le cadre des conventions  inter-établissements (préparation des invitations, suivi des visas, des  titres de transport, de la relation avec le parc, réservation et suivi  des confirmations avec les hôtels et de la gestion des factures).  Collabore avec la DPGR, la DG, le SG, le service des marchés, le budget,  parc auto.\n2. Service de Formation Continue : . Gestion des appels d’offres de formation continue  \nA. Prospection et tenue de la liste des formateurs\nB. Gestion des fournisseurs appelés à intervenir dans la formation  continue (traiteurs, ..) et suivi des opérations (bons de commandes  internes et externes, bons de livraisons, etc.     \nC. Supervision de l’opération « concours d’examens professionnels »,  examens de recrutements d’ingénieurs conformément à la règlementation3. Service des Statistiques et Communication externe :  Préparation des statistiques DREFC\nA. Revue de presse et relations Presse,\nB. Préparation des Portes ouvertes de l’Ecole et actualisation de la présentation de l’Ecole (vidéos, dépliants, ..)\nC. Veille informationnelle"
+      },
+      "moyens": {
+        "title": "La Direction des Moyens Informatiques",
+        "subtitles": ["Schéma", "Détails"],
+        "description": "    Composée  de deux services: le service de « gestion réseau et maintenance» et le  service de « gestion des salles pédagogiques» pour assurer les travaux  pratiques de nos étudiants. Le service « gestion du réseau et maintenance» a pour mission  d’assurer le bon fonctionnement du réseau (intranet et internet) de  l’école, d’assurer la maintenance du matériel informatique (hard et  soft). Le service » gestion des salles pédagogiques » a pour but de mettre  à la disposition des étudiants des salles équipées de matériel  informatique (ordinateurs et logiciels) afin d’assurer le bon  déroulement des séances de travaux pratiques de nos étudiants."
+      }
+    }
+  }
+}
