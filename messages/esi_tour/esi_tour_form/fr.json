@@ -1,0 +1,44 @@
+{
+    "esi_tour_form":{
+      "main":{
+        "heroSection":{
+            "title":"Resérver un tour",
+            "form":{
+                "name":{
+                    "label":"Nom",
+                    "placeHolder":"Enter Votre Nom"
+                },
+               "organisation":{
+                    "label":"Who are you?",
+                    "placeHolder":"Organization/Institution"
+                }, 
+                "email":{
+                    "label":"Entrez un email correct",
+                    "placeHolder":"Email"
+                },
+                "number":{
+                    "label":"Entrez une Numero correct",
+                    "placeHolder":"Numero de telephone"
+                },
+                "date":{
+                    "label":"Preferred Date and Time",
+                    "placeHolder":"Date"
+                },
+                "desc":{
+                    "label":"Brève description de pourquoi le groupe visite le campus?",
+                    "placeHolder":"Objectif de la Visite"
+                },
+                "group":{
+                    "label":"Nombre de personnes dans le groupe de visite",
+                    "placeHolder":"Taille du Groupe"
+                },
+                "open":{
+                    "label":"Un champ ouvert",
+                    "placeHolder":"Additional Comments"
+                },
+                "submit":"Reservez votre tour"
+            }
+        }
+    }
+        }
+    }

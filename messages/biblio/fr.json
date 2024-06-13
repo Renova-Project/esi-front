@@ -1,0 +1,62 @@
+{
+    "biblio":{
+      "main":{
+        "heroSection":{
+            "desc":{
+               "title":"Description",
+               "desc":"La Bibliothèque de l’ESI a été créée lors de la création de l’école en 1969. Elle met à la disposition des usagers un large éventail de services, dont principalement de la documentation. C’est une structure essentiellement spécialisée dans le domaine Informatique.",
+               "catalogue":"Visualiser le catalogue",
+               "memories":"Entropot des memoires"
+            },
+            "workTimes":{
+                "title":"Horaire d’ouverture",
+                "saturday":"Samedi:  8h30 à 16h00",
+                "sunday":"Dimanche au Jeudi: 8h30 à 22h00"
+            }
+        },
+        "biblioInNumbers":{
+            "title":"Bibliothèque en chiffres",
+            "fondDocumentaires":{
+              "title":"Fond documentaires",
+              "tit":"TITRES",
+              "exp":"EXEMPLAIRES"
+            },
+            "memories":{
+                "title":"Memories",
+                "tit":"PROJET DE FIN D’ETUDE",
+                "exp":"MASTER"
+            },
+            "theses":{
+                "title":"Thèses",
+                "tit":"DOCTORAT",
+                "exp":"MAJISTER"
+            }
+        },
+        "aquisation":{
+            "title":"Dernières aquisitions",
+            "desc":"Chaque année la bibliothèque achète de nouveaux ouvrages selon les besoins des adhérents notamment les besoins des enseignants (en moyenne 40 à 60 titres constitués de 3 à 5 exemplaires chacun)."
+        },
+        "biblioInPic":{
+            "title":"Bibliothèque en photos" ,
+            "explore":"Explorez la gallery de notre Bibliothèque ", 
+            "regl":"Règlementation interne de la bibliothèque",
+            "officialWebSite":"Acceser Au site Officiel"   
+        },
+        "contact":{
+            "title":"Contactez Nous" ,
+            "desc":" Notre équipe est là  pour  répondre  à  toutes  vos questions et vous offrir l'assistance dont vous avez besoin. N'hésitez pas à nous contacter par e-mail ou en personne à la bibliothèque", 
+            "respo":"Directeur de la bibliothèque",
+            "officialWebSite":"Acceser Au site Officiel",
+            "form":{
+                "nameLabel":"Nom",
+                "emailLabel":"Entrez un email correct ",
+                "phoneNumberLabel":"Entrez une Numero correct",
+                "messageLabel":"Le message ne depasse pas 255 mots",
+                "submit":"Envoyer le Message"
+            }  
+        }
+    }
+        }
+    }
+
+   

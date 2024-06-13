@@ -1,0 +1,28 @@
+{
+    "esi_tour":{
+      "main":{
+        "heroSection":{
+            "title":"ESI TOUR",
+            "discover":{
+                "title":"Découvrer l’esi",
+                "desc":"Nous sommes heureux d'accueillir des visites de l’ESI . Les groupes peuvent profiter d'une visite du campus et d'une présentation sur les admissions, ainsi que d'activités supplémentaires sur demande. Les visites sont disponibles en semaine tout au long de l'année. ",
+                "reserve":"Reservez votre tours"
+            }
+        },
+        "vue_360":{
+             "title1":"Commencer une virtuel tour",
+             "title2":"Visite 360°"
+
+        },
+        "localisation":{
+            "title1":"Où Nous Trouver",
+            "title2":"Localisation Géographique de l’ESI",
+            "desc":"ESI est situé à 15 kilomètres du centre-ville de la capitale Alger et à 4 Km de l’Aéroport International « Houari Boumediène» et à 2 kilomètres de l’Université des Sciences et de la Technologie Houari Boumediene (USTHB). Elle est desservi par le train Banlieue Est « Alger- Dar El Beida- Thénia »."
+        },
+        "environement":{
+            "title1":"Cadre Pédagogique",
+            "title2":"L'Environnement d'Apprentissage chez l’ESI"
+        }
+    }
+        }
+    }

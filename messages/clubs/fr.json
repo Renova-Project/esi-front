@@ -1,0 +1,40 @@
+{
+"clubs":{
+  "main":{
+    "heroSection":{
+        "title":[
+            "Vivez des",
+            "Moments Inoubliables",
+            "avec les Clubs Scientifiques et les Événements à l’ESI"
+        ]  
+    },
+    "events":{
+        "title":"Explorez ce qui vous Attend"
+    },
+    "allEvents":"Voir Tous les Événements",
+    "ourClubs":{
+        "title":"Nos clubs",
+        "discover":"Découvrez nos Clubs Scientifiques"
+    },
+    "studentTell":{
+        "title":"Étudiants Racontent",
+        "discover":"Des Expériences Uniques dans les Clubs et Événements qui Marquent le Parcours Académique"
+    },
+    "details":{
+        "creationDate":"Date de création",
+        "president":"Président(e)",
+        "domaine":"Domaine",
+        "majeurEvent":"Evénements majeurs",
+        "numbers":{
+            "participants":"Participant",
+            "members":"Membres",
+            "events":"Evenement"
+        },
+        "recents":"Les évenements recents",
+        "others":"Autres"
+    }
+}
+    }
+}
+
+ 
