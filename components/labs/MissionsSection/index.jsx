@@ -4,7 +4,7 @@ import { sourceSerif } from "@/lib/styles";
 
 export default function MissionsSection({ lab }) {
     return <section className="bg-grayishBg">
-        <div className="grid grid-cols-2 gap-x-16 container py-10 lg:py-20">
+        <div className="grid lg:grid-cols-2 gap-8 gap-x-16 container py-10 lg:py-20">
             <div className="space-y-8">
                 <h2 className={cn(sourceSerif.className, "text-2xl lg:text-3xl mb-10 font-bold")}>Missions de <span className="text-crayola">{String(lab).toUpperCase()}</span></h2>
                 <p className="text-lg opacity-70 leading-10 text-justify">

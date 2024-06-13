@@ -63,7 +63,7 @@ export default function EventsArticlesSection() {
 
 
     return <section className="bg-grayishBg">
-        <div className="container py-10 lg:py-20 grid grid-cols-3 gap-16">
+        <div className="container py-10 lg:py-20 grid md:grid-cols-1 lg:grid-cols-3 gap-16">
             <div className="col-span-1 flex justify-between flex-col">
                 <h2
                     className={cn(
@@ -80,7 +80,7 @@ export default function EventsArticlesSection() {
                     Voir tous les événements
                 </Link>
             </div>
-            <div className="col-span-2 flex flex-col justify-between">
+            <div className="col-span-1 lg:col-span-2 flex flex-col justify-between">
                 <h2
                     className={cn(
                         "font-bold text-2xl lg:text-3xl mb-10",
@@ -102,6 +102,29 @@ export default function EventsArticlesSection() {
                                 autoplaySpeed: 3000
                             }
                         }
+                        responsive={[
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 1,
+                                },
+                            },
+                            {
+                                breakpoint: 600,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                },
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 1,
+                                    slidesToScroll: 1,
+                                },
+                            },
+                        ]}
                     >
                         {articles.map((article) => <Article key={article.id} article={article} />)}
                     </Carousel>

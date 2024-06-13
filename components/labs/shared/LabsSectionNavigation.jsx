@@ -71,7 +71,7 @@ const links = {
 
 export default function LabsSectionNavigation({ lab, section }) {
     return <section className="bg-grayishBg">
-        <div className="container flex justify-around py-5 lg:py-10 uppercase font-semibold">
+        <div className="container flex flex-col items-center gap-4 md:gap-0 md:flex-row justify-around py-5 lg:py-10 uppercase font-semibold">
             {links[lab].map((link) => (
                 <Link key={link.link} className="block" href={`/labs/${lab}/${link.link}`}>
                     <span className={`${section === link.link ? "text-honolulu font-bold" : ""}`}>
