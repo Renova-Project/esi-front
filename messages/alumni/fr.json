@@ -1,0 +1,14 @@
+{
+    "alumni": {
+        "hero": {
+          "title": "Espace Alumni",
+          "alumni": "Alumni",
+          "history": "Histoires de réussite paratgées",
+          "taux": "Taux de satisfaction des alumnis"
+        },
+        "events":{
+          "title":"Evénements"
+        }
+    }
+  }
+  
