@@ -64,7 +64,6 @@ const getLandingData = async () => {
 export default async function Home() {
   const t = await getTranslations("Landing");
   const data = await getLandingData();
-  console.log(data);
   return (
     <div>
       <Nav />
