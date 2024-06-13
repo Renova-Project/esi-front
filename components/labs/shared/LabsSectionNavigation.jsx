@@ -19,7 +19,7 @@ const links = {
             link: "articles",
         },
         {
-            label: "Annuaire des cherchers",
+            label: "Annuaire des chercheurs",
             link: "directory"
         },
         {
@@ -45,7 +45,7 @@ const links = {
             link: "articles",
         },
         {
-            label: "Annuaire des cherchers",
+            label: "Annuaire des chercheurs",
             link: "directory"
         },
         {
