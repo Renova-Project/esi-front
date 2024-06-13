@@ -12,6 +12,9 @@
         "alumniStories":{
           "title":"Alumni stories & news",
           "submit":"Lire Autres Histoires"
+        },
+        "alumniTell":{
+          "title":"Temoignage des ancients etudiants"
         }
     }
   }

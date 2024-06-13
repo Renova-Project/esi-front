@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { Source_Serif_4 } from "next/font/google";
 import Image from "next/image";
 import { AlumniStories } from "./AlumniStories";
+import AlumniTell from "./AlumniTell";
 
 
 const sourceSerif = Source_Serif_4({
@@ -69,7 +70,7 @@ export default function Home() {
                          <p className="mt-6">Bienvenue dans la famille des alumnis de notre école, un réseau qui s'étend bien au-delà des jours de remise des diplômes. À l’ESI, nous croyons que votre parcours ne fait que commencer une fois que vous avez franchi les portes de notre campus. Votre réussite est la nôtre, et nous sommes fiers de partager chacune de vos réalisations</p>
                     </div>
                     <div className="w-full md:max-w-[30%]">
-                        <h1 className={`font-bold text-2xl mb-2 ${sourceSerif.className}`}>Je veux</h1>
+                        <h1 className={`font-bold text-2xl mb-2 mt-4 md:mt-0 ${sourceSerif.className}`}>Je veux</h1>
                         <div className="w-full px-2 py-1 mb-2 rounded-md bg-white">
                             <p >Donner un témoignage</p>
                         </div>
@@ -91,6 +92,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <AlumniTell/>
         </div>
     )
 }
