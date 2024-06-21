@@ -16,7 +16,13 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-
+    // await fetch(`${API_URL}/auth/local`, {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({ identifier: email, password }),
+    // });
     if (email === "khelil@esi.dz" && password === "0310") {
       localStorage.setItem(
         "user",

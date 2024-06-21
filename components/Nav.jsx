@@ -38,7 +38,7 @@ const upLinks = [
 
 const downLinks = [
   {
-    href: "/school",
+    href: "/school/presentation",
     key: "school",
     sublinks: [
       "/school/presentation",
@@ -50,7 +50,7 @@ const downLinks = [
     imgUrl: "/sublinks0.jpg",
   },
   {
-    href: "/studies",
+    href: "/studies/engineering",
     key: "studies",
     sublinks: [
       "/studies/engineering",
@@ -62,13 +62,13 @@ const downLinks = [
     imgUrl: "/sublinks1.jpg",
   },
   {
-    href: "/research",
+    href: "/research/center",
     key: "research",
     sublinks: ["/research/center", "/labs", "/research/phd", "/research/rules"],
     imgUrl: "/sublinks2.jpg",
   },
   {
-    href: "/campus",
+    href: "/campus/esi_tour",
     key: "campus",
     sublinks: [
       "/campus/esi_tour",
@@ -79,7 +79,7 @@ const downLinks = [
     imgUrl: "/hero.jpg",
   },
   {
-    href: "/partnetship",
+    href: "/partners/recruitment",
     key: "partnetship",
     sublinks: [
       "/partners/recruitment",
@@ -89,7 +89,7 @@ const downLinks = [
     imgUrl: "/sublinks3.png",
   },
   {
-    href: "/alumni",
+    href: "/alumni/testimonials",
     key: "alumni",
     sublinks: [
       "/alumni/testimonials",
