@@ -9,7 +9,7 @@ const New = ({ image, description }) => {
       <div className="w-[45%] lg:w-full h-full lg:h-[70%] relative flex items-start justify-start">
         <Image
           className="w-full h-full"
-          src={"/LMCS-11.svg"}
+          src={image}
           alt="/"
           fill={true}
           objectFit="cover"

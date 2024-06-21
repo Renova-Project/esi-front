@@ -38,13 +38,12 @@ export const Speciality = ({ abrevihation, name, image }) => {
 
 export const Partner = ({ image }) => {
   return (
-    <div className="relative w-[14rem] max-w-[16rem] h-[6rem]">
+    <div className="relative w-[14rem] max-w-[16rem] min-h-[9rem]">
       <Image
         src={image}
         alt="/"
         fill={true}
-        className="w-full h-full"
-        objectFit="cover"
+        className="w-full h-full object-fill"
       />
     </div>
   );
@@ -64,6 +63,7 @@ const getLandingData = async () => {
 export default async function Home() {
   const t = await getTranslations("Landing");
   const data = await getLandingData();
+  console.log(data);
   return (
     <div>
       <Nav />
@@ -172,9 +172,9 @@ export default async function Home() {
                 arrows: false,
               }}
             >
-              <Partner image="/LMCS-11.svg" />
-              <Partner image="/LMCS-11.svg" />
-              <Partner image="/LMCS-11.svg" />
+              {data?.partners_logos.map((partner) => (
+                <Partner key={partner.id} image={partner.logo} />
+              ))}
             </Carousel>
           </div>
         </div>

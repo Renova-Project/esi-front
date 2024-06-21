@@ -91,7 +91,7 @@ async function Page() {
               />
               <div className="font-medium mt-2">{story.title}</div>
               <div className="flex justify-between items-center">
-                <Link href="/school/success-stories/1">
+                <Link href={`/school/success-stories/${story.id}`}>
                   <Button className="mt-2 py-2">{t("readMore")}</Button>
                 </Link>
                 <span className="text-sm text-darkgrey">

@@ -18,8 +18,10 @@ const HeroSection = ({ sliderContent }) => {
     <section>
       <Carousel
         settings={{
+          pauseOnFocus: true,
           dots: true,
           infinite: true,
+          autoplay: true,
           speed: 500,
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -66,7 +68,7 @@ const HeroSection = ({ sliderContent }) => {
               src="https://res.cloudinary.com/ddrigh0zp/video/upload/v1718921598/uxkubhaezvftzitomrj6.mp4"
               type="video/mp4"
             />
-             <div className="bg-gradient-to-b from-heroGradientStart/50 to-heroGradientEnd/30 absolute top-0 left-0 w-full h-full" /> 
+            <div className="bg-gradient-to-b from-heroGradientStart/50 to-heroGradientEnd/30 absolute top-0 left-0 w-full h-full" />
             <div className="relative text-white container lg:text-center">
               <p className="text-crayola text-xl font-bold lg:text-4xl lg:font-normal lg:text-white">
                 {t("hero.welcome")}
